@@ -61,4 +61,4 @@ class PoblarProgramaTable extends Seeder
             ]);
         }
     }
-}
+} 
