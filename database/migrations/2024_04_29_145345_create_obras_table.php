@@ -26,29 +26,43 @@ return new class extends Migration
             $table->foreignId('programa_id')->constrained('programa');
             $table->foreignId('subprograma_id')->constrained('subprograma');
             $table->foreignId('sector')->constrained('sector');
-            $table->string('codigo_unico_inversion')->unique();
-            $table->string('codigo_snip')->nullable()->unique();
-            $table->string('nombre_inversion', 1000);
-            $table->float('monto_viable', 3);
-            $table->string('situacion');
-            $table->string('estado_inversion');
-            $table->enum('nivel_gobierno', ['GL', 'GR', 'GN']);
-            $table->string('entidad');
-            $table->string('unidad_opmi')->nullable();
-            $table->string('responsable_opmi')->nullable();
-            $table->string('unidad_uei')->nullable();
-            $table->string('responsable_uei')->nullable();
-            $table->string('responsable_uf')->nullable();
-            $table->string('entidad_opi')->nullable();
-            $table->string('responsable_opi')->nullable();
-            $table->string('ejecutora')->nullable();
-            $table->date('fecha_registro')->nullable();
-            $table->string('ultimo_estudio')->nullable();
-            $table->string('estado_estudio')->nullable();
-            $table->string('nivel_viabilidad')->nullable();
-            $table->string('responsable_viabilidad')->nullable();
-            $table->date('fecha_viabilidad')->nullable();
-            $ta
+            $table->string('codigo_unico_inversion')->unique(); //CA
+            $table->string('codigo_snip')->nullable()->unique(); //CA
+            $table->string('nombre_inversion', 1000); //CA
+            $table->float('monto_viable', 3); //CA
+            $table->string('situacion'); //CA
+            $table->string('estado_inversion'); //CA
+            $table->enum('nivel_gobierno', ['GL', 'GR', 'GN']);  //CA
+            $table->string('entidad'); //CA
+            $table->string('unidad_opmi')->nullable(); //CA
+            $table->string('responsable_opmi')->nullable(); //CA
+            $table->string('unidad_uei')->nullable(); //CA
+            $table->string('responsable_uei')->nullable(); //CA
+            $table->string('responsable_uf')->nullable(); //CA
+            $table->string('entidad_opi')->nullable(); //CA
+            $table->string('responsable_opi')->nullable(); //CA
+            $table->string('ejecutora')->nullable(); //CA 
+            $table->date('fecha_registro')->nullable(); //CA
+            $table->string('ultimo_estudio')->nullable(); //CA
+            $table->string('estado_estudio')->nullable(); //CA
+            $table->string('nivel_viabilidad')->nullable(); //CA
+            $table->string('responsable_viabilidad')->nullable(); //CA
+            $table->date('fecha_viabilidad')->nullable(); //CA
+            $table->float('costo_actualizado')->nullable(); //CA
+            $table->text('descripcion_alternativa')->nullable();
+            $table->integer('beneficiaros_habitantes', false, true); //CA
+            $table->float('devengado_año_vigente', 3)->nullable(); //CA
+            $table->float('devengado_año_anterior')->nullable(); //CA
+            $table->integer('pim_año_vigente')->nullable(); //CA
+            $table->float('devengado_acumulado',3)->nullable(); //CA
+            $table->enum('marco', ['SNIP', 'INVIERTE']); //CA
+            $table->float('saldo_por_financiar', 3)->nullable(); //CA
+            $table->float('año_mes_primer_devengado')->nullable(); //CA
+            $table->float('año_mes_ultimo_devengado')->nullable(); //CA
+            $table->boolean('incluido_programacion_pmi'); //CA
+            $table->boolean('incluido_ejecucion_pmi'); //CA
+            $table->boolean('ganador_fronipel'); //CA
+            $table->string('registro_cierre')->nullable(); // CA
             $table->timestamps();
         });
     }
