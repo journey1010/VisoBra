@@ -11,10 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('contrataciones_obra', function (Blueprint $table) {
+        Schema::create('fotos_obra', function (Blueprint $table) {
             $table->id();
             $table->foreignId('obra_id')->constrained('obras');
-            $table->json('contrataciones')->nullable();
+            $table->json('files_path')->nullable();
             $table->timestamps();
         });
     }
@@ -24,9 +24,9 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('contrataciones_obra', function (Blueprint $table){
+        Schema::table('fotos_obra', function(Blueprint $table){
             $table->dropConstrainedForeignId('obra_id');
         });
-        Schema::dropIfExists('contrataciones_obra');
+        Schema::dropIfExists('fotos_obra');
     }
 };

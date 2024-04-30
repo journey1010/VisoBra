@@ -8,6 +8,7 @@ return new class extends Migration
 {
     /**
      * Run the migrations.
+     * Tipo: GET
      * Fuente de datos: https://ws.mineco.gob.pe/server/rest/services/cartografia_pip_georef_edicion_lectura/MapServer/0/query?f=json&where=UPPER(COD_UNICO)%20LIKE%20%27%252192666%25%27&returnGeometry=true&spatialRel=esriSpatialRelIntersects&maxAllowableOffset=0.01866138385297604&outFields=*&outSR=102100&resultRecordCount=1
      * Para ese link hay 2 elementos a tener a cuenta el codigo COD_UNICO(el cui) y MapServer/x (x puede ser 0 o 1, desconosco si hay mas números)
      * 
