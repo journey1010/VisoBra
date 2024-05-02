@@ -18,7 +18,7 @@ return new class extends Migration
     {
         Schema::create('geo_obra', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor('obras_id')->constrained('obras');
+            $table->foreignId('obras_id')->constrained('obras');
             $table->string('provincia');
             $table->string('distrito');
             $table->string('departamento');
