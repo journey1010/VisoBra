@@ -17,7 +17,7 @@ return new class extends Migration
       * CA link de enlace : https://ofi5.mef.gob.pe/inviertePub/ConsultaPublica/ConsultaAvanzada
       * SSI link de enlace : https://ofi5.mef.gob.pe/ssi/ssi/Index
       * GI link de enlace : https://ofi5.mef.gob.pe/geoinvierteportal/
-      * Tipo de metodo: GET (para todos los link)
+      * Tipo de metodo: GET (para todos los link, excepto para CA. El metodo de CA es POST)
       */
     public function up(): void
     {
