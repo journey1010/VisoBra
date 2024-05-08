@@ -12,5 +12,8 @@ abstract class Scraper implements ScraperInterface
 
     abstract public function store();
 
-    abstract public function logHandler();
+    public function logHandler(): void
+    {
+
+    }
 }

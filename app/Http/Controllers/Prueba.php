@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Support\Facades\Http;
-use App\Services\HttpClient;
+use App\Services\Contracts\HttpClientInterface; 
 
 class Prueba extends Controller
 {
@@ -18,7 +18,7 @@ class Prueba extends Controller
 
     }
 
-    public function testHttpObra()
+    public function testHttpObra(HttpClientInterface $http)
     {
         $data = [
             "filters" => "",
@@ -67,7 +67,6 @@ class Prueba extends Controller
         
         $headers = [];
         $url = "https://ofi5.mef.gob.pe/inviertePub/ConsultaPublica/traeListaProyectoConsultaAvanzada";
-        $http = new HttpClient();
         $http->config(2,100, 30, $headers);
         $response = $http->makeRequest($url, 'post', $data);
         return $response;   
