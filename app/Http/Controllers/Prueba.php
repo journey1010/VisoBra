@@ -64,11 +64,12 @@ class Prueba extends Controller
             "sortOrder" => "desc",
             "chkFoniprel" => ""
         ];
-        $headers = [
-            'Accept' => 'application/json',
-            'Content-Type' => 'application/json'
-        ];
-
+        // $headers = [
+        //     'Accept' => 'application/json',
+        //     'Content-Type' => 'application/json'
+        // ];
+        
+        $headers = [];
             
          $http  = Http::withHeaders($headers)
                 ->post(

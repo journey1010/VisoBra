@@ -3,7 +3,6 @@
 namespace App\Services\Contracts;
 
 interface ScraperInterface {
-    public function config (string $url, string $method, int $retry, array $headers = false);
     
     public function validateFormat(): bool;
 
