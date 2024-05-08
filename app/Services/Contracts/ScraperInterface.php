@@ -6,8 +6,6 @@ interface ScraperInterface {
     
     public function validateFormat(): bool;
 
-    public function extractData();
-
     public function proccesData();
 
     public function store();

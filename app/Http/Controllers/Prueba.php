@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Http;
+use App\Services\HttpClient;
 
 class Prueba extends Controller
 {
@@ -64,20 +64,12 @@ class Prueba extends Controller
             "sortOrder" => "desc",
             "chkFoniprel" => ""
         ];
-        // $headers = [
-        //     'Accept' => 'application/json',
-        //     'Content-Type' => 'application/json'
-        // ];
         
         $headers = [];
-            
-         $http  = Http::withHeaders($headers)
-                ->post(
-                     'https://ofi5.mef.gob.pe/inviertePub/ConsultaPublica/traeListaProyectoConsultaAvanzada', 
-                      $data
-                     );
-        
-        return $http->body();
-        
+        $url = "https://ofi5.mef.gob.pe/inviertePub/ConsultaPublica/traeListaProyectoConsultaAvanzada";
+        $http = new HttpClient();
+        $http->config(2,100, 30, $headers);
+        $response = $http->makeRequest($url, 'post', $data);
+        return $response;   
     }
 }

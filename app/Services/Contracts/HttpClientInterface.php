@@ -4,5 +4,8 @@ namespace App\Services\Contracts;
 
 interface HttpClientInterface
 {
-    public function config(string $url, string $method, int $retry, ?array $data, ?array $headers);
+    public function config(int $retry, int $sleepTime, int $timeout, ?array $headers);
+    
+    public function makeRequest(string $url, string $method, ?array $data);
+    
 }
