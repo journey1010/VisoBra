@@ -26,7 +26,7 @@ return new class extends Migration
             $table->foreignId('funcion_id')->constrained('funcion');
             $table->foreignId('programa_id')->constrained('programa');
             $table->foreignId('subprograma_id')->constrained('subprograma');
-            $table->foreignId('sector')->constrained('sector');
+            $table->foreignId('sector_id')->constrained('sector');
             $table->string('codigo_unico_inversion')->unique(); //CA
             $table->string('codigo_snip')->nullable()->unique(); //CA
             $table->string('nombre_inversion', 1000)->fulltext(); //CA
@@ -74,7 +74,7 @@ return new class extends Migration
     public function down(): void
     {
         Schema::table('obras', function(Blueprint $table){
-            $table->dropFullText('nombre_inversion');
+            $table->dropIndex('obras_nombre_inversion_fulltext');
             $table->dropConstrainedForeignId('funcion_id');
             $table->dropConstrainedForeignId('programa_id');
             $table->dropConstrainedForeignId('subprograma_id');

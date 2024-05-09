@@ -13,7 +13,8 @@ class Obras extends Model
 
     protected $fillable = [
         'funcion_id',
-        'programa_id', 
+        'programa_id',
+        'subprograma_id',
         'sector',
         'codigo_unico_inversion',
         'codigo_snip', 
