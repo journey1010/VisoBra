@@ -2,7 +2,7 @@
 
 namespace App\Services\Contracts;
 
-interface ScraperInterface {
+interface DataHandler {
     
     public function validateFormat(): bool;
 
@@ -10,5 +10,4 @@ interface ScraperInterface {
 
     public function store();
 
-    public function logHandler();
 }

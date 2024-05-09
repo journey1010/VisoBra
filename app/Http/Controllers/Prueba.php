@@ -4,7 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Support\Facades\Http;
-use App\Services\Contracts\HttpClientInterface; 
+use App\Services\Contracts\HttpClientInterface;
+use App\Exceptions\HttpClientException;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\RateLimiter;
 
 class Prueba extends Controller
 {
@@ -70,5 +73,26 @@ class Prueba extends Controller
         $http->config(2,100, 30, $headers);
         $response = $http->makeRequest($url, 'post', $data);
         return $response;   
+    }
+
+    public function httException()
+    {
+        try {
+            throw new HttpClientException('Soy una excepcion');
+        }catch (\Exception $e){
+            $className = get_class($e);
+
+            $executed = RateLimiter::attempt(
+                $className,
+                $perDay = 5,
+                function() use ($e, $className){
+                    Log::build([
+                        'driver' => 'single',
+                        'path' => storage_path('log/'.$className .'.log')
+                    ])->critical($e->getMessage());
+                }
+            );
+            
+        }   
     }
 }
