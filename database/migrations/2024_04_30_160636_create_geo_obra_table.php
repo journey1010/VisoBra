@@ -33,7 +33,7 @@ return new class extends Migration
     public function down(): void
     {
         Schema::table('geo_obra', function(Blueprint $table){   
-            $table->dropForeignIdFor('obras_id');
+            $table->dropConstrainedForeignId('obras_id');
         });
         Schema::dropIfExists('geo_obra');
     }

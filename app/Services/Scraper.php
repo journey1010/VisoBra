@@ -3,6 +3,7 @@
 namespace App\Services;
 
 use App\Services\Contracts\ScraperInterface;
+use Illuminate\Support\Facades\Log;
 
 abstract class Scraper implements ScraperInterface
 {
@@ -12,8 +13,8 @@ abstract class Scraper implements ScraperInterface
 
     abstract public function store();
 
-    public function logHandler(): void
+    public function logHandler(string $message): void
     {
-
+        
     }
 }
