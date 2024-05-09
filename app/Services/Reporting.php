@@ -13,7 +13,7 @@ class Reporting
      * @param $e => Error lanzado
      * @return void
      */
-    public static function loggin(Exception $e, ?int $attemps = 5): void
+    public static function loggin(Exception $e, ?int $attemps = 100): void
     {   
         $className = get_class($e);
         RateLimiter::attempt(
