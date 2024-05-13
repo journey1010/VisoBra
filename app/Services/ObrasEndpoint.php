@@ -3,7 +3,7 @@
 namespace App\Services;
 
 use App\Services\Contracts\DataHandler;
-use App\Services\HttpClient;
+use App\Exceptions\DataHandlerException;
 
 class ObrasEndpoint implements DataHandler
 {
@@ -61,15 +61,18 @@ class ObrasEndpoint implements DataHandler
         'DescripcionCierre'=>'registro_cierre',
     ];
 
-    protected function updateMetada(): bool
-    {
-        return true;
-    }
 
-
-    public function validateFormat(): bool
+    public function validateFormat(array $data): bool
     {
-     
+        if(is_array($data) && empty($data)){
+            throw new DataHandlerException('El array de datos esperado esta vacío o no es un array.');
+        }
+
+        foreach ($this->dataHoped as $key => $value){
+            if(!array_key_exists($key, $data)){
+                throw new DataHandlerException('Datos incompatibles, el formato de datos esperados no es el correcto. Fallo en : ' . $key . 'al buscar en los datos de Consulta avanzada.');
+            }
+        }
         return true;
     }
 

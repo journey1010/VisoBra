@@ -8,9 +8,55 @@ use App\Services\Contracts\HttpClientInterface;
 use App\Exceptions\HttpClientException;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\RateLimiter;
+use Exception;
 
 class Prueba extends Controller
 {
+    protected $dataHoped = [
+        'Funcion' => 'funcion_id',
+        'Programa' => 'programa_id',
+        'Subprograma' => 'subprograma_id',
+        'Sector' => 'sector_id',
+        'CodigoUnico' => 'codigo_unico_inversion',
+        'Codigo' => 'codigo_snip',
+        'Nombre' => 'nombre_inversion',
+        'MontoAlternativa' => 'monto_viable',
+        'Situacion' => 'situacion',
+        'Estado' => 'estado_inversion',
+        'Nivel' => 'nivel_gobierno',
+        'Pliego' => 'entidad',
+        'Opmi' => 'unidad_opmi',
+        'ResponsableOpmi' => 'responsable_opmi',
+        'Uei' => 'unidad_uei',
+        'ResponsableUei' => 'responsable_uei',
+        'Uf' => 'unidad_uf',
+        'ResponsableUf' => 'responsable_uf',
+        'Opi' => 'entidad_opi',
+        'ResponsableOpi' => 'responsable_opi',
+        'Ejecutora' => 'ejecutora',
+        'FechaRegistro' => 'fecha_registro',
+        'UltimoEstudio' => 'ultimo_estudio',
+        'EstadoEstudio' => 'estado_estudio',
+        'NivelViabilidad' => 'nivel_viabilidad',
+        'ResponsableViabilidad' => 'responsable_viabilidad',
+        'FechaViabilidad' => 'fecha_viabilidad',
+        'Costo' => 'costo_actualizado',
+        'Alternativa' => 'descripcion_alternativa',
+        'Beneficiarios' => 'beneficiaros_habitantes',
+        'DevActual'=>'devengado_año_vigente',
+        'DevAcumuladoAnterior'=>'devengado_año_anterior',        
+        'PimActual'=>'pim_año_vigente',
+        'DevAcumulado'=>'devengado_acumulado',        
+        'Marco'=>'marco',        
+        'SaldoPorFinanciar'=>'saldo_por_financiar',
+        'MesAnioPDev'=>'año_mes_primer_devengado',        
+        'MesAnioUDev'=>'año_mes_ultimo_devengado',
+        'IncluidoProgramacionPmi'=>'incluido_programacion_pmi',
+        'IncluidoEjecucionPmi'=>'incluido_ejecucion_pmi',
+        'GanadorFoniprel'=>'ganador_fronipel',
+        'DescripcionCierre'=>'registro_cierre',
+    ];
+
     public function test()
     {
         User::create([
@@ -61,7 +107,7 @@ class Prueba extends Controller
             "cboGrupo" => "0",
             "rbtnCadena" => "T",
             "isSearch" => false,
-            "PageSize" => 10,
+            "PageSize" => 1,
             "PageIndex" => 1,
             "sortField" => "MontoAlternativa",
             "sortOrder" => "desc",
@@ -72,7 +118,12 @@ class Prueba extends Controller
         $url = "https://ofi5.mef.gob.pe/inviertePub/ConsultaPublica/traeListaProyectoConsultaAvanzada";
         $http->config(2,100, 30, $headers);
         $response = $http->makeRequest($url, 'post', $data);
-        dd($response);
+        $data = $response['Data'][0];
+        foreach($this->dataHoped as $k => $v){
+            if($d = array_key_exists($k, $data)){
+               dd('No hay'); 
+            }
+        }
         return $response;   
     }
 
@@ -96,4 +147,5 @@ class Prueba extends Controller
             
         }   
     }
+
 }
