@@ -6,7 +6,7 @@ interface DataHandler {
     
     public function validateFormat(array $data): bool;
 
-    public function proccesData();
+    public function proccessData(...$data);
 
     public function store();
 

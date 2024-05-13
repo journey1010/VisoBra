@@ -119,12 +119,7 @@ class Prueba extends Controller
         $http->config(2,100, 30, $headers);
         $response = $http->makeRequest($url, 'post', $data);
         $data = $response['Data'][0];
-        foreach($this->dataHoped as $k => $v){
-            if($d = array_key_exists($k, $data)){
-               dd('No hay'); 
-            }
-        }
-        return $response;   
+        return $data;   
     }
 
     public function httException()
