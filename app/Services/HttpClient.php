@@ -25,7 +25,7 @@ class HttpClient implements HttpClientInterface{
         $this->http->timeout($timeout);
     }
 
-    public function makeRequest(string $url, string $method, ?array $data)
+    public function makeRequest(string $url, string $method, ?array $data): array
     {   
         $method = strtoupper($method);
         switch($method){
@@ -43,8 +43,8 @@ class HttpClient implements HttpClientInterface{
             $message = 'HTTP request failed with status code: ' . $response->status();
             throw new HttpClientException($message);
         }
-
-        return $response->body();
+              
+        return json_decode($response->body(), true);
     }
 
     protected function isSuccessResponse(Response $response): bool

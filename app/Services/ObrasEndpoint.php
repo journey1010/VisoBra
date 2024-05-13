@@ -2,7 +2,8 @@
 
 namespace App\Services;
 
-use App\Services\Contracts\DataHandler; 
+use App\Services\Contracts\DataHandler;
+use App\Services\HttpClient;
 
 class ObrasEndpoint implements DataHandler
 {
@@ -13,10 +14,7 @@ class ObrasEndpoint implements DataHandler
       * FechaRegistro 
       * FechaViabilidad
       * MesAnioPDev
-      * MesAnioUDev
-      *
-      *
-      *      
+      * MesAnioUDev     
       */
     protected $dataHoped = [
         'Funcion' => 'funcion_id',
