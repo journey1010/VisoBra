@@ -39,6 +39,7 @@ return new class extends Migration
             $table->string('responsable_opmi')->nullable(); //CA
             $table->string('unidad_uei')->nullable(); //CA
             $table->string('responsable_uei')->nullable(); //CA
+            $table->string('unidad_uf')->nullable(); //CA
             $table->string('responsable_uf')->nullable(); //CA
             $table->string('entidad_opi')->nullable(); //CA
             $table->string('responsable_opi')->nullable(); //CA
@@ -78,7 +79,7 @@ return new class extends Migration
             $table->dropConstrainedForeignId('funcion_id');
             $table->dropConstrainedForeignId('programa_id');
             $table->dropConstrainedForeignId('subprograma_id');
-            $table->dropConstrainedForeignId('sector');
+            $table->dropConstrainedForeignId('sector_id');
         });
         Schema::dropIfExists('obras');
     }
