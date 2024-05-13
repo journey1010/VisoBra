@@ -4,6 +4,7 @@ namespace App\Services;
 
 use App\Services\Contracts\DataHandler;
 use App\Exceptions\DataHandlerException;
+use App\Models\Obras;
 
 class ObrasEndpoint implements DataHandler
 {
@@ -85,7 +86,7 @@ class ObrasEndpoint implements DataHandler
     public function proccessData(...$data)
     {
         
-    }   
+    }
     
     public function store()
     {

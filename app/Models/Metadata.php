@@ -9,6 +9,8 @@ class Metadata extends Model
 {
     use HasFactory;
 
+    protected $table = 'metadata_list_obras';
+
     protected $fillable = [
         'pages_size',
         'total_rows',
