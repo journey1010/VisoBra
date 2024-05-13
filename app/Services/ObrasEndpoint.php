@@ -61,6 +61,12 @@ class ObrasEndpoint implements DataHandler
         'DescripcionCierre'=>'registro_cierre',
     ];
 
+    protected function updateMetada(): bool
+    {
+        return true;
+    }
+
+
     public function validateFormat(): bool
     {
      

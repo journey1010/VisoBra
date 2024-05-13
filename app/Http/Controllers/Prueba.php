@@ -72,6 +72,7 @@ class Prueba extends Controller
         $url = "https://ofi5.mef.gob.pe/inviertePub/ConsultaPublica/traeListaProyectoConsultaAvanzada";
         $http->config(2,100, 30, $headers);
         $response = $http->makeRequest($url, 'post', $data);
+        dd($response);
         return $response;   
     }
 
