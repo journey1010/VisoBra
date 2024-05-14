@@ -63,7 +63,7 @@ return new class extends Migration
             $table->float('año_mes_ultimo_devengado')->nullable(); //CA
             $table->boolean('incluido_programacion_pmi')->nullable(); //CA
             $table->boolean('incluido_ejecucion_pmi')->nullable(); //CA
-            $table->boolean('ganador_fronipel')->nullable(); //CA
+            $table->string('ganador_fronipel')->nullable(); //CA
             $table->string('registro_cierre')->nullable(); // CA
             $table->timestamps();
         });

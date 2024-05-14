@@ -16,7 +16,7 @@ class Obras extends Model
         'funcion_id',
         'programa_id',
         'subprograma_id',
-        'sector',
+        'sector_id',
         'codigo_unico_inversion',
         'codigo_snip', 
         'nombre_inversion',
