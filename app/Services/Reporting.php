@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\RateLimiter;
 class Reporting
 {
     /**
+     * Guarda en los archivos de los Un error
      * @param $attemps => limite de veces que puede ser reportado un error
      * @param $e => Error lanzado
      * @return void

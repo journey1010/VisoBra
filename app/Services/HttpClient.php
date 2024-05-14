@@ -47,7 +47,7 @@ class HttpClient implements HttpClientInterface{
         return json_decode($response->body(), true);
     }
 
-    protected function isSuccessResponse(Response $response): bool
+    private function isSuccessResponse(Response $response): bool
     {
         return $response->successful();
     }

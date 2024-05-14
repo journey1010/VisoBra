@@ -153,7 +153,7 @@ class Prueba extends Controller
         // );
 
         $a = Metadata::find(1);
-        return $this->dataStore;   
+        return $response;   
     }
 
     public function httException()

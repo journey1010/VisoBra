@@ -74,12 +74,12 @@ class ObrasEndpoint implements DataHandler
     public function validateFormat(array $data): bool
     {
         if(is_array($data) && empty($data)){
-            throw new DataHandlerException('El array de datos esperado esta vacío o no es un array.');
+            return throw new DataHandlerException('El array de datos esperado esta vacío o no es un array.');
         }
 
         foreach ($this->dataHoped as $key => $value){
             if(!array_key_exists($key, $data)){
-                throw new DataHandlerException('Datos incompatibles, el formato de datos esperados no es el correcto. Fallo en : ' . $key . 'al buscar en los datos de Consulta avanzada.');
+               return throw new DataHandlerException('Datos incompatibles, el formato de datos esperados no es el correcto. Fallo en : ' . $key . 'al buscar en los datos de Consulta avanzada.');
             }
         }
         return true;
@@ -122,7 +122,7 @@ class ObrasEndpoint implements DataHandler
                     break;
             }
         }
-        
+
         return $this->dataStore;
     }
 
@@ -142,12 +142,8 @@ class ObrasEndpoint implements DataHandler
         if($diference != 0){
             return false;
         }
-
-        $metadata->pages_size = $pageSize;
-        $metadata->total_pages = $totalPage;
-        $metadata->total_rows = $totalRows;
-        $metadata->save();
-
+    
+        Metadata::upMetada(1, $pageSize, $totalRows, $totalPage);
         return $diference;
     }
 }
