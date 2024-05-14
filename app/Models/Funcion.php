@@ -11,4 +11,7 @@ class Funcion extends Model
 
     protected $table = 'funcion';
     
+    protected $fillable = [
+        'nombre'
+    ];
 }

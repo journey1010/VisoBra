@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Subprograma extends Model
 {
     use HasFactory;
+
+    protected $table = 'subprograma';
+
+    protected $fillable = [
+        'nombre'
+    ];
 }

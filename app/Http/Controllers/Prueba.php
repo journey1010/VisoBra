@@ -8,7 +8,10 @@ use App\Services\Contracts\HttpClientInterface;
 use App\Exceptions\HttpClientException;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\RateLimiter;
-use Exception;
+use App\Models\Funcion;
+use App\Models\Sector;
+use App\Models\Subprograma;
+use App\Models\Programa;
 
 class Prueba extends Controller
 {
@@ -122,8 +125,28 @@ class Prueba extends Controller
         $response = $http->makeRequest($url, 'post', $data);
         $data = $response['Data'][0];
         foreach($this->dataHoped as $key => $value){
-            $this->dataStore = array_merge($this->dataStore, [$value => $data[$key]]);
+            $valueToStore = $data[$key]; 
+            $this->dataStore = array_merge($this->dataStore, [$value =>$valueToStore]);
+            switch($key){
+                case 'Funcion':
+                    $function = Funcion::firstOrCreate(['nombre' => $valueToStore]);
+                    $this->dataStore[$value] = $function->id;
+                    break;
+                case 'Programa':
+                    $programa = Programa::firstOrCreate(['nombre' => $valueToStore]);
+                    $this->dataStore[$value] = $programa->id;
+                    break;
+                case 'Subprograma':
+                    $subprograma = Subprograma::firstOrCreate(['nombre' => $valueToStore]); 
+                    $this->dataStore[$value] = $subprograma->id;
+                    break;
+                case 'Sector':
+                    $sector  = Sector::firstOrCreate(['nombre' => $valueToStore]);
+                    $this->dataStore[$value] = $sector->id;
+                    break;
+            }
         }
+        
         return $this->dataStore;   
     }
 

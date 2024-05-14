@@ -11,4 +11,8 @@ class Programa extends Model
 
     protected $table = 'programa'; 
 
+    protected $fillable = [
+        'nombre',
+    ];
+
 }

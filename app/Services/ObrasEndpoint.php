@@ -5,10 +5,13 @@ namespace App\Services;
 use App\Services\Contracts\DataHandler;
 use App\Exceptions\DataHandlerException;
 use App\Models\Obras;
+use App\Models\Funcion;
+use App\Models\Sector;
+use App\Models\Subprograma;
+use App\Models\Programa;
 
 class ObrasEndpoint implements DataHandler
 {
-
 
      /** 
       *Propiedades a convertir
@@ -85,7 +88,27 @@ class ObrasEndpoint implements DataHandler
     public function store($data)
     {
         foreach($this->dataHoped as $key => $value){
-            $this->dataStore = array_merge($this->dataStore, [$value => $data[$key]]);
+            $valueToStore = $data[$key]; 
+            $this->dataStore = array_merge($this->dataStore, [$value =>$valueToStore]);
+            switch($key){
+                case 'Funcion':
+                    $function = Funcion::firstOrCreate(['nombre' => $valueToStore]);
+                    $this->dataStore[$value] = $function->id;
+                    break;
+                case 'Programa':
+                    $programa = Programa::firstOrCreate(['nombre' => $valueToStore]);
+                    $this->dataStore[$value] = $programa->id;
+                    break;
+                case 'Subprograma':
+                    $subprograma = Subprograma::firstOrCreate(['nombre' => $valueToStore]); 
+                    $this->dataStore[$value] = $subprograma->id;
+                    break;
+                case 'Sector':
+                    $sector  = Sector::firstOrCreate(['nombre' => $valueToStore]);
+                    $this->dataStore[$value] = $sector->id;
+                    break;
+            }
         }
     }
+
 }
