@@ -109,6 +109,10 @@ class ObrasEndpoint implements DataHandler
                     break;
             }
         }
+
+        Obras::create([
+            $this->dataStore
+        ]);
     }
 
 }

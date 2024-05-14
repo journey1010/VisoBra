@@ -12,6 +12,7 @@ use App\Models\Funcion;
 use App\Models\Sector;
 use App\Models\Subprograma;
 use App\Models\Programa;
+use App\Models\Obras;
 
 class Prueba extends Controller
 {
@@ -146,7 +147,9 @@ class Prueba extends Controller
                     break;
             }
         }
-        
+        Obras::create(
+            $this->dataStore
+        );
         return $this->dataStore;   
     }
 

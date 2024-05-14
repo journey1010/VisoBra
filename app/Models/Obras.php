@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Casts\Attribute;
 
 class Obras extends Model
 {
@@ -57,10 +58,17 @@ class Obras extends Model
         'updated_at'
     ];
 
-    protected function cast(): array
+    protected function fechaRegistro(): Attribute
     {
-        
-        return [];
+        return Attribute::make(
+            set: fn (string $value) => jsonDateToPhp($value),
+        );
     }
 
+    protected function fechaViabilidad(): Attribute
+    {
+        return Attribute::make(
+            set : fn(string $value) => jsonDateToPhp($value),
+        );
+    }
 }
