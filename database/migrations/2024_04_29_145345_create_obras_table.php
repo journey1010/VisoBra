@@ -59,8 +59,8 @@ return new class extends Migration
             $table->float('devengado_acumulado',3)->nullable(); //CA
             $table->enum('marco', ['SNIP', 'INVIERTE']); //CA
             $table->float('saldo_por_financiar', 3)->nullable(); //CA
-            $table->float('año_mes_primer_devengado')->nullable(); //CA
-            $table->float('año_mes_ultimo_devengado')->nullable(); //CA
+            $table->date('año_mes_primer_devengado')->nullable(); //CA
+            $table->date('año_mes_ultimo_devengado')->nullable(); //CA
             $table->boolean('incluido_programacion_pmi')->nullable(); //CA
             $table->boolean('incluido_ejecucion_pmi')->nullable(); //CA
             $table->string('ganador_fronipel')->nullable(); //CA

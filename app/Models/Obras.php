@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Casts\Attribute;
+use SebastianBergmann\CodeUnit\FunctionUnit;
 
 class Obras extends Model
 {
@@ -70,5 +71,37 @@ class Obras extends Model
         return Attribute::make(
             set : fn(string $value) => jsonDateToPhp($value),
         );
+    }
+
+    protected function descripcionAlternativa(): Attribute
+    {
+        return Attribute::make(
+            set: fn (string $value) => clearRichText($value),
+        );
+    }
+
+    protected function añoMesPrimerDevengado(): Attribute
+    {
+        return Attribute::make(
+            set: fn(string $value) =>  $this->convertDate($value),
+        );
+    }
+
+    protected function añoMesUltimoDevengado(): Attribute
+    {
+        return Attribute::make(
+            set: fn(string $value) => $this->convertDate($value),
+        );
+    }
+
+
+    /**
+     * Convert string of date type (Ym) a validate date of type Y-m
+     * @return date Y-m
+     */
+    private function convertDate(string $date)
+    {
+        $dateConvert = date_create_from_format('Ym', $date);
+        return $dateConvert->format('Y-m');
     }
 }
