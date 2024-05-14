@@ -57,6 +57,8 @@ class Prueba extends Controller
         'DescripcionCierre'=>'registro_cierre',
     ];
 
+    protected $dataStore = [];
+
     public function test()
     {
         User::create([
@@ -119,7 +121,10 @@ class Prueba extends Controller
         $http->config(2,100, 30, $headers);
         $response = $http->makeRequest($url, 'post', $data);
         $data = $response['Data'][0];
-        return $data;   
+        foreach($this->dataHoped as $key => $value){
+            $this->dataStore = array_merge($this->dataStore, [$value => $data[$key]]);
+        }
+        return $this->dataStore;   
     }
 
     public function httException()

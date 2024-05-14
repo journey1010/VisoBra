@@ -8,6 +8,6 @@ interface DataHandler {
 
     public function proccessData(...$data);
 
-    public function store();
+    public function store(array $data);
 
 }

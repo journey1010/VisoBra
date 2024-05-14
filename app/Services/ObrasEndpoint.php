@@ -62,6 +62,10 @@ class ObrasEndpoint implements DataHandler
         'DescripcionCierre'=>'registro_cierre',
     ];
 
+    /**
+     * Array Asociativo que guardara los datos en el modelo de obras
+     */
+    protected $dataStore = [];
 
     public function validateFormat(array $data): bool
     {
@@ -88,8 +92,10 @@ class ObrasEndpoint implements DataHandler
         
     }
     
-    public function store()
+    public function store($data)
     {
-        
+        foreach($this->dataHoped as $key => $value){
+            $this->dataStore = array_merge($this->dataStore, [$value => $data[$key]]);
+        }
     }
 }

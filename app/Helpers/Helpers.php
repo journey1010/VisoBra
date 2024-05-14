@@ -21,3 +21,16 @@ function jsonDateToPhp(string $date){
     $fechaNormal->setTimestamp($timestamp);
     return $fechaNormal->format('Y-m-d H:i:s');
 }
+
+
+/**
+ * Limpiar texto enriquecido
+ * @param $text
+ * @return string
+ */
+
+ function clearRichText(string $text){
+    $pattern   = '/[\x00-\x1F\x7F-\xFF]/';
+    $cleanText = preg_replace($pattern, '', $text);
+    return $cleanText;
+ }

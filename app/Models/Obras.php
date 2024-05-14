@@ -57,4 +57,10 @@ class Obras extends Model
         'updated_at'
     ];
 
+    protected function cast(): array
+    {
+        
+        return [];
+    }
+
 }
