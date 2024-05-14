@@ -81,16 +81,6 @@ class ObrasEndpoint implements DataHandler
         return true;
     }
 
-    /**
-     * @param $data[0] : FechaRegistro;
-     * @param $data[1] : FechaViabilidad;
-     * @param $data[2] : MesAnioPDev;
-     * @param $data[3] : MesAnioUDev;
-     * */
-    public function proccessData(...$data)
-    {
-        
-    }
     
     public function store($data)
     {
