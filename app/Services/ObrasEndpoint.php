@@ -9,6 +9,7 @@ use App\Models\Funcion;
 use App\Models\Sector;
 use App\Models\Subprograma;
 use App\Models\Programa;
+use App\Models\Metadata;
 
 class ObrasEndpoint implements DataHandler
 {
@@ -66,7 +67,7 @@ class ObrasEndpoint implements DataHandler
     ];
 
     /**
-     * Array Asociativo que guardara los datos en el modelo de obras
+     * Array Asociativo que guardara|actualizara los datos en el modelo de obras
      */
     protected $dataStore = [];
 
@@ -83,9 +84,21 @@ class ObrasEndpoint implements DataHandler
         }
         return true;
     }
-
     
     public function store($data)
+    {
+        Obras::create($this->createRecords($data));
+    }
+
+    public function update(int $id, array $data)
+    {
+        Obras::where('id', $id)->update($this->dataStore);
+    }
+
+    /**
+     * Crea un array asociativo basandose en el nombre de las co
+     */
+    private function createRecords(array $data): array
     {
         foreach($this->dataHoped as $key => $value){
             $valueToStore = $data[$key]; 
@@ -109,6 +122,32 @@ class ObrasEndpoint implements DataHandler
                     break;
             }
         }
-        Obras::create($this->dataStore);
+        
+        return $this->dataStore;
+    }
+
+    /**
+     * @return bool is false if there isn´t new data in Consulta avanzada
+     * @return int  number of new data
+     */
+    public function  isThereNewData(int $pageSize, int $totalRows, int $totalPage): bool|int
+    {
+        $metadata = Metadata::find(1); 
+        if(!$metadata){
+            throw new DataHandlerException('No hay registro de metadatos : table (metadata_list_obras)');
+        }
+
+        $diference  = $totalRows - $metadata->total_rows;
+        
+        if($diference != 0){
+            return false;
+        }
+
+        $metadata->pages_size = $pageSize;
+        $metadata->total_pages = $totalPage;
+        $metadata->total_rows = $totalRows;
+        $metadata->save();
+
+        return $diference;
     }
 }

@@ -13,6 +13,7 @@ use App\Models\Sector;
 use App\Models\Subprograma;
 use App\Models\Programa;
 use App\Models\Obras;
+use App\Models\Metadata;
 
 class Prueba extends Controller
 {
@@ -147,9 +148,11 @@ class Prueba extends Controller
                     break;
             }
         }
-        Obras::create(
-            $this->dataStore
-        );
+        // Obras::create(
+        //     $this->dataStore
+        // );
+
+        $a = Metadata::find(1);
         return $this->dataStore;   
     }
 
