@@ -6,12 +6,86 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class PoblarSubprogramaTable extends Seeder
+class PoblarTablas extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
     protected $campos = [
+        'TRANSPORTE',
+        'SALUD Y SANEAMIENTO',
+        'ENERGIA Y RECURSOS MINERALES',
+        'EDUCACION Y CULTURA',
+        'COMUNICACIONES',
+        'INDUSTRIA, COMERCIO Y SERVICIOS',
+        'AGRARIA',
+        'JUSTICIA',
+        'VIVIENDA Y DESARROLLO URBANO',
+        'ADMINISTRACION Y PLANEAMIENTO',
+        'ASISTENCIA Y PREVISION SOCIAL',
+        'DEFENSA Y SEGURIDAD NACIONAL',
+        'PESCA'
+    ];
+
+    protected $campos2 = [
+        'TRANSPORTE TERRESTRE',
+        'SANEAMIENTO',
+        'ENERGIA',
+        'EDUCACION PRIMARIA',
+        'TRANSPORTE HIDROVIARIO',
+        'SALUD INDIVIDUAL',
+        'TELECOMUNICACIONES',
+        'TURISMO',
+        'COMERCIO',
+        'TRANSPORTE AEREO',
+        'PRESERVACION DE LOS RECURSOS NATURALES RENOVABLES',
+        'JUSTICIA',
+        'DESARROLLO URBANO',
+        'TRANSPORTE METROPOLITANO',
+        'INFRAESTRUCTURA EDUCATIVA',
+        'EDUCACION SUPERIOR',
+        'ADMINISTRACION',
+        'PROMOCION Y ASISTENCIA SOCIAL COMUNITARIA',
+        'EDUCACION FISICA Y DEPORTES',
+        'PROMOCION Y EXTENSION RURAL',
+        'PROTECCION DEL MEDIO AMBIENTE',
+        'INDUSTRIA',
+        'PLANEAMIENTO GUBERNAMENTAL',
+        'EDUCACION ESPECIAL',
+        'DEFENSA CONTRA SINIESTROS',
+        'ORDEN INTERNO',
+        'PROMOCION DE LA PRODUCCION PECUARIA',
+        'SALUD COLECTIVA',
+        'PROMOCION DE LA PRODUCCION PESQUERA',
+        'EDUCACION SECUNDARIA',
+        'EDUCACION INICIAL',
+        'CIENCIA Y TECNOLOGIA',
+        'PROMOCION DE LA PRODUCCION AGRARIA',
+        'VIVIENDA',
+        'ASISTENCIA A EDUCANDOS',
+        'CULTURA',
+    ];
+
+    protected $campos3 = [
+        'AGRICULTURA Y RIEGO',
+        'VIVIENDA, CONSTRUCCION Y SANEAMIENTO',
+        'ENERGIA Y MINAS',
+        'EDUCACION',
+        'TRANSPORTES Y COMUNICACIONES',
+        'GOBIERNOS REGIONALES',
+        'GOBIERNOS LOCALES',
+        'JUSTICIA',
+        'MINISTERIO PUBLICO',
+        'PRESIDENCIA DEL CONSEJO DE MINISTROS',
+        'PODER JUDICIAL',
+        'DEFENSA',
+        'ECONOMIA Y FINANZAS',
+        'COMERCIO EXTERIOR Y TURISMO',
+        'INTERIOR',
+        'PRODUCCION',
+        'DESARROLLO E INCLUSION SOCIAL',
+        'UNIVERSIDADES',
+    ];
+
+
+    protected $campos4 = [
         'CONSTRUCCION Y MEJORAMIENTO DE CARRETERAS',
         'SANEAMIENTO GENERAL',
         'ELECTRIFICACION RURAL',
@@ -91,10 +165,33 @@ class PoblarSubprogramaTable extends Seeder
     {
         date_default_timezone_set('America/Lima');
         foreach($this->campos as $key){
+            DB::table('funcion')->insert([
+                'nombre' => $key,
+                'created_at' => date('Y-m-d :H:i:s'),
+            ]);
+        }
+
+        foreach($this->campos2 as $key){
+            DB::table('programa')->insert([
+                'nombre' => $key,
+                'created_at' => date('Y-m-d :H:i:s'),
+            ]);
+        }
+
+        foreach($this->campos3 as $key){
+            DB::table('sector')->insert([
+                'nombre' => $key,
+                'created_at' => date('Y-m-d :H:i:s'),
+            ]);
+        }
+
+        foreach($this->campos4 as $key){
             DB::table('subprograma')->insert([
                 'nombre' => $key,
                 'created_at' => date('Y-m-d :H:i:s'),
             ]);
         }
+
     }
+
 }
