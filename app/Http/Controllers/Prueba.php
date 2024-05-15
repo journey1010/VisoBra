@@ -114,7 +114,7 @@ class Prueba extends Controller
             "cboGrupo" => "0",
             "rbtnCadena" => "T",
             "isSearch" => false,
-            "PageSize" => 1,
+            "PageSize" => 100,
             "PageIndex" => 1,
             "sortField" => "MontoAlternativa",
             "sortOrder" => "desc",
@@ -125,35 +125,8 @@ class Prueba extends Controller
         $url = "https://ofi5.mef.gob.pe/inviertePub/ConsultaPublica/traeListaProyectoConsultaAvanzada";
         $http->config(2,100, 30, $headers);
         $response = $http->makeRequest($url, 'post', $data);
-        $data = $response['Data'][0];
-        foreach($this->dataHoped as $key => $value){
-            $valueToStore = $data[$key]; 
-            $this->dataStore = array_merge($this->dataStore, [$value =>$valueToStore]);
-            switch($key){
-                case 'Funcion':
-                    $function = Funcion::firstOrCreate(['nombre' => $valueToStore]);
-                    $this->dataStore[$value] = $function->id;
-                    break;
-                case 'Programa':
-                    $programa = Programa::firstOrCreate(['nombre' => $valueToStore]);
-                    $this->dataStore[$value] = $programa->id;
-                    break;
-                case 'Subprograma':
-                    $subprograma = Subprograma::firstOrCreate(['nombre' => $valueToStore]); 
-                    $this->dataStore[$value] = $subprograma->id;
-                    break;
-                case 'Sector':
-                    $sector  = Sector::firstOrCreate(['nombre' => $valueToStore]);
-                    $this->dataStore[$value] = $sector->id;
-                    break;
-            }
-        }
-        // Obras::create(
-        //     $this->dataStore
-        // );
-
-        $a = Metadata::find(1);
-        return $response;   
+        $data = count($response['Data']);
+        return $data;   
     }
 
     public function httException()

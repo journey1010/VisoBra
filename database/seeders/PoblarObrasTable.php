@@ -6,8 +6,8 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Exceptions\DataHandlerException;
 use App\Exceptions\HttpClientException;
-use App\Models\Obras;
 use Exception;
+use App\Jobs\ProcessPoblarObras;
 use App\Services\HttpClient;
 use App\Services\ObrasEndpoint;
 use App\Services\Reporting;
@@ -75,19 +75,25 @@ class PoblarObrasTable extends Seeder
             $http = new HttpClient();
             $http->config($this->retry, 200, 30, []);
             $response = $http->makeRequest( $this->url, 'post', $this->params);
-            
-            $obras = new ObrasEndpoint();
             $data = $response['Data'][0];
-            $obras->validateFormat($data);
 
+            $obras = new ObrasEndpoint();
+            if(!$obras->validateFormat($data)){
+                throw new DataHandlerException('Datos incompatibles, el formato de datos esperados no es el correcto. Al buscar en los datos de Consulta avanzada.');
+            }
+            
             Metadata::create([
                  'pages_size' => $response['PageSize'],
                  'total_rows' => $response['TotalRows'],
                  'total_pages' => $response['TotalPage'],
             ]);
-            
-            $params[] = 
 
+            $this->params['PageSize'] = 100;
+            for ($i = 1 ; $i <= 122; $i++){
+                $this->params['PageIndex'] = $i;
+                $response = $http->makeRequest($this->url, 'post', $this->params);
+                ProcessPoblarObras::dispatch($response['Data'], $http);
+            }
 
         }catch(HttpClientException $e){
             Reporting::loggin($e, 100);

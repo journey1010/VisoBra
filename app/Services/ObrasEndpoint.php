@@ -74,17 +74,21 @@ class ObrasEndpoint implements DataHandler
     public function validateFormat(array $data): bool
     {
         if(is_array($data) && empty($data)){
-            return throw new DataHandlerException('El array de datos esperado esta vacío o no es un array.');
+            return false;
         }
-
+    
         foreach ($this->dataHoped as $key => $value){
             if(!array_key_exists($key, $data)){
-               return throw new DataHandlerException('Datos incompatibles, el formato de datos esperados no es el correcto. Fallo en : ' . $key . 'al buscar en los datos de Consulta avanzada.');
+                return false;
             }
         }
         return true;
+
     }
-    
+    /**
+     *@param Array $data Array asociativo de datosa guardar
+     */
+
     public function store($data)
     {
         Obras::create($this->createRecords($data));
