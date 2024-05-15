@@ -27,9 +27,9 @@ return new class extends Migration
             $table->foreignId('programa_id')->constrained('programa');
             $table->foreignId('subprograma_id')->constrained('subprograma');
             $table->foreignId('sector_id')->constrained('sector');
-            $table->string('codigo_unico_inversion')->unique(); //CA
+            $table->string('codigo_unico_inversion')->nullable()->unique(); //CA
             $table->string('codigo_snip')->nullable()->unique(); //CA
-            $table->string('nombre_inversion', 1000)->fulltext(); //CA
+            $table->string('nombre_inversion', 1000)->nullable()->fulltext(); //CA
             $table->float('monto_viable', 3); //CA
             $table->string('situacion'); //CA
             $table->string('estado_inversion'); //CA
@@ -52,7 +52,7 @@ return new class extends Migration
             $table->date('fecha_viabilidad')->nullable(); //CA
             $table->float('costo_actualizado')->nullable(); //CA
             $table->text('descripcion_alternativa')->nullable();
-            $table->integer('beneficiaros_habitantes', false, true); //CA
+            $table->integer('beneficiaros_habitantes', false, true)->nullable(); //CA
             $table->float('devengado_año_vigente', 3)->nullable(); //CA
             $table->float('devengado_año_anterior')->nullable(); //CA
             $table->integer('pim_año_vigente')->nullable(); //CA

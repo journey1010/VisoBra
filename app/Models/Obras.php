@@ -62,35 +62,35 @@ class Obras extends Model
     protected function fechaRegistro(): Attribute
     {
         return Attribute::make(
-            set: fn (string $value) => jsonDateToPhp($value),
+            set: fn (string|null $value) => jsonDateToPhp($value),
         );
     }
 
     protected function fechaViabilidad(): Attribute
     {
         return Attribute::make(
-            set : fn(string $value) => jsonDateToPhp($value),
+            set : fn(string|null $value) => jsonDateToPhp($value),
         );
     }
 
     protected function descripcionAlternativa(): Attribute
     {
         return Attribute::make(
-            set: fn (string $value) => clearRichText($value),
+            set: fn (string|null $value) => clearRichText($value),
         );
     }
 
     protected function añoMesPrimerDevengado(): Attribute
     {
         return Attribute::make(
-            set: fn(string $value) =>  $this->convertDate($value),
+            set: fn(string|null $value) => $this->convertDate($value),
         );
     }
 
     protected function añoMesUltimoDevengado(): Attribute
     {
         return Attribute::make(
-            set: fn(string $value) => $this->convertDate($value),
+            set: fn(string|null $value) => $this->convertDate($value),
         );
     }
 
@@ -99,8 +99,11 @@ class Obras extends Model
      * Convert string of date type (Ym) a validate date of type Y-m
      * @return date Y-m
      */
-    private function convertDate(string $date)
+    private function convertDate(string|null $date)
     {
+        if(!$date){
+            return null;
+        }
         $dateConvert = date_create_from_format('Ym', $date);
         return $dateConvert->format('Y-m');
     }

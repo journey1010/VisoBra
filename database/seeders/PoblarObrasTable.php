@@ -92,7 +92,7 @@ class PoblarObrasTable extends Seeder
             for ($i = 1 ; $i <= 122; $i++){
                 $this->params['PageIndex'] = $i;
                 $response = $http->makeRequest($this->url, 'post', $this->params);
-                ProcessPoblarObras::dispatch($response['Data'], $http);
+                ProcessPoblarObras::dispatch($response['Data'], $obras);
             }
 
         }catch(HttpClientException $e){

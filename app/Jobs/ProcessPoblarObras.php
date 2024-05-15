@@ -9,7 +9,6 @@ use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 
 use App\Services\ObrasEndpoint;
-use App\Models\Obras;
 
 class ProcessPoblarObras implements ShouldQueue
 {
@@ -33,7 +32,7 @@ class ProcessPoblarObras implements ShouldQueue
     public function handle(): void
     {
         $rows = count($this->datos);
-        for( $i = 0; $i <= $rows; $i++){
+        for( $i = 0; $i < $rows; $i++){
             $this->obrasHandler->store($this->datos[$i]);
         }      
     }

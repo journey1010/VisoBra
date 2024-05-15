@@ -14,7 +14,10 @@ function messageValidation(Validator $validator){
  * @return PHP dateFormat Object
  */
 
-function jsonDateToPhp(string $date){
+function jsonDateToPhp(string|null $date){
+    if(!$date){
+        return null;
+    }
     preg_match("/\d+/", $date, $matches);
     $timestamp = $matches[0] / 1000;
     $fechaNormal  = new DateTime();
@@ -29,7 +32,10 @@ function jsonDateToPhp(string $date){
  * @return string
  */
 
- function clearRichText(string $text){
+ function clearRichText(string|null $text){
+    if(!$text){
+        return null;
+    }
     $pattern   = '/[\x00-\x1F\x7F-\xFF]/';
     $cleanText = preg_replace($pattern, '', $text);
     return $cleanText;
