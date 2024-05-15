@@ -19,7 +19,7 @@
                     <div class="card">
                         <h3 class="card-header text-center">Login</h3>
                         <div class="card-body">
-                            <form method="POST" action="{{ route ('login.horizon') }}">
+                            <form method="POST" action="{{ route ('login.dashboard') }}">
                                 @csrf
                                 <div class="form-group mb-3">
                                     <input type="text" placeholder="Email" id="email" class="form-control"
@@ -38,7 +38,7 @@
                                     </div>
                                 </div>
                                 <div class="d-grid mx-auto">
-                                    <button type="submit" class="btn btn-dark btn-block">Iniciar</button>
+                                    <button id="sign" type="button" class="btn btn-dark btn-block">Iniciar</button>
                                 </div>
                             </form>
                         </div>
@@ -51,18 +51,15 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script>
         $(document).ready(function() {
-            $('#submitBtn').on('click', function(e) {
+            $('#sign').on('click', function(e) {
                 e.preventDefault();
-                // Obtener los datos del formulario
                 let formData = $('#loginForm').serialize();
-
-                // Realizar la solicitud AJAX
                 $.ajax({
                     url: $('#loginForm').attr('action'),
                     type: 'POST',
                     data: formData,
                     success: function(response) {
-                        // Manejar la respuesta con SweetAlert2
+                        let response = response
                         Swal.fire({
                             icon: 'success',
                             title: 'Success',
@@ -92,5 +89,4 @@
         });
     </script>
 </body>
-
 </html>

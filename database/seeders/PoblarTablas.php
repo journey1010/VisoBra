@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 
 class PoblarTablas extends Seeder
 {
@@ -192,6 +193,13 @@ class PoblarTablas extends Seeder
             ]);
         }
 
+        DB::table('users')->insert([
+            'name' => 'Lucatiel',
+            'last_name' => 'Administrador',
+            'dni' => '11111111',
+            'email' => 'lucatiel@gmail.com',
+            'password' => Hash::make('Hola5.2')  
+        ]);
     }
 
 }

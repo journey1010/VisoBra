@@ -8,4 +8,4 @@ Route::get('/', function () {
 });
 
 Route::get('/login', [AuthController::class, 'index']);
-Route::get('/auth/horizon/dashboard', [AuthController::class, 'login'])->name('login.horizon');
+Route::post('/auth/horizon/dashboard', [AuthController::class, 'login'])->name('login.dashboard');
