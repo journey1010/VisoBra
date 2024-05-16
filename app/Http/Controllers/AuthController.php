@@ -4,13 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\JsonResponse;
 use App\Http\Requests\Auth\Horizon;
-use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
     public function index()
     {
+        if(Auth::check()){
+            return redirect('/horizon');
+        }
         return view('login');
     }
 
@@ -21,10 +23,9 @@ class AuthController extends Controller
         if(Auth::attempt($credentials)){
             $request->session()->regenerate();
             return response()->json([
-                'status' => 'succes',
-                'message' => 'login validate'
+                'status' => 'success',
+                'message' => 'Credenciales correctas'
             ], 200);
-            return redirect('/horizon', 200);
         }
         return response()->json([
             'status' => 'error',
