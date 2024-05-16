@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf_token" content="{{ csrf_token() }}" />
     <link rel="icon" href="{{ asset('gorel_favicon.ico') }}" type="image/x-icon">
-    <title>Geobra</title>
+    <title>Visobra</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 

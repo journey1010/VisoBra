@@ -2,16 +2,15 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Exceptions\DataHandlerException;
-use App\Exceptions\HttpClientException;
 use Exception;
 use App\Jobs\ProcessPoblarObras;
 use App\Services\HttpClient;
 use App\Services\ObrasEndpoint;
 use App\Services\Reporting;
 use App\Services\Notify;
+use App\Services\Mailer;
 use App\Models\Metadata;
 
 
@@ -72,6 +71,7 @@ class PoblarObrasTable extends Seeder
     public function run(): void
     {
         try{
+            throw new DataHandlerException('Prueba');
             $http = new HttpClient();
             $http->config($this->retry, 200, 30, []);
             $response = $http->makeRequest( $this->url, 'post', $this->params);
@@ -95,11 +95,12 @@ class PoblarObrasTable extends Seeder
                 ProcessPoblarObras::dispatch($response['Data'], $obras);
             }
 
-        }catch(HttpClientException $e){
-            Reporting::loggin($e, 100);
-        }catch(DataHandlerException $e){
-            Reporting::loggin($e, 100);
         }catch(Exception $e){
+            $notifier = new Notify(new Mailer());
+            $notifier->clientNotify(
+                to: 'ginopalfo001608@gmail.com', 
+                message: $e->getMessage(),
+                subject: 'Fallo en visoobra al obtener datos');
             Reporting::loggin($e, 100);
         }
     }
