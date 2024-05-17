@@ -73,12 +73,12 @@ class ObrasEndpoint implements DataHandler
 
     public function validateFormat(array $data): bool
     {
-        if(is_array($data) && empty($data)){
+        if(!is_array($data) || empty($data)){
             return false;
         }
     
         foreach ($this->dataHoped as $key => $value){
-            if(!array_key_exists($key, $data)){
+            if(!array_key_exists($key, $data['Data'][0])){
                 return false;
             }
         }

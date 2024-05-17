@@ -22,6 +22,7 @@ use App\Services\HttpClient;
 use App\Services\ObrasEndpoint;
 use App\Services\Reporting;
 use App\Services\Notify;
+use App\Models\Geobra;
 
 class Prueba extends Controller
 {
@@ -210,8 +211,19 @@ class Prueba extends Controller
     public function testHttpObra()
     {
 
-        $registros = Obras::select('codigo_unico_inversion')
-                    ->whereNotNull('codigo_unico_inversion')
-                    ->get();
-    }
+        $url = 'https://ws.mineco.gob.pe/server/rest/services/cartografia_pip_georef_edicion_lectura/MapServer/0/query';
+        $params  = [
+            'f' => 'json',
+            'where' => "UPPER(COD_UNICO) LIKE '%2192666%'",
+            'returnGeometry' => true,
+            'spatialRel' => 'esriSpatialRelIntersects',
+            'maxAllowableOffset' => 0.01866138385297604,
+            'outFields' => '*',
+            'outSR' => 102100,
+            'resultRecordCount' => 1,
+        ];
+        $http = new HttpClient();
+        $http->config($this->retry, 200, 30, []);
+        $response = $http->makeRequest( $url, 'get', $params);
+-
 }

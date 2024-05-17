@@ -10,7 +10,14 @@ class GeobraEndpoint implements DataHandler
     /**
      * Create a new class instance.
     */ 
-    protected $dataHoped = [];
+    protected $dataHoped = [
+        'DEPARTAMEN', 
+        'PROVINCIA',
+        'DISTRITO',
+        'X',
+        'Y',
+    ];
+
     
     /**
      *
@@ -26,12 +33,21 @@ class GeobraEndpoint implements DataHandler
 
     public function store(array $data)
     {
-        
+            
     }
 
     public function validateFormat(array $data): bool
     {
-     
+        if(!is_array($data) || empty($data)){
+            return false;
+        } 
+
+        foreach ($this->dataHoped as $key => $value){
+            if(!array_key_exists($key, $data['features']['attributes'])){
+                return false;
+            }
+        }
+
         return true;
 
     }

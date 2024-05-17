@@ -12,6 +12,7 @@ class Geobra extends Model
     protected $table = 'geo_obra';
 
     protected $fillable = [
+        'obras',
         'provincia',
         'distrito',
         'departamento',

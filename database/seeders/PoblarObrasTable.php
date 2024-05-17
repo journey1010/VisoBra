@@ -74,10 +74,9 @@ class PoblarObrasTable extends Seeder
             $http = new HttpClient();
             $http->config($this->retry, 200, 30, []);
             $response = $http->makeRequest( $this->url, 'post', $this->params);
-            $data = $response['Data'][0];
 
             $obras = new ObrasEndpoint();
-            if(!$obras->validateFormat($data)){
+            if(!$obras->validateFormat($response)){
                 throw new DataHandlerException('Datos incompatibles, el formato de datos esperados no es el correcto. Al buscar en los datos de Consulta avanzada.');
             }
             
