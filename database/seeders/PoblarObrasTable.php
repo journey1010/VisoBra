@@ -71,7 +71,6 @@ class PoblarObrasTable extends Seeder
     public function run(): void
     {
         try{
-            throw new DataHandlerException('Prueba');
             $http = new HttpClient();
             $http->config($this->retry, 200, 30, []);
             $response = $http->makeRequest( $this->url, 'post', $this->params);

@@ -36,4 +36,9 @@ class ProcessPoblarObras implements ShouldQueue
             $this->obrasHandler->store($this->datos[$i]);
         }      
     }
+
+    public function tags(): array
+    {
+        return ['Poblar_obra'];
+    }
 }
