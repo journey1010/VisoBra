@@ -32,8 +32,15 @@ class GeobraEndpoint implements DataHandler
     }
 
     public function store(array $data)
-    {
-            
+    {  
+        $clean  = $data['features']['attributes'];
+        Geobra::create([
+            'obras_id' => $data['obras_id'],
+            'provincia' => $clean['PROVINCIA'],
+            'departamento' => $clean ['DEPARTAMEN'],
+            'distrito' =>  $clean['DISTRITO'],
+            'coordenada' => [$clean['X'], $clean['Y']],
+        ]);
     }
 
     public function validateFormat(array $data): bool
