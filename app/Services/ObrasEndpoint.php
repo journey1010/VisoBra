@@ -100,7 +100,7 @@ class ObrasEndpoint implements DataHandler
     }
 
     /**
-     * Crea un array asociativo basandose en el nombre de las co
+     * Crea un array asociativo basandose en el nombre de las columnas
      */
     private function createRecords(array $data): array
     {

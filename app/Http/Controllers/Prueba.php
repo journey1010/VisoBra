@@ -209,30 +209,9 @@ class Prueba extends Controller
 
     public function testHttpObra()
     {
-        $http = new HttpClient();
-        $http->config($this->retry, 200, 30, []);
-        $response = $http->makeRequest( $this->url, 'post', $this->params);
-        $data = $response['Data'][0];
 
-        $obras = new ObrasEndpoint();
-        if(!$obras->validateFormat($data)){
-            throw new DataHandlerException('Datos incompatibles, el formato de datos esperados no es el correcto. Al buscar en los datos de Consulta avanzada.');
-        }
-        
-        Metadata::create([
-             'pages_size' => $response['PageSize'],
-             'total_rows' => $response['TotalRows'],
-             'total_pages' => $response['TotalPage'],
-        ]);
-
-        $this->params['PageSize'] = 100;
-        for ($i = 1 ; $i <= 10; $i++){
-            $this->params['PageIndex'] = $i;
-            $response = $http->makeRequest($this->url, 'post', $this->params);
-            $rows = count($response['Data']);
-            for( $i = 0; $i < $rows; $i++){
-                $obras->store($response['Data'][$i]);
-            }     
-        }
+        $registros = Obras::select('codigo_unico_inversion')
+                    ->whereNotNull('codigo_unico_inversion')
+                    ->get();
     }
 }
