@@ -19,51 +19,7 @@ class PoblarObrasTable extends Seeder
     /**
      * Run the database seeds.
      */
-    protected $url = 'https://ofi5.mef.gob.pe/inviertePub/ConsultaPublica/traeListaProyectoConsultaAvanzada';
-    protected $params = [
-        "filters" => "",
-        "ip" => "",
-        "cboNom" => "1",
-        "txtNom" => "",
-        "cboDpto" => "16",
-        "cboProv" => "0",
-        "cboDist" => "0",
-        "optUf" => "*",
-        "cboGNSect" => "*",
-        "cboGNPlie" => "",
-        "cboGNUF" => "",
-        "cboGR" => "*",
-        "cboGRUf" => "",
-        "optGL" => "*",
-        "cboGLDpto" => "*",
-        "cboGLProv" => "*",
-        "cboGLDist" => "*",
-        "cboGLUf" => "",
-        "cboGLManPlie" => "*",
-        "cboGLManUf" => "",
-        "cboSitu" => "*",
-        "cboNivReqViab" => "*",
-        "cboEstu" => "*",
-        "cboEsta" => "*",
-        "optFecha" => "*",
-        "txtIni" => "",
-        "txtFin" => "",
-        "chkMonto" => false,
-        "txtMin" => "",
-        "txtMax" => "",
-        "tipo" => "1",
-        "cboFunc" => "0",
-        "chkInactivo" => "0",
-        "cboDivision" => "0",
-        "cboGrupo" => "0",
-        "rbtnCadena" => "T",
-        "isSearch" => false,
-        "PageSize" => 1,
-        "PageIndex" => 1,
-        "sortField" => "MontoAlternativa",
-        "sortOrder" => "desc",
-        "chkFoniprel" => ""
-    ];
+    
     protected $pageSize;
     protected $retry = 3;
     

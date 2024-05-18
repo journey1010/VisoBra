@@ -13,14 +13,60 @@ use App\Models\Metadata;
 
 class ObrasEndpoint implements DataHandler
 {
+    /**
+     * Attributes for endpoint obras 
+    */
 
-     /** 
-      *Propiedades a convertir
-      * FechaRegistro 
-      * FechaViabilidad
-      * MesAnioPDev
-      * MesAnioUDev     
-      */
+    public $url = 'https://ofi5.mef.gob.pe/inviertePub/ConsultaPublica/traeListaProyectoConsultaAvanzada';
+    public $params = [
+        "filters" => "",
+        "ip" => "",
+        "cboNom" => "1",
+        "txtNom" => "",
+        "cboDpto" => "16",
+        "cboProv" => "0",
+        "cboDist" => "0",
+        "optUf" => "*",
+        "cboGNSect" => "*",
+        "cboGNPlie" => "",
+        "cboGNUF" => "",
+        "cboGR" => "*",
+        "cboGRUf" => "",
+        "optGL" => "*",
+        "cboGLDpto" => "*",
+        "cboGLProv" => "*",
+        "cboGLDist" => "*",
+        "cboGLUf" => "",
+        "cboGLManPlie" => "*",
+        "cboGLManUf" => "",
+        "cboSitu" => "*",
+        "cboNivReqViab" => "*",
+        "cboEstu" => "*",
+        "cboEsta" => "*",
+        "optFecha" => "*",
+        "txtIni" => "",
+        "txtFin" => "",
+        "chkMonto" => false,
+        "txtMin" => "",
+        "txtMax" => "",
+        "tipo" => "1",
+        "cboFunc" => "0",
+        "chkInactivo" => "0",
+        "cboDivision" => "0",
+        "cboGrupo" => "0",
+        "rbtnCadena" => "T",
+        "isSearch" => false,
+        "PageSize" => 1,
+        "PageIndex" => 1,
+        "sortField" => "MontoAlternativa",
+        "sortOrder" => "desc",
+        "chkFoniprel" => ""
+    ];
+    public $method =  'post';
+    public $headers =  []; 
+
+    protected $http;
+ 
     protected $dataHoped = [
         'Funcion' => 'funcion_id',
         'Programa' => 'programa_id',
@@ -66,10 +112,41 @@ class ObrasEndpoint implements DataHandler
         'DescripcionCierre'=>'registro_cierre',
     ];
 
-    /**
-     * Array Asociativo que guardara|actualizara los datos en el modelo de obras
-     */
     protected $dataStore = [];
+
+    public function __construct($http)
+    {
+        $this->http = $http;
+    }
+
+    public function configureHttpClient(?int $retry = 3, ?int $sleep=100, ?int $timeout = 30): void
+    {
+        $this->http->config($retry, $sleep, $timeout, $this->headers);
+    }
+
+    /**
+     * Hope asociative array
+     */
+    public function changeParams(...$params) :void
+    {   
+        foreach($params as $key  =>  $value){
+            $this->params[$key] = $value;
+        }
+    }
+
+    public function fetchValidateResponse(): ?array
+    {
+        $response = $this->http->makeRequest(
+            $this->url,
+            $this->method,
+            $this->params
+        );
+
+        if ($this->validateFormat($response)) {
+            return $response;
+        }
+        return null;
+    }
 
     public function validateFormat(array $data): bool
     {
@@ -88,6 +165,7 @@ class ObrasEndpoint implements DataHandler
             throw new DataHandlerException('Fallo en validacion en obrasendpoint: ' . $e->getMessage());
         }
     }
+
     /**
      *@param Array $data Array asociativo de datosa guardar
      */
