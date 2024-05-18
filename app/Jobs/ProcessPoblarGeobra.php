@@ -9,24 +9,23 @@ use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 
 use App\Services\HttpClient;
+use App\Services\GeobraEndpoint;
 use App\Services\Notify;
 use App\Services\Reporting;
 use App\Services\Mailer;
 
-class PoblarGeobra implements ShouldQueue
+class ProcessPoblarGeobra implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
     /**
      * Create a new job instance.
     */
-    protected $url = '';
-    protected $params = '';
-    protected $a = '';
+    protected $id;
 
-    public function __construct()
+    public function __construct(int $id)
     {
-        //
+        $this->id = $id;
     }
 
     /**
@@ -35,6 +34,15 @@ class PoblarGeobra implements ShouldQueue
 
     public function handle(): void
     {
-        //
+        try{
+
+        }catch(\Exception $e){
+            $notifier = new Notify(new Mailer());
+            $notifier->clientNotify(
+                to: 'ginopalfo001608@gmail.com', 
+                message: $e->getMessage(),
+                subject: 'Fallo en visoobra al obtener datos');
+            Reporting::loggin($e, 100);
+        }
     }
 }

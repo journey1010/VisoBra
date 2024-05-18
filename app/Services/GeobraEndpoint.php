@@ -8,8 +8,23 @@ use App\Services\Contracts\DataHandler;
 class GeobraEndpoint implements DataHandler
 {
     /**
-     * Create a new class instance.
-    */ 
+     * datos de consumo de endpoint
+     */
+    public $url = 'https://ws.mineco.gob.pe/server/rest/services/cartografia_pip_georef_edicion_lectura/MapServer/0/query';
+    public $params = [
+        'f' => 'json',
+        'where' => "UPPER(COD_UNICO) LIKE '%2192666%'",
+        'returnGeometry' => true,
+        'spatialRel' => 'esriSpatialRelIntersects',
+        'maxAllowableOffset' => 0.01866138385297604,
+        'outFields' => '*',
+        'outSR' => 102100,
+        'resultRecordCount' => 1,
+    ];
+    public $method = 'get';
+    public $headers = [];
+
+    /**Datos esperados desde el servicio */
     protected $dataHoped = [
         'DEPARTAMEN', 
         'PROVINCIA',
@@ -18,9 +33,7 @@ class GeobraEndpoint implements DataHandler
         'Y',
     ];
 
-    protected $data = [];
-
-
+    
     public function store(array $data)
     {  
         $clean  = $data['features']['attributes'];

@@ -5,14 +5,13 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Obras;
+use App\Jobs\ProcessPoblarGeobra;
 
 class PobblarGeoObraTable extends Seeder
 {
     /**
      * Run the database seeds.
     */
-    protected $url = '';
-    protected $params = [];
 
     public function run(): void
     {
@@ -20,7 +19,7 @@ class PobblarGeoObraTable extends Seeder
                     ->whereNotNull('codigo_unico_inversion')
                     ->get();
         foreach($registros as $registro){
-            
+            ProcessPoblarGeobra::dispatch($registro->id);
         }
     }
 }
