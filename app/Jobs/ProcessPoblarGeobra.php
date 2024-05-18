@@ -36,11 +36,12 @@ class ProcessPoblarGeobra implements ShouldQueue
     public function handle(): void
     {
         try {
-            $geobra = new GeobraEndpoint();
             $http = new HttpClient();
-            $this->configureHttpClient($http, $geobra);
+            $geobra = new GeobraEndpoint($http);
+     
+            $geobra->configureHttpClient();
     
-            $response = $this->fetchValidResponse($http, $geobra);
+            $response = $geobra->fetchValidResponse();
         
             if ($response === null) {
                 throw new DataHandlerException('Fallo al obtener datos para el codigo de inversion con id :' . $this->id);
