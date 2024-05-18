@@ -20,9 +20,12 @@ use Exception;
 use App\Jobs\ProcessPoblarObras;
 use App\Services\HttpClient;
 use App\Services\ObrasEndpoint;
-use App\Services\Reporting;
-use App\Services\Notify;
 use App\Models\Geobra;
+
+use App\Services\Notify;
+use App\Services\Reporting;
+use App\Services\Mailer;
+use App\Services\GeobraEndpoint;
 
 class Prueba extends Controller
 {
@@ -211,7 +214,7 @@ class Prueba extends Controller
     public function testHttpObra()
     {
 
-        $url = 'https://ws.mineco.gob.pe/server/rest/services/cartografia_pip_georef_edicion_lectura/MapServer/0/query';
+        $url = 'https://ws.mineco.gob.pe/server/rest/services/cartografia_pip_georef_edicion_lectura/MapServer/1/query';
         $params  = [
             'f' => 'json',
             'where' => "UPPER(COD_UNICO) LIKE '%2192666%'",
@@ -225,16 +228,55 @@ class Prueba extends Controller
         $http = new HttpClient();
         $http->config($this->retry, 200, 30, []);
         $response = $http->makeRequest( $url, 'get', $params);
+        dd($response['features'][0]['attributes']['DES_OPMI']);
     }
 
-    public function prueba()
+
+    public function prueba(): void
     {
-        Geobra::create([
-            'obras_id' => 1,
-            'provincia' => 'loreto',
-            'departamento' => 'a',
-            'distrito' =>  'a',
-            'coordenadas' => ['-72.742785','-2.727637'],
-        ]);
+        try {
+            $id = 1;
+            $geobra = new GeobraEndpoint();
+            $http = new HttpClient();
+            $this->configureHttpClient($http, $geobra);
+    
+            $response = $this->fetchValidResponse($http, $geobra);
+        
+            if ($response === null) {
+                throw new DataHandlerException('Fallo al obtener datos para el codigo de inversion con id :' . $id);
+            }
+            $response['obras_id'] = $id;
+            $geobra->store($response);
+        } catch (\Exception $e) {
+            $notifier = new Notify(new Mailer());
+            $notifier->configLimiter(3, 'Geobra');
+            $notifier->clientNotify(
+                to: 'ginopalfo001608@gmail.com',
+                message: $e->getMessage(),
+                subject: 'Fallo en visoobra al obtener datos'
+            );
+            Reporting::loggin($e, 100);
+        }
+    }
+    
+    private function configureHttpClient(HttpClient $http, GeobraEndpoint $geobra): void
+    {
+        $http->config(3, 100, 30, $geobra->headers);
+    }
+    
+    private function fetchValidResponse(HttpClient $http, GeobraEndpoint $geobra): ?array
+    {
+        for ($i = 0; $i <= 1; $i++) {
+            $response = $http->makeRequest(
+                $geobra->setUrl($i),
+                $geobra->method,
+                $geobra->params
+            );
+    
+            if ($geobra->validateFormat($response)) {
+                return $response;
+            }
+        }
+        return null;
     }
 }

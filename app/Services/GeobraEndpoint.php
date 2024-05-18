@@ -4,6 +4,8 @@ namespace App\Services;
 
 use App\Models\Geobra;
 use App\Services\Contracts\DataHandler;
+use App\Exceptions\DataHandlerException;
+use Exception;
 
 class GeobraEndpoint implements DataHandler
 {
@@ -41,30 +43,32 @@ class GeobraEndpoint implements DataHandler
 
     public function store(array $data)
     {  
-        $clean  = $data['features']['attributes'];
+        $clean  = $data['features'][0]['attributes'];
         Geobra::create([
             'obras_id' => $data['obras_id'],
             'provincia' => $clean['PROVINCIA'],
             'departamento' => $clean ['DEPARTAMEN'],
             'distrito' =>  $clean['DISTRITO'],
-            'coordenada' => [$clean['X'], $clean['Y']],
+            'coordenadas' => [$clean['X'], $clean['Y']],
         ]);
     }
 
     public function validateFormat(array $data): bool
     {
-        if(!is_array($data) || empty($data)){
-            return false;
-        } 
-
-        foreach ($this->dataHoped as $key => $value){
-            if(!array_key_exists($key, $data['features']['attributes'])){
+        try{
+            if(empty($data['features'])){
                 return false;
+            } 
+            $search = $data['features'][0]['attributes'];
+            foreach ($this->dataHoped as $key){
+                if(!array_key_exists($key, $search)){
+                    return false;
+                }
             }
+            return true;
+        }catch(Exception $e){
+            throw new DataHandlerException('Fallo en validacion de datos en geobraendpoint:' .$e->getMessage());
         }
-
-        return true;
-
     }
     
     public function update(int $id, array $data)

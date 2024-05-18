@@ -73,17 +73,20 @@ class ObrasEndpoint implements DataHandler
 
     public function validateFormat(array $data): bool
     {
-        if(!is_array($data) || empty($data)){
-            return false;
-        }
-    
-        foreach ($this->dataHoped as $key => $value){
-            if(!array_key_exists($key, $data['Data'][0])){
+        try{
+            if(empty($data)){
                 return false;
             }
+        
+            foreach ($this->dataHoped as $key => $value){
+                if(!array_key_exists($key, $data['Data'][0])){
+                    return false;
+                }
+            }
+            return true;
+        }catch(\Exception $e){
+            throw new DataHandlerException('Fallo en validacion en obrasendpoint: ' . $e->getMessage());
         }
-        return true;
-
     }
     /**
      *@param Array $data Array asociativo de datosa guardar

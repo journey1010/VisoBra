@@ -7,7 +7,7 @@ use Illuminate\Database\Seeder;
 use App\Models\Obras;
 use App\Jobs\ProcessPoblarGeobra;
 
-class PobblarGeoObraTable extends Seeder
+class PoblarGeoObraTable extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,7 +15,7 @@ class PobblarGeoObraTable extends Seeder
 
     public function run(): void
     {
-        $registros = Obras::select('codigo_unico_inversion')
+        $registros = Obras::select('id')
                     ->whereNotNull('codigo_unico_inversion')
                     ->get();
         foreach($registros as $registro){
