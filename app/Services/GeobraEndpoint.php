@@ -9,8 +9,8 @@ class GeobraEndpoint implements DataHandler
 {
     /**
      * datos de consumo de endpoint
-     */
-    public $url = 'https://ws.mineco.gob.pe/server/rest/services/cartografia_pip_georef_edicion_lectura/MapServer/0/query';
+    */
+    protected $url;
     public $params = [
         'f' => 'json',
         'where' => "UPPER(COD_UNICO) LIKE '%2192666%'",
@@ -33,7 +33,12 @@ class GeobraEndpoint implements DataHandler
         'Y',
     ];
 
-    
+    public function setUrl(int $i): string
+    {
+        $this->url = 'https://ws.mineco.gob.pe/server/rest/services/cartografia_pip_georef_edicion_lectura/MapServer/'.$i.'/query';
+        return $this->url;
+    }
+
     public function store(array $data)
     {  
         $clean  = $data['features']['attributes'];

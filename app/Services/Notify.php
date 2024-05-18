@@ -2,11 +2,14 @@
 
 namespace App\Services;
 
+use Illuminate\Support\Facades\RateLimiter;
 
 class Notify 
 {
  
-    private $notifier; 
+    private $notifier;
+    private $attemps = 3;
+    private $identifier = 'Notifier';
 
     public function __construct(Object $notifier)
     {
@@ -20,6 +23,18 @@ class Notify
 
     public function clientNotify(string|int $to, ?string $subject , ?string $message = null): void
     {
-        $this->notifier->sendNotify($to, $subject, $message);
+        RateLimiter::attempt(
+            $this->identifier, 
+            $perDay = $this->attemps,
+            function() use ($to, $subject, $message){
+                $this->notifier->sendNotify($to, $subject, $message);
+            }  
+        );
+    }
+
+    public function configLimiter(int $attemps, string $identifier)
+    {
+        $this->attemps = $attemps;
+        $this->identifier = $identifier;
     }
 }

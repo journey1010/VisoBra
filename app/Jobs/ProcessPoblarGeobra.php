@@ -35,7 +35,10 @@ class ProcessPoblarGeobra implements ShouldQueue
     public function handle(): void
     {
         try{
-
+            for($i = 1; $i <= 2; $i++){
+                
+            }
+        
         }catch(\Exception $e){
             $notifier = new Notify(new Mailer());
             $notifier->clientNotify(
