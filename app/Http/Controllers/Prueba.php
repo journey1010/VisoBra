@@ -225,5 +225,16 @@ class Prueba extends Controller
         $http = new HttpClient();
         $http->config($this->retry, 200, 30, []);
         $response = $http->makeRequest( $url, 'get', $params);
--
+    }
+
+    public function prueba()
+    {
+        Geobra::create([
+            'obras_id' => 1,
+            'provincia' => 'loreto',
+            'departamento' => 'a',
+            'distrito' =>  'a',
+            'coordenadas' => ['-72.742785','-2.727637'],
+        ]);
+    }
 }

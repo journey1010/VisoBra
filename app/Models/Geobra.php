@@ -14,7 +14,7 @@ class Geobra extends Model
     protected $table = 'geo_obra';
 
     protected $fillable = [
-        'obras',
+        'obras_id',
         'provincia',
         'distrito',
         'departamento',
@@ -24,7 +24,7 @@ class Geobra extends Model
     protected function coordenadas(): Attribute
     {
         return Attribute::make(
-            set : fn (array $value) => ("POINT({$value['x']}, {$value['y']})"),
+            set : fn (array $value) => DB::raw("ST_GeomFromText('POINT($value[0] $value[0])')"),
         );
     }
 

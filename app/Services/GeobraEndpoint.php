@@ -18,18 +18,8 @@ class GeobraEndpoint implements DataHandler
         'Y',
     ];
 
-    
-    /**
-     *
-    */
-    
     protected $data = [];
 
-
-    public function __construct()
-    {
-        
-    }
 
     public function store(array $data)
     {  
