@@ -58,26 +58,4 @@ class ProcessPoblarGeobra implements ShouldQueue
             Reporting::loggin($e, 100);
         }
     }
-    
-    public function configureHttpClient(HttpClient $http, GeobraEndpoint $geobra): void
-    {
-        $http->config(3, 100, 30, $geobra->headers);
-    }
-    
-    public function fetchValidResponse(HttpClient $http, GeobraEndpoint $geobra): ?array
-    {
-        for ($i = 0; $i <= 1; $i++) {
-            $response = $http->makeRequest(
-                $geobra->setUrl($i),
-                $geobra->method,
-                $geobra->params
-            );
-    
-            if ($geobra->validateFormat($response)) {
-                return $response;
-            }
-        }
-        return null;
-    }
-        
 }

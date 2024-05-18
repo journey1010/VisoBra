@@ -13,6 +13,7 @@ class GeobraEndpoint implements DataHandler
      * datos de consumo de endpoint
     */
     protected $url;
+
     public $params = [
         'f' => 'json',
         'where' => "UPPER(COD_UNICO) LIKE '%2192666%'",
@@ -24,6 +25,7 @@ class GeobraEndpoint implements DataHandler
         'resultRecordCount' => 1,
     ];
     public $method = 'get';
+
     public $headers = [];
 
     /**Datos esperados desde el servicio */
@@ -35,10 +37,42 @@ class GeobraEndpoint implements DataHandler
         'Y',
     ];
 
+    protected $http;
+
+    public function __construct($http)
+    {
+        $this->http = $http;
+    }
+
+    public function configureHttpClient(?int $retry = 3, ?int $sleep=100, ?int $timeout = 30): void
+    {
+        $this->http->config($retry, $sleep, $timeout, $this->headers);
+    }
+
     public function setUrl(int $i): string
     {
         $this->url = 'https://ws.mineco.gob.pe/server/rest/services/cartografia_pip_georef_edicion_lectura/MapServer/'.$i.'/query';
         return $this->url;
+    }
+
+    /**
+     * 
+     * Ejecuta una llamada al endpoint de geoinvierte. Comprueba la respuesta para validar el formato de datos esperado
+     */
+    public function fetchValidResponse(): ?array
+    {
+        for ($i = 0; $i <= 1; $i++) {
+            $response = $this->http->makeRequest(
+                $this->setUrl($i),
+                $this->method,
+                $this->params
+            );
+    
+            if ($this->validateFormat($response)) {
+                return $response;
+            }
+        }
+        return null;
     }
 
     public function store(array $data)
