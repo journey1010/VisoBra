@@ -19,21 +19,16 @@ class PoblarObrasTable extends Seeder
     /**
      * Run the database seeds.
      */
-    
-    protected $pageSize;
-    protected $retry = 3;
-    
 
     public function run(): void
     {
         try{
-            $http = new HttpClient();
-            $http->config($this->retry, 200, 30, []);
-            $response = $http->makeRequest( $this->url, 'post', $this->params);
+            $obras = new ObrasEndpoint(new HttpClient());
+            $obras->configureHttpClient();
 
-            $obras = new ObrasEndpoint();
-            if(!$obras->validateFormat($response)){
-                throw new DataHandlerException('Datos incompatibles, el formato de datos esperados no es el correcto. Al buscar en los datos de Consulta avanzada.');
+            $response = $obras->fetchValidateResponse();
+            if($response === null){
+                throw new DataHandlerException('Fallo al obtener datos para poblar obras');
             }
             
             Metadata::create([
@@ -42,11 +37,11 @@ class PoblarObrasTable extends Seeder
                  'total_pages' => $response['TotalPage'],
             ]);
 
-            $this->params['PageSize'] = 100;
+            $obras->changeParams(['PageSize' => 100]);
             for ($i = 1 ; $i <= 122; $i++){
-                $this->params['PageIndex'] = $i;
-                $response = $http->makeRequest($this->url, 'post', $this->params);
-                ProcessPoblarObras::dispatch($response['Data'], $obras);
+                $obras->changeParams(['PageIndex' => $i]);
+                $response = $obras->fetchValidateResponse();
+                ProcessPoblarObras::dispatch($response['Data']);
             }
 
         }catch(Exception $e){

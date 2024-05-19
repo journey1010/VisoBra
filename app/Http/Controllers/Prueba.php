@@ -213,9 +213,39 @@ class Prueba extends Controller
 
     public function prueba(HttpClientInterface $http)
     {
-        $geobra = new GeobraEndpoint($http);
-        $a = $geobra->configureHttpClient();
-        $a = $geobra->fetchValidResponse();
-        dd($a);
+        try{
+            $obras = new ObrasEndpoint(new HttpClient());
+            $obras->configureHttpClient();
+
+            $response = $obras->fetchValidateResponse();
+            if($response === null){
+                throw new DataHandlerException('Fallo al obtener datos para poblar obras');
+            }
+            
+            Metadata::create([
+                 'pages_size' => $response['PageSize'],
+                 'total_rows' => $response['TotalRows'],
+                 'total_pages' => $response['TotalPage'],
+            ]);
+
+            $obras->changeParams(['PageSize' => 100]);
+            for ($i = 1 ; $i <= 122; $i++){
+                $obras->changeParams(['PageIndex' => $i]);
+                $response = $obras->fetchValidateResponse();  
+                $rows = count($response['Data']);
+                for( $i = 0; $i < $rows; $i++){
+                    $obras->store($response['Data'][$i]);
+                }  
+                //ProcessPoblarObras::dispatch($response['Data']);
+            }
+
+        }catch(Exception $e){
+            $notifier = new Notify(new Mailer());
+            $notifier->clientNotify(
+                to: 'ginopalfo001608@gmail.com', 
+                message: $e->getMessage(),
+                subject: 'Fallo en visoobra al obtener datos');
+            Reporting::loggin($e, 100);
+        }
     }
 }

@@ -127,7 +127,7 @@ class ObrasEndpoint implements DataHandler
     /**
      * Hope asociative array
      */
-    public function changeParams(...$params) :void
+    public function changeParams(array $params) :void
     {   
         foreach($params as $key  =>  $value){
             $this->params[$key] = $value;
@@ -174,6 +174,7 @@ class ObrasEndpoint implements DataHandler
     {
         Obras::create($this->createRecords($data));
     }
+
 
     public function update(int $id, array $data)
     {

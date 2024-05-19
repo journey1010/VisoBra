@@ -2,6 +2,7 @@
 
 namespace App\Jobs;
 
+use App\Services\HttpClient;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
@@ -18,12 +19,10 @@ class ProcessPoblarObras implements ShouldQueue
      * Create a new job instance.
      */
     private $datos = [];
-    private $obrasHandler;
 
-    public function __construct(array $datos, ObrasEndpoint $obrasHandler)
+    public function __construct(array $datos)
     {
         $this->datos = $datos;
-        $this->obrasHandler = $obrasHandler;
     }
 
     /**
@@ -31,9 +30,10 @@ class ProcessPoblarObras implements ShouldQueue
      */
     public function handle(): void
     {
+        $obras = new ObrasEndpoint(new HttpClient());
         $rows = count($this->datos);
         for( $i = 0; $i < $rows; $i++){
-            $this->obrasHandler->store($this->datos[$i]);
+            $obras->store($this->datos[$i]);
         }      
     }
 
