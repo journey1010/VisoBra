@@ -5,6 +5,7 @@ namespace App\Services;
 use App\Services\Contracts\DataHandler;
 use App\Exceptions\DataHandlerException;
 use Exception;
+use App\Models\Contrataciones;
 
 class ContratacionesEndpoint implements DataHandler
 {
@@ -107,7 +108,10 @@ class ContratacionesEndpoint implements DataHandler
             ];
         }
     
-        return $store;
+        Contrataciones::create([
+            'obra_id' => $data['obra_id'],
+            'contrataciones' => $store 
+        ]);
     }
 
     public function update(int $id, array $data)
