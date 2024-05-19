@@ -9,6 +9,11 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
+
+    /***
+     * URL de fotos : https://ofi5.mef.gob.pe/inviertews/Repseguim/ResumF12B?codigo=2490719
+     */
+
     public function up(): void
     {
         Schema::create('fotos_obra', function (Blueprint $table) {
