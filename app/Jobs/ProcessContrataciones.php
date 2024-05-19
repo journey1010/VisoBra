@@ -14,6 +14,7 @@ use App\Services\Reporting;
 use App\Services\ContratacionesEndpoint;
 use App\Exceptions\DataHandlerException;
 
+
 class ProcessContrataciones implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
@@ -21,14 +22,14 @@ class ProcessContrataciones implements ShouldQueue
     /**
      * Foreign key of obra
      */
-    protected $id;
-    protected $codigoSnip;
-    protected $method;
+    public $id;
+    public  $codigoSnip;
+    public $method;
 
     /**
      * Create a new job instance.
      */
-    public function __construct(int $id, int $codigoSnip, string $method)
+    public function __construct(int $id, int|string $codigoSnip, string $method)
     {
         $this->id = $id;
         $this->codigoSnip = $codigoSnip;
@@ -46,7 +47,7 @@ class ProcessContrataciones implements ShouldQueue
             $contrataciones->changeParams(['id' => $this->codigoSnip]);
             $response = $contrataciones->fetchValidateResponse();
             if($response === null){
-                throw new DataHandlerException('Contrataciones Endpoint : Fallo al obtener datos para el codigo snip con id :' . $this->id);
+                return;
             }
             $response['obra_id'] = $this->id;
             switch($this->method){

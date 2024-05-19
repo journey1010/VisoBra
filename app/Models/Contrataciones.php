@@ -18,13 +18,6 @@ class Contrataciones extends Model
         'contrataciones',
     ];
 
-    // protected function casts(): array
-    // {
-    //     return [
-    //         'contrataciones' => 'array',
-    //     ];
-    // }
-
     protected function contrataciones(): Attribute
     {
         return Attribute::make(

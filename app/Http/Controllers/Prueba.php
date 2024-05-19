@@ -28,6 +28,7 @@ use App\Services\Mailer;
 use App\Services\GeobraEndpoint;
 use App\Services\ContratacionesEndpoint;
 use App\Models\Contrataciones;
+use App\Jobs\ProcessContrataciones;
 
 class Prueba extends Controller
 {
@@ -204,19 +205,17 @@ class Prueba extends Controller
 
     public function prueba(HttpClientInterface $http)
     {
-        $contrataciones = new ContratacionesEndpoint($http);
-        $contrataciones->changeParams(['id' => 396]);
+        $contrataciones  = new ContratacionesEndpoint(new HttpClient());
         $contrataciones->configureHttpClient();
-        $response = $contrataciones->fetchValidateResponse();
-        if($response === null){
-            throw new DataHandlerException('a');
-        }
-        $A = $contrataciones->store($response);
+        $contrataciones->changeParams(['id' => 396]);
 
-        $A['obras_id'] = 26;
-        Contrataciones::create([
-            'obra_id' => 26,
-            'contrataciones' => $A 
-        ]);
+        $response = $contrataciones->fetchValidateResponse();
+
+        $registros = Obras::select('id', 'codigo_snip')
+                    ->whereNotNull('codigo_snip')
+                    ->get();
+        foreach($registros as $registro){
+            ProcessContrataciones::dispatch($registro->id, $registro->codigo_snip, 'store');
+        }
     }
 }
