@@ -134,6 +134,12 @@ class ObrasEndpoint implements DataHandler
         }
     }
 
+    /**
+     * fetch a endpoint (throw a DataHandlerException if failed)
+     * @return array $response what is a array of data.
+     * @return null is a $response has not validate format.
+     * 
+     */
     public function fetchValidateResponse(): ?array
     {
         $response = $this->http->makeRequest(

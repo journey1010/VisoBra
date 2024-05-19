@@ -26,6 +26,7 @@ use App\Services\Notify;
 use App\Services\Reporting;
 use App\Services\Mailer;
 use App\Services\GeobraEndpoint;
+use App\Services\ContratacionesEndpoint;
 
 class Prueba extends Controller
 {
@@ -179,17 +180,6 @@ class Prueba extends Controller
 
     }
 
-    // public function testHttpObra(HttpClientInterface $http)
-    // {
-      
-    //     $headers = [];
-    //     $url = "https://ofi5.mef.gob.pe/inviertePub/ConsultaPublica/traeListaProyectoConsultaAvanzada";
-    //     $http->config(2,100, 30, $headers);
-    //     $response = $http->makeRequest($url, 'post', $this->data);
-    //     $data = count($response['Data']);
-    //     return $data;   
-    // }
-
     public function httException()
     {
         try {
@@ -213,39 +203,14 @@ class Prueba extends Controller
 
     public function prueba(HttpClientInterface $http)
     {
-        try{
-            $obras = new ObrasEndpoint(new HttpClient());
-            $obras->configureHttpClient();
-
-            $response = $obras->fetchValidateResponse();
-            if($response === null){
-                throw new DataHandlerException('Fallo al obtener datos para poblar obras');
-            }
-            
-            Metadata::create([
-                 'pages_size' => $response['PageSize'],
-                 'total_rows' => $response['TotalRows'],
-                 'total_pages' => $response['TotalPage'],
-            ]);
-
-            $obras->changeParams(['PageSize' => 100]);
-            for ($i = 1 ; $i <= 122; $i++){
-                $obras->changeParams(['PageIndex' => $i]);
-                $response = $obras->fetchValidateResponse();  
-                $rows = count($response['Data']);
-                for( $i = 0; $i < $rows; $i++){
-                    $obras->store($response['Data'][$i]);
-                }  
-                //ProcessPoblarObras::dispatch($response['Data']);
-            }
-
-        }catch(Exception $e){
-            $notifier = new Notify(new Mailer());
-            $notifier->clientNotify(
-                to: 'ginopalfo001608@gmail.com', 
-                message: $e->getMessage(),
-                subject: 'Fallo en visoobra al obtener datos');
-            Reporting::loggin($e, 100);
+        $contrataciones = new ContratacionesEndpoint($http);
+        $contrataciones->changeParams(['id' => 396]);
+        $contrataciones->configureHttpClient();
+        $response = $contrataciones->fetchValidateResponse();
+        if($response === null){
+            throw new DataHandlerException('a');
         }
+        $A = $contrataciones->store($response);
+        dd($A);
     }
 }
