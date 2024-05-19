@@ -213,8 +213,7 @@ class Prueba extends Controller
         }
         $A = $contrataciones->store($response);
 
-        $b = Contrataciones::find(1);
-        $contrataciones = $b->contrataciones;
+        $A['obras_id'] = 26;
         Contrataciones::create([
             'obra_id' => 26,
             'contrataciones' => $A 

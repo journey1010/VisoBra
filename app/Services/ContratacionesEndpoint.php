@@ -87,8 +87,15 @@ class ContratacionesEndpoint implements DataHandler
     public function store(array $data)
     {
         $store = [];
+        
+        if(!array_key_exists('obra_id', $data)){
+            throw new DataHandlerException('No se proporciono el id en contrataciones endpoint para insertar registro'); 
+        }
     
         foreach ($data as $index => $item) {
+            if($index == 'obra_id'){
+                continue;
+            }
             $store[$index] = [
                 'FEC_CONVOCATORIA' => $item['FEC_CONVOCATORIA'],
                 'NUM_CONTRATO' => $item['NUM_CONTRATO'],
