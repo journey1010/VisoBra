@@ -34,7 +34,9 @@ class ContratacionesEndpoint implements DataHandler
     {
         $this->http = $http;
     }
-
+    /**
+     * Change params of endpoint to fetch
+     */
     public function changeParams(array $data): void
     {
         foreach($data as $key => $value){

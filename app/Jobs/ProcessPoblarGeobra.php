@@ -36,8 +36,7 @@ class ProcessPoblarGeobra implements ShouldQueue
     public function handle(): void
     {
         try {
-            $http = new HttpClient();
-            $geobra = new GeobraEndpoint($http);
+            $geobra = new GeobraEndpoint(new HttpClient());
      
             $geobra->configureHttpClient();
     
