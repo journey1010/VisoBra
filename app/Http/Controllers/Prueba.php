@@ -27,6 +27,7 @@ use App\Services\Reporting;
 use App\Services\Mailer;
 use App\Services\GeobraEndpoint;
 use App\Services\ContratacionesEndpoint;
+use App\Models\Contrataciones;
 
 class Prueba extends Controller
 {
@@ -211,6 +212,12 @@ class Prueba extends Controller
             throw new DataHandlerException('a');
         }
         $A = $contrataciones->store($response);
-        dd($A);
+
+        $b = Contrataciones::find(1);
+        $contrataciones = $b->contrataciones;
+        Contrataciones::create([
+            'obra_id' => 26,
+            'contrataciones' => $A 
+        ]);
     }
 }
