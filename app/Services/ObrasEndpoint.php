@@ -178,7 +178,11 @@ class ObrasEndpoint implements DataHandler
 
     public function store($data)
     {
-        Obras::create($this->createRecords($data));
+        $pureData  = $data['Data'];
+
+        foreach($pureData as $record){
+            Obras::create($this->createRecords($record));
+        }
     }
 
 

@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use App\Exceptions\DataHandlerException;
 use Exception;
-use App\Jobs\ProcessObras;
+use App\Jobs\ProcessInsertObras;
 use App\Services\HttpClient;
 use App\Services\ObrasEndpoint;
 use App\Services\Reporting;
@@ -41,9 +41,8 @@ class PoblarObrasTable extends Seeder
             for ($i = 1 ; $i <= 122; $i++){
                 $obras->changeParams(['PageIndex' => $i]);
                 $response = $obras->fetchValidateResponse();
-                ProcessObras::dispatch(null,$response['Data'],'store');
+                ProcessInsertObras::dispatch($response);
             }
-
         }catch(Exception $e){
             $notifier = new Notify(new Mailer());
             $notifier->clientNotify(

@@ -3,7 +3,6 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
-use App\Jobs\ProcessObras;
 use App\Jobs\ProccessFotos;
 use App\Jobs\ProcessContrataciones;
 use App\Jobs\ProcessGeobra;
@@ -50,11 +49,11 @@ class SearchNewObras extends Command
             'PageSize' => $registros,
         ]);
         $response = $obras->fetchValidateResponse();
-        ProcessObras::dispatch(null,$response['Data'],'store');
+        // ProcessObras::dispatch(null,$response['Data'],'store');
         list($codeUnique, $codeSnip)  = $this->storeCodes($response);
-        foreach($codeUnique as $code){
-            ProcessGeobra::dispatch()
-        }
+        // foreach($codeUnique as $code){
+        //     ProcessGeobra::dispatch()
+        // }
     }
 
     /**
@@ -72,6 +71,14 @@ class SearchNewObras extends Command
         }
 
         return [$codeUnique, $codeSnip];
+    }
+
+    public function storeObras(array $data, ObrasEndpoint $obras)
+    { 
+        $rows = count($data);
+        for( $i = 0; $i < $rows; $i++){
+            $obras->store($data[$i]);
+        }   
     }
 
     public function findObra(?int $snip = null, ?int $codeUnique = null): ?int
