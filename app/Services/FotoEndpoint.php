@@ -107,9 +107,21 @@ class FotoEndpoint implements DataHandler
 
     public function update(int $id, array $data)
     {
-        
+        $store = [];
+        foreach ($data as $index => $item) {
+            if($index == 'obra_id'){
+                continue;
+            }
+            $store[$index] = [
+                'RUTA_FOTO' => $item['RUTA_FOTO'],
+                'RUTA_FOTO_2' => $item['RUTA_FOTO_2'] ,
+                'RUTA_FOTO_3' => $item['RUTA_FOTO_3'],
+                'RUTA_FOTO_4' => $item['RUTA_FOTO_4']
+            ];
+        }
+
+        $fotos = Fotos::find($id);
+        $fotos->files_path = $store;
+        $fotos->save();    
     }
-
-
-    
 }
