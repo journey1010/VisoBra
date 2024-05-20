@@ -29,6 +29,7 @@ use App\Services\GeobraEndpoint;
 use App\Services\FotoEndpoint;
 use App\Models\foto;
 use App\Jobs\Processfoto;
+use Laravel\Horizon\Exec;
 
 class Prueba extends Controller
 {
@@ -76,6 +77,8 @@ class Prueba extends Controller
         'GanadorFoniprel'=>'ganador_fronipel',
         'DescripcionCierre'=>'registro_cierre',
     ];
+
+    public $response;
 
     protected $dataStore = [];
 
@@ -205,17 +208,33 @@ class Prueba extends Controller
 
     public function prueba(HttpClientInterface $http)
     {
-        $geobra = new GeobraEndpoint(new HttpClient());
-     
-        $geobra->configureHttpClient();
-        $geobra->changeParams(['where' => 2078436]);
-        $response = $geobra->fetchValidResponse();
-    
-        if ($response === null) {
-            throw new DataHandlerException('Geobra Job: Fallo al obtener datos para el codigo de inversion con id :' . 2078436 . '. Es posible que no existan registros en el portal de geoinvierte.');
+        try {
+            $registros =  Obras::select('id','nombre_inversion')
+                ->where('estado_inversion', '=', 'ACTIVO')
+                ->whereNotNull('nombre_inversion')
+                ->get();
+
+            $obras = new ObrasEndpoint($http);
+            $obras->configureHttpClient();
+
+            foreach($registros as $registro){
+                $obras->changeParams([
+                    'cboNom' => 5,
+                    'txtNom' => $registro->nombre_inversion,
+                ]);
+
+                $this->response = $obras->fetchValidateResponse();
+                if($this->response === null){
+                    throw new DataHandlerException('Update obra job: Error al obtener datos para la obra con id ');
+                }
+                $obras->update($registro->id, $this->response);
+            }
+
+        }catch(Exception $e){
+            $this->response;
+            $e->getMessage();
         }
-        $response['obras_id'] = 194;
-        $geobra->store($response);
+
     
     }
 

@@ -93,7 +93,6 @@ class Obras extends Model
         );
     }
 
-
     /**
      * Convert string of date type (Ym) a validate date of type Y-m
      * @return date Y-m

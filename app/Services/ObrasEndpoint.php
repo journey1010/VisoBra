@@ -188,7 +188,20 @@ class ObrasEndpoint implements DataHandler
 
     public function update(int $id, array $data)
     {
-        Obras::where('id', $id)->update($this->createRecords($data));
+        unset(
+            $this->dataHoped['Funcion'],
+            $this->dataHoped['Programa'],
+            $this->dataHoped['Subprograma'],
+            $this->dataHoped['Sector'],
+            $this->dataHoped['CodigoUnico'],
+            $this->dataHoped['Codigo'],
+            $this->dataHoped['Nombre'],
+        );      
+        $toUpdate = $this->createRecords($data['Data'][0]);
+        $toUpdate['updated_at'] = date('Y-m-d H:i:s');
+        $obras = Obras::find($id);
+        $obras->fill($toUpdate);
+        $obras->save();
     }
 
     /**
