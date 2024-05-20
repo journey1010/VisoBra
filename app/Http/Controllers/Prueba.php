@@ -205,19 +205,22 @@ class Prueba extends Controller
 
     public function prueba(HttpClientInterface $http)
     {
-        $foto  = new FotoEndpoint(new HttpClient());
-        $foto->configureHttpClient();
-        $foto->changeParams(['id' => 2490719]);
-
-        $response = $foto->fetchValidateResponse();
-        $response['obra_id'] = 41;
-        $foto->store($response);
-
-        // $registros = Obras::select('id', 'codigo_snip')
-        //             ->whereNotNull('codigo_snip')
-        //             ->get();
-        // foreach($registros as $registro){
-        //     Processfoto::dispatch($registro->id, $registro->codigo_snip, 'store');
-        // }
+        $obras = new ObrasEndpoint(new HttpClient);
+        $obras->configureHttpClient();
+        $response = $obras->fetchValidateResponse();
+        
+        $registros = $obras->isThereNewData($response['PageSize'], $response['TotalRows'], $response['TotalPage']);
+        if(!$registros){
+            return;
+        }
+        $obras->changeParams([
+            'PageIndex' => $registros,
+            'PageSize' => $registros,
+        ]);
+        $response = $obras->fetchValidateResponse();
+        foreach($response['Data'] as $item){
+            $obras->store($item);
+        }
+    
     }
 }

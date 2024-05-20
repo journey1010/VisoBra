@@ -135,7 +135,7 @@ class ObrasEndpoint implements DataHandler
     }
 
     /**
-     * fetch a endpoint (throw a DataHandlerException if failed)
+     * fetch a endpoint or throw a DataHandlerException if failed
      * @return array $response what is a array of data.
      * @return null is a $response has not validate format.
      * 
@@ -184,7 +184,7 @@ class ObrasEndpoint implements DataHandler
 
     public function update(int $id, array $data)
     {
-        Obras::where('id', $id)->update($this->dataStore);
+        Obras::where('id', $id)->update($this->createRecords($data));
     }
 
     /**
@@ -219,11 +219,12 @@ class ObrasEndpoint implements DataHandler
     }
 
     /**
-     * @return bool is false if there isn´t new data in Consulta avanzada
-     * @return int  number of new data
+     * Determina si se encontraron nuevos registro en consulta avanzada (Aplicativo del Mef)
+     * @return bool|int is false wether there isn´t new data or number of new data
      */
     public function  isThereNewData(int $pageSize, int $totalRows, int $totalPage): bool|int
     {
+        
         $metadata = Metadata::find(1); 
         if(!$metadata){
             throw new DataHandlerException('No hay registro de metadatos : table (metadata_list_obras)');
@@ -231,7 +232,7 @@ class ObrasEndpoint implements DataHandler
 
         $diference  = $totalRows - $metadata->total_rows;
         
-        if($diference != 0){
+        if($diference === 0){
             return false;
         }
     
