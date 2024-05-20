@@ -17,7 +17,7 @@ class Fotos extends Model
         'files_path',
     ];
 
-    protected function contrataciones(): Attribute
+    protected function filesPath(): Attribute
     {
         return Attribute::make(
             set: fn (array $value) => json_encode($value),

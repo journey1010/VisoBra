@@ -26,9 +26,9 @@ use App\Services\Notify;
 use App\Services\Reporting;
 use App\Services\Mailer;
 use App\Services\GeobraEndpoint;
-use App\Services\ContratacionesEndpoint;
-use App\Models\Contrataciones;
-use App\Jobs\ProcessContrataciones;
+use App\Services\FotoEndpoint;
+use App\Models\foto;
+use App\Jobs\Processfoto;
 
 class Prueba extends Controller
 {
@@ -205,17 +205,19 @@ class Prueba extends Controller
 
     public function prueba(HttpClientInterface $http)
     {
-        $contrataciones  = new ContratacionesEndpoint(new HttpClient());
-        $contrataciones->configureHttpClient();
-        $contrataciones->changeParams(['id' => 396]);
+        $foto  = new FotoEndpoint(new HttpClient());
+        $foto->configureHttpClient();
+        $foto->changeParams(['id' => 2490719]);
 
-        $response = $contrataciones->fetchValidateResponse();
+        $response = $foto->fetchValidateResponse();
+        $response['obra_id'] = 41;
+        $foto->store($response);
 
-        $registros = Obras::select('id', 'codigo_snip')
-                    ->whereNotNull('codigo_snip')
-                    ->get();
-        foreach($registros as $registro){
-            ProcessContrataciones::dispatch($registro->id, $registro->codigo_snip, 'store');
-        }
+        // $registros = Obras::select('id', 'codigo_snip')
+        //             ->whereNotNull('codigo_snip')
+        //             ->get();
+        // foreach($registros as $registro){
+        //     Processfoto::dispatch($registro->id, $registro->codigo_snip, 'store');
+        // }
     }
 }
