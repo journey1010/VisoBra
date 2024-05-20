@@ -55,6 +55,17 @@ class GeobraEndpoint implements DataHandler
         return $this->url;
     }
 
+    public function changeParams(array $data): void
+    {
+        foreach($data as $key => $value){
+            if($key == 'where'){
+                $this->params[$key] = "UPPER(COD_UNICO) LIKE '%" . $value . "%'";
+                continue;
+            }
+            $this->params[$key] = $value;
+        }
+    }
+
     /**
      * 
      * Ejecuta una llamada al endpoint de geoinvierte. Comprueba la respuesta para validar el formato de datos esperado

@@ -15,11 +15,11 @@ class PoblarGeoObraTable extends Seeder
 
     public function run(): void
     {
-        $registros = Obras::select('id')
+        $registros = Obras::select('id', 'codigo_unico_inversion')
                     ->whereNotNull('codigo_unico_inversion')
                     ->get();
         foreach($registros as $registro){
-            ProcessGeobra::dispatch($registro->id);
+            ProcessGeobra::dispatch($registro->id, $registro->codigo_unico_inversion);
         }
     }
 }

@@ -14,6 +14,7 @@ use App\Services\ObrasEndpoint;
 use App\Services\Reporting;
 use App\Services\Notify;
 use App\Services\Mailer;
+use Exception;
 
 class SearchNewObras extends Command
 {
@@ -36,24 +37,46 @@ class SearchNewObras extends Command
      */
     public function handle()
     {
-        $obras = new ObrasEndpoint(new HttpClient);
-        $obras->configureHttpClient();
-        $response = $obras->fetchValidateResponse();
-        
-        $registros = $obras->isThereNewData($response['PageSize'], $response['TotalRows'], $response['TotalPage']);
-        if(!$registros){
-            return;
+        try{
+            $obras = new ObrasEndpoint(new HttpClient);
+            $obras->configureHttpClient();
+            $response = $obras->fetchValidateResponse();
+            
+            $registros = $obras->isThereNewData($response['PageSize'], $response['TotalRows'], $response['TotalPage']);
+            if(!$registros){
+                return;
+            }
+            $obras->changeParams([
+                'PageIndex' => $registros,
+                'PageSize' => $registros,
+            ]);
+            $response = $obras->fetchValidateResponse();
+            $obras->store($response);
+            list($codeUnique, $codeSnip)  = $this->storeCodes($response);
+
+        }catch(Exception $e){
+            $notifier = new Notify(new Mailer());
+            $notifier->configLimiter(3, 'Geobra');
+            $notifier->clientNotify(
+                to: 'ginopalfo001608@gmail.com',
+                message: $e->getMessage(),
+                subject: 'Fallo en visoobra al obtener datos'
+            );
+            Reporting::loggin($e, 100);
         }
-        $obras->changeParams([
-            'PageIndex' => $registros,
-            'PageSize' => $registros,
-        ]);
-        $response = $obras->fetchValidateResponse();
-        // ProcessObras::dispatch(null,$response['Data'],'store');
-        list($codeUnique, $codeSnip)  = $this->storeCodes($response);
-        // foreach($codeUnique as $code){
-        //     ProcessGeobra::dispatch()
-        // }
+    }
+
+    public function insertGeobra(array $codeUnique)
+    {
+        foreach($codeUnique as $code){
+            $id = $this->findObra( codeUnique: $code);
+            ProcessGeobra::dispatch($id);
+        }
+    }
+
+    public function insertContrataciones()
+    {
+        
     }
 
     /**
@@ -73,18 +96,9 @@ class SearchNewObras extends Command
         return [$codeUnique, $codeSnip];
     }
 
-    public function storeObras(array $data, ObrasEndpoint $obras)
-    { 
-        $rows = count($data);
-        for( $i = 0; $i < $rows; $i++){
-            $obras->store($data[$i]);
-        }   
-    }
 
     public function findObra(?int $snip = null, ?int $codeUnique = null): ?int
-    {
-        $id = null;
-    
+    {  
         if ($codeUnique !== null) {
             $obra = Obras::select('id')->where('codigo_unico_inversion', '=', $codeUnique)->first();
         } elseif ($snip !== null) {
@@ -97,5 +111,4 @@ class SearchNewObras extends Command
     
         return null; 
     }
-    
 }

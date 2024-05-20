@@ -205,34 +205,23 @@ class Prueba extends Controller
 
     public function prueba(HttpClientInterface $http)
     {
-        $obras = new ObrasEndpoint(new HttpClient);
-        $obras->configureHttpClient();
-        $response = $obras->fetchValidateResponse();
-        
-        // $registros = $obras->isThereNewData($response['PageSize'], $response['TotalRows'], $response['TotalPage']);
-        // if(!$registros){
-        //     return;
-        // }
-        // $obras->changeParams([
-        //     'PageIndex' => $registros,
-        //     'PageSize' => $registros,
-        // ]);
-        $response = $obras->fetchValidateResponse();
-        // foreach($response['Data'] as $item){
-        //     $obras->store($item);
-        // }
-
-        $this->storesnip($response);
+        $geobra = new GeobraEndpoint(new HttpClient());
+     
+        $geobra->configureHttpClient();
+        $geobra->changeParams(['where' => 2078436]);
+        $response = $geobra->fetchValidResponse();
+    
+        if ($response === null) {
+            throw new DataHandlerException('Geobra Job: Fallo al obtener datos para el codigo de inversion con id :' . 2078436 . '. Es posible que no existan registros en el portal de geoinvierte.');
+        }
+        $response['obras_id'] = 194;
+        $geobra->store($response);
     
     }
 
 
     public function storesnip($data)
     {
-        $snips =[];
-        $data = $data['Data'];
-        foreach($data as $key){
-            $d = $key['Codigo'];
-        }
+
     }   
 }

@@ -22,11 +22,16 @@ class ProcessGeobra implements ShouldQueue
     /**
      * Create a new job instance.
     */
+    /**
+     * ID de obra, table obras
+     */
     protected $id;
+    protected $codeUnique;
 
-    public function __construct(int $id)
+    public function __construct(int $id, int $codeUnique)
     {
         $this->id = $id;
+        $this->codeUnique = $codeUnique;
     }
 
     /**
@@ -39,11 +44,11 @@ class ProcessGeobra implements ShouldQueue
             $geobra = new GeobraEndpoint(new HttpClient());
      
             $geobra->configureHttpClient();
-    
+            $geobra->changeParams(['where' => $this->codeUnique]);
             $response = $geobra->fetchValidResponse();
         
             if ($response === null) {
-                throw new DataHandlerException('Fallo al obtener datos para el codigo de inversion con id :' . $this->id);
+                throw new DataHandlerException('Geobra Job: Fallo al obtener datos para el codigo de inversion con id :' . $this->codeUnique . '. Es posible que no existan registros en el portal de geoinvierte.');
             }
             $response['obras_id'] = $this->id;
             $geobra->store($response);
