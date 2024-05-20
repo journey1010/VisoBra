@@ -14,7 +14,6 @@ class PoblarContratacionesTable extends Seeder
      */
     public function run(): void
     {
-        
         $registros = Obras::select('id', 'codigo_snip')
                     ->whereNotNull('codigo_snip')
                     ->get();
