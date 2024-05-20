@@ -6,6 +6,7 @@ use App\Services\Contracts\DataHandler;
 use App\Exceptions\DataHandlerException;
 use Exception;
 use App\Models\Contrataciones;
+use App\Models\Obras;
 
 class ContratacionesEndpoint implements DataHandler
 {
@@ -118,7 +119,24 @@ class ContratacionesEndpoint implements DataHandler
 
     public function update(int $id, array $data)
     {
+        $store = [];
         
+        foreach ($data as $index => $item) {
+            if($index == 'obra_id'){
+                continue;
+            }
+            $store[$index] = [
+                'FEC_CONVOCATORIA' => $item['FEC_CONVOCATORIA'],
+                'NUM_CONTRATO' => $item['NUM_CONTRATO'],
+                'DES_PROCESO' => $item['DES_PROCESO'],
+                'FEC_SUSCRIPCION' => $item['FEC_SUSCRIPCION'],
+                'NOM_CONTRATISTA' => $item['NOM_CONTRATISTA'],
+                'URL_CONTRATO' => $item['URL_CONTRATO'],
+                'MTO_TOTAL' => $item['MTO_TOTAL'],
+            ];
+        }
+        
+        // $contrataciones  = Obras::find
     }
 
 }

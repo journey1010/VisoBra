@@ -113,15 +113,22 @@ class FotoEndpoint implements DataHandler
                 continue;
             }
             $store[$index] = [
-                'RUTA_FOTO' => $item['RUTA_FOTO'],
-                'RUTA_FOTO_2' => $item['RUTA_FOTO_2'] ,
-                'RUTA_FOTO_3' => $item['RUTA_FOTO_3'],
-                'RUTA_FOTO_4' => $item['RUTA_FOTO_4']
+                'RUTA_FOTO' => $item['RUTA_FOTO'] ?? null,
+                'RUTA_FOTO_2' => $item['RUTA_FOTO_2'] ?? null,
+                'RUTA_FOTO_3' => $item['RUTA_FOTO_3'] ?? null,
+                'RUTA_FOTO_4' => $item['RUTA_FOTO_4'] ?? null
             ];
         }
 
-        $fotos = Fotos::find($id);
-        $fotos->files_path = $store;
-        $fotos->save();    
+        $fotos = Fotos::where('obra_id', $id)->first(); 
+        if ($fotos) {
+            $fotos->files_path = $store;
+            $fotos->save();
+        } else {
+            Fotos::create([
+                'obra_id' => $id,
+                'files_path' => $store 
+            ]);
+        }
     }
 }
