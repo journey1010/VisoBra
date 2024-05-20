@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Obras;
-use App\Jobs\ProcessPoblarGeobra;
+use App\Jobs\ProcessGeobra;
 
 class PoblarGeoObraTable extends Seeder
 {
@@ -19,7 +19,7 @@ class PoblarGeoObraTable extends Seeder
                     ->whereNotNull('codigo_unico_inversion')
                     ->get();
         foreach($registros as $registro){
-            ProcessPoblarGeobra::dispatch($registro->id);
+            ProcessGeobra::dispatch($registro->id);
         }
     }
 }

@@ -209,18 +209,30 @@ class Prueba extends Controller
         $obras->configureHttpClient();
         $response = $obras->fetchValidateResponse();
         
-        $registros = $obras->isThereNewData($response['PageSize'], $response['TotalRows'], $response['TotalPage']);
-        if(!$registros){
-            return;
-        }
-        $obras->changeParams([
-            'PageIndex' => $registros,
-            'PageSize' => $registros,
-        ]);
+        // $registros = $obras->isThereNewData($response['PageSize'], $response['TotalRows'], $response['TotalPage']);
+        // if(!$registros){
+        //     return;
+        // }
+        // $obras->changeParams([
+        //     'PageIndex' => $registros,
+        //     'PageSize' => $registros,
+        // ]);
         $response = $obras->fetchValidateResponse();
-        foreach($response['Data'] as $item){
-            $obras->store($item);
-        }
+        // foreach($response['Data'] as $item){
+        //     $obras->store($item);
+        // }
+
+        $this->storesnip($response);
     
     }
+
+
+    public function storesnip($data)
+    {
+        $snips =[];
+        $data = $data['Data'];
+        foreach($data as $key){
+            $d = $key['Codigo'];
+        }
+    }   
 }

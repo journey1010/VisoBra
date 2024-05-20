@@ -15,7 +15,7 @@ use App\Services\Notify;
 use App\Services\Reporting;
 use App\Services\Mailer;
 
-class ProcessPoblarGeobra implements ShouldQueue
+class ProcessGeobra implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
