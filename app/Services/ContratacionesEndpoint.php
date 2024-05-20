@@ -136,7 +136,16 @@ class ContratacionesEndpoint implements DataHandler
             ];
         }
         
-        // $contrataciones  = Obras::find
+        $contrataciones = Contrataciones::where('obra_id', $id)->first(); 
+        if ($contrataciones) {
+            $contrataciones->files_path = $store;
+            $contrataciones->save();
+        } else {
+            Contrataciones::create([
+                'obra_id' => $id,
+                'contrataciones' => $store 
+            ]);
+        }
     }
 
 }
