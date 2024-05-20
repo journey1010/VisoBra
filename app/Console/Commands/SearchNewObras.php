@@ -37,58 +37,74 @@ class SearchNewObras extends Command
      */
     public function handle()
     {
-        try{
-            $obras = new ObrasEndpoint(new HttpClient);
+        try {
+            $obras = new ObrasEndpoint(new HttpClient());
             $obras->configureHttpClient();
             $response = $obras->fetchValidateResponse();
             
             $registros = $obras->isThereNewData($response['PageSize'], $response['TotalRows'], $response['TotalPage']);
-            if(!$registros){
+            if (!$registros) {
                 return;
             }
+
             $obras->changeParams([
                 'PageIndex' => $registros,
                 'PageSize' => $registros,
             ]);
             $response = $obras->fetchValidateResponse();
             $obras->store($response);
-            list($codeUnique, $codeSnip)  = $this->storeCodes($response);
+            
+            list($codeUnique, $codeSnip) = $this->storeCodes($response);
 
-        }catch(Exception $e){
-            $notifier = new Notify(new Mailer());
-            $notifier->configLimiter(3, 'Geobra');
-            $notifier->clientNotify(
-                to: 'ginopalfo001608@gmail.com',
-                message: $e->getMessage(),
-                subject: 'Fallo en visoobra al obtener datos'
-            );
-            Reporting::loggin($e, 100);
+            $this->insertGeobra($codeUnique);
+            $this->insertContrataciones($codeSnip);
+            $this->insertFotos($codeUnique);
+
+        } catch (Exception $e) {
+            $this->handleException($e);
         }
     }
 
-    public function insertGeobra(array $codeUnique)
+    private function insertGeobra(array $codeUnique)
     {
-        foreach($codeUnique as $code){
-            $id = $this->findObra( codeUnique: $code);
-            ProcessGeobra::dispatch($id);
+        foreach ($codeUnique as $code) {
+            $id = $this->findObraByCodeUnique($code);
+            if ($id) {
+                ProcessGeobra::dispatch($id, $code);
+            }
         }
     }
 
-    public function insertContrataciones()
+    private function insertContrataciones(array $codeSnip): void
     {
-        
+        foreach ($codeSnip as $code) {
+            $id = $this->findObraBySnip($code);
+            if ($id) {
+                ProcessContrataciones::dispatch($id, $code, 'store');
+            }
+        }
+    }
+
+    private function insertFotos(array $codeUnique)
+    {
+        foreach ($codeUnique as $code) {
+            $id = $this->findObraByCodeUnique($code);
+            if ($id) {
+                ProccessFotos::dispatch($id, $code, 'store');
+            }
+        }
     }
 
     /**
-     * Guarda los codigo snip y codigo unico de inversion
-     *
+     * Guarda los códigos snip y códigos únicos de inversión.
      */
-    public function storeCodeS(array $data)
+    private function storeCodes(array $data): array
     {
-        $codeUnique =[]; 
-        $codeSnip = []; 
-        $pureData  = $data['Data'];
-        foreach($pureData as $key){
+        $codeUnique = [];
+        $codeSnip = [];
+        $pureData = $data['Data'];
+
+        foreach ($pureData as $key) {
             $codeUnique[] = $key['CodigoUnico'];
             $codeSnip[] = $key['Codigo'];
         }
@@ -96,19 +112,27 @@ class SearchNewObras extends Command
         return [$codeUnique, $codeSnip];
     }
 
+    private function findObraByCodeUnique(int $codeUnique): ?int
+    {
+        $obra = Obras::select('id')->where('codigo_unico_inversion', $codeUnique)->first();
+        return $obra ? $obra->id : null;
+    }
 
-    public function findObra(?int $snip = null, ?int $codeUnique = null): ?int
-    {  
-        if ($codeUnique !== null) {
-            $obra = Obras::select('id')->where('codigo_unico_inversion', '=', $codeUnique)->first();
-        } elseif ($snip !== null) {
-            $obra = Obras::select('id')->where('codigo_snip', '=', $snip)->first();
-        }
-    
-        if ($obra !== null) {
-            return $obra->id;
-        }
-    
-        return null; 
+    private function findObraBySnip(int $snip): ?int
+    {
+        $obra = Obras::select('id')->where('codigo_snip', $snip)->first();
+        return $obra ? $obra->id : null;
+    }
+
+    private function handleException(Exception $e)
+    {
+        $notifier = new Notify(new Mailer());
+        $notifier->configLimiter(3, 'Geobra');
+        $notifier->clientNotify(
+            'ginopalfo001608@gmail.com',
+            $e->getMessage(),
+            'Fallo en visoobra al obtener datos'
+        );
+        Reporting::loggin($e, 100);
     }
 }

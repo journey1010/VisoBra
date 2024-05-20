@@ -11,7 +11,7 @@ class ContratacionesEndpoint implements DataHandler
 {
     public $url = 'https://ofi5.mef.gob.pe/inviertews/DashboardSeace/traeContrSeaceSSI';
 
-    /**Utilizar el id(codigo snip de la obra) para buscar sus contrataciones */
+    /**Utilizar para el id(codigo snip de la obra) para buscar sus contrataciones */
     public $params = [
         'id'  => 1,
         'vers' => 'v2'

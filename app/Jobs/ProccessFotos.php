@@ -30,7 +30,7 @@ class ProccessFotos implements ShouldQueue
     /**
      * Create a new job instance.
      */
-    public function __construct(?int $id = null, int $codigoInversion, string $method)
+    public function __construct(int $id, int $codigoInversion, string $method)
     {
         $this->id = $id;
         $this->codigoInversion = $codigoInversion;
