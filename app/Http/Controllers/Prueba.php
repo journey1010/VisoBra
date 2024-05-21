@@ -8,6 +8,7 @@ use App\Services\Contracts\HttpClientInterface;
 use App\Exceptions\HttpClientException;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\RateLimiter;
+use Illuminate\Support\Facades\DB;
 use App\Models\Funcion;
 use App\Models\Sector;
 use App\Models\Subprograma;
@@ -208,39 +209,7 @@ class Prueba extends Controller
 
     public function prueba(HttpClientInterface $http)
     {
-        try {
-            $registros =  Obras::select('id','nombre_inversion')
-                ->where('estado_inversion', '=', 'ACTIVO')
-                ->whereNotNull('nombre_inversion')
-                ->get();
-
-            $obras = new ObrasEndpoint($http);
-            $obras->configureHttpClient();
-
-            foreach($registros as $registro){
-                $obras->changeParams([
-                    'cboNom' => 5,
-                    'txtNom' => $registro->nombre_inversion,
-                ]);
-
-                $this->response = $obras->fetchValidateResponse();
-                if($this->response === null){
-                    throw new DataHandlerException('Update obra job: Error al obtener datos para la obra con id ');
-                }
-                $obras->update($registro->id, $this->response);
-            }
-
-        }catch(Exception $e){
-            $this->response;
-            $e->getMessage();
-        }
-
-    
+        $obras = DB::table('contrataciones_obra')->get();
+        return response()->json($obras);
     }
-
-
-    public function storesnip($data)
-    {
-
-    }   
 }

@@ -105,4 +105,13 @@ class Obras extends Model
         $dateConvert = date_create_from_format('Ym', $date);
         return $dateConvert->format('Y-m');
     }
+
+    /**
+     * Busqueda por codigo unico de inversion, snip, nombre, provincia, distrito
+    */
+
+    public static function searchPaginate(?int $codeUnique = null, ?int $snip =  null, ?string $nombreObra = null, ?string $provincia = null, ?string $distrito = null)
+    {
+            
+    }
 }
