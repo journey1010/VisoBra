@@ -46,7 +46,7 @@ class Obras extends Controller
     public function searchById(Request $request)
     {
         try{  
-            $idObra =$request->idObra;
+            $idObra = (int) $request->idObra;
             if(!is_int($idObra)){
                 return response()->json([
                     'message' => 'Formato de ID para obra debe ser numérico'
@@ -67,27 +67,27 @@ class Obras extends Controller
         }
     }
 
-    public function searchTotals()
-    {
-        try{  
-            $idObra =$request->idObra;
-            if(!is_int($idObra)){
-                return response()->json([
-                    'message' => 'Formato de ID para obra debe ser numérico'
-                ], 422);
-            }
-            $results = ObrasModel::searchById($idObra);
-            if(!$results){
-                return response()->json([
-                    'message' => 'No se encontraron resultados'
-                ],404);
-            }
+    // public function searchTotals()
+    // {
+    //     try{  
+    //         $idObra =$request->idObra;
+    //         if(!is_int($idObra)){
+    //             return response()->json([
+    //                 'message' => 'Formato de ID para obra debe ser numérico'
+    //             ], 422);
+    //         }
+    //         $results = ObrasModel::searchById($idObra);
+    //         if(!$results){
+    //             return response()->json([
+    //                 'message' => 'No se encontraron resultados'
+    //             ],404);
+    //         }
 
-            return response()->json($results, 200);
-        }catch(Exception $e){
-            return response()->json([
-                'message' => 'Estamos experimentando problemas temporales.'
-            ], 500);
-        }
-    }
+    //         return response()->json($results, 200);
+    //     }catch(Exception $e){
+    //         return response()->json([
+    //             'message' => 'Estamos experimentando problemas temporales.'
+    //         ], 500);
+    //     }
+    // }
 }          
