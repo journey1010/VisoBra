@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\JsonResponse;
-// use App\Models\Obras;
+// use App\Models\Obras as ObrasModel;
 use Exception;
 
 class Obras extends Controller
@@ -11,7 +11,7 @@ class Obras extends Controller
     public function mainObras(): JsonResponse
     {
         try{
-            // $obras = Obras::
+             //$obras = ObrasModel::
         }catch(Exception $e){
             return response()->json([
                 'message' => 'Estamos experimentando problemas temporales.'

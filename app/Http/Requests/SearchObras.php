@@ -9,6 +9,18 @@ use Illuminate\Contracts\Validation\Validator;
 
 class SearchObras extends FormRequest
 {
+
+    protected $stopOnFirstFailure = true;
+
+
+    protected function failedValidation(Validator $validator)
+    {
+        $jsonResponse = new JsonResponse([
+            'message' => messageValidation($validator)
+        ], 422); 
+        throw new HttpResponseException($jsonResponse);
+    }
+
     /**
      * Determine if the user is authorized to make this request.
      */
@@ -33,6 +45,11 @@ class SearchObras extends FormRequest
             'distrito ' => 'nullable|string',
             'page' => 'nullable|number',
             'itemsPerPage' => 'nullable|int',
+            'estadoInversion' => 'nullable|string',
+            'funcion' => 'nullable|string',
+            'subprograma' => 'nullable|string',
+            'programa' =>  'nullable|string',
+            'sector' => 'nullable|string',
         ];
     }
 
@@ -48,6 +65,11 @@ class SearchObras extends FormRequest
             'distrito.string' => 'Distrito es textual',
             'page.number' => 'Número de página es numérico lol',
             'itemsPerPage' => 'Númerico de items es numérico lol', 
+            'estadoInversion.string' => 'nullable|string',
+            'funcion.string' => 'Función es textual',
+            'subprograma.string' => 'Subprograma es textual',
+            'programa.string' =>  'Programa es textual',
+            'sector.string' => 'Sector es textual',
        ];
     }
 }

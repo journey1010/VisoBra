@@ -13,7 +13,7 @@ use App\Models\Funcion;
 use App\Models\Sector;
 use App\Models\Subprograma;
 use App\Models\Programa;
-use App\Models\Obras;
+use App\Models\Obras as ObrasM;
 use App\Models\Metadata;
 use App\Exceptions\DataHandlerException;
 
@@ -209,7 +209,7 @@ class Prueba extends Controller
 
     public function prueba(HttpClientInterface $http)
     {
-        $obras = DB::table('contrataciones_obra')->get();
-        return response()->json($obras);
+            $obras = ObrasM::searchPaginate( nombreObra: 'MEJORAMIENTO DEL SERVICIO DE MOVILIDAD URBANA EN VIA DE ACCESO DEL A.H. DARWIN GRANDEZ DE LA CIUDAD DE NAUTA Y EL KM 87 DE LA CARRETERA IQUITOS-NAUTA   DISTRITO DE NAUTA DE LA PROVINCIA DE LORETO DEL DEPARTAMENTO DE LORETO');
+            return $obras;
     }
 }

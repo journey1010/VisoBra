@@ -1087,3 +1087,1251 @@ Stack trace:
 [stacktrace]
 #0 {main}
 "} 
+[2024-05-21 10:04:57] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:116)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:04:57] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:116)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:05:15] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:117)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:05:15] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:117)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:06:27] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:119)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:06:27] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:119)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:06:35] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:119)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:06:35] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:119)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:06:41] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:119)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:06:41] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:119)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:06:49] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:119)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:06:49] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:119)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:06:50] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:119)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:07:04] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:119)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:07:04] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:119)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:07:49] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:119)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:07:49] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:119)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:07:50] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:119)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:08:12] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:119)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:08:12] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:119)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:08:41] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:119)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:08:41] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:119)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:08:50] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:119)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:09:50] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:119)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:10:50] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:119)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:11:50] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:119)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:12:50] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:119)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:13:50] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:119)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:14:50] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:119)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:15:50] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:119)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:16:50] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:119)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:17:50] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:119)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:18:30] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:119)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:18:30] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:119)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:18:39] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:119)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:18:39] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:119)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:18:50] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:119)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:19:23] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:123)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:19:23] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:123)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:19:39] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:124)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:19:39] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:124)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:19:50] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:125)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:19:53] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:125)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:19:53] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:125)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:20:18] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:132)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:20:18] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:132)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:20:33] local.ERROR: syntax error, unexpected token "?", expecting ")" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"?\", expecting \")\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:116)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:20:33] local.ERROR: syntax error, unexpected token "?", expecting ")" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"?\", expecting \")\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:116)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:20:45] local.ERROR: syntax error, unexpected token "?", expecting ")" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"?\", expecting \")\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:117)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:20:45] local.ERROR: syntax error, unexpected token "?", expecting ")" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"?\", expecting \")\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:117)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:20:50] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:134)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:20:50] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:134)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:20:50] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:134)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:21:04] local.ERROR: syntax error, unexpected token "?", expecting ")" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"?\", expecting \")\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:118)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:21:04] local.ERROR: syntax error, unexpected token "?", expecting ")" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"?\", expecting \")\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:118)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:21:16] local.ERROR: syntax error, unexpected token "?" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"?\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:119)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:21:16] local.ERROR: syntax error, unexpected token "?" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"?\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:119)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:21:37] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:136)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:21:37] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:136)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:21:50] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:136)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:21:55] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:136)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:21:55] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:136)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:22:50] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:136)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:23:50] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:136)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:24:50] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:136)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:25:50] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:136)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:26:50] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:136)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:27:50] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:136)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:28:50] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:136)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:29:50] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:136)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:30:50] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:136)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:31:50] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:136)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:32:01] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:136)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:32:01] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:136)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:32:16] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:136)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:32:16] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:136)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:32:30] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:137)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:32:30] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:137)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:32:49] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:137)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:32:49] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:137)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:32:50] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:137)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:33:14] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:138)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:33:14] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:138)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:33:21] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:138)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:33:21] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:138)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:33:26] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:138)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:33:26] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:138)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:33:49] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:138)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:33:49] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:138)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:33:50] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:138)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:34:03] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:139)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:34:03] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:139)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:34:22] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:139)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:34:22] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:139)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:34:50] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:139)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:43:32] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:140)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:43:32] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:140)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:43:50] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:140)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:43:51] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:140)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:43:51] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:140)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:44:03] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:140)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:44:03] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:140)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:44:17] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:140)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:44:17] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:140)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:44:25] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:140)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:44:25] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:140)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:44:30] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:140)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:44:30] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:140)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:44:50] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:140)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:44:56] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:140)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:44:56] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:140)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:45:01] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:140)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:45:01] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:140)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:45:08] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:140)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:45:08] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:140)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:45:13] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:140)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:45:13] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:140)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:45:26] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:141)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:45:26] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:141)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:45:49] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:141)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:45:49] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:141)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:45:50] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:142)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:45:56] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:142)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:45:56] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:142)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:46:04] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:142)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:46:04] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:142)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:46:20] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:142)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:46:20] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:142)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:46:43] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:142)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:46:43] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:142)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:46:50] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:142)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:47:12] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:142)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:47:12] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:142)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:47:31] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:142)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:47:31] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:142)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:47:50] local.ERROR: syntax error, unexpected single-quoted string "sub.id", expecting ")" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected single-quoted string \"sub.id\", expecting \")\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:140)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:48:07] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:142)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:48:07] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:142)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:48:30] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:143)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:48:30] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:143)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:48:50] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:145)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:48:54] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:145)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:48:54] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:145)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:49:16] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:146)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:49:16] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:146)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:49:27] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:147)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:49:27] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:147)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:49:49] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:147)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:49:49] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:147)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:49:50] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:147)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:50:12] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:147)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:50:12] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:147)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:50:25] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:148)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:50:25] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:148)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:50:30] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:148)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 10:50:30] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:148)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 11:05:50] local.ERROR: syntax error, unexpected identifier "o", expecting ")" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected identifier \"o\", expecting \")\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:180)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 11:08:29] local.ERROR: syntax error, unexpected token "]", expecting variable or "{" or "$" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"]\", expecting variable or \"{\" or \"$\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:176)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 11:08:29] local.ERROR: syntax error, unexpected token "]", expecting variable or "{" or "$" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"]\", expecting variable or \"{\" or \"$\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:176)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 11:09:18] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:148)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 11:09:18] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:148)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 11:09:36] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:148)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 11:09:36] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:148)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 11:09:50] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:148)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 11:10:01] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:148)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 11:10:01] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:148)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 11:10:12] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:148)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 11:10:12] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:148)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 11:10:25] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:148)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 11:10:25] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:148)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 11:16:48] local.ERROR: Too few arguments to function App\Models\Obras::searchPaginate(), 0 passed in /home/dev/Dev/VisoBra/app/Http/Controllers/Prueba.php on line 212 and at least 10 expected {"exception":"[object] (ArgumentCountError(code: 0): Too few arguments to function App\\Models\\Obras::searchPaginate(), 0 passed in /home/dev/Dev/VisoBra/app/Http/Controllers/Prueba.php on line 212 and at least 10 expected at /home/dev/Dev/VisoBra/app/Models/Obras.php:114)
+[stacktrace]
+#0 /home/dev/Dev/VisoBra/app/Http/Controllers/Prueba.php(212): App\\Models\\Obras::searchPaginate()
+#1 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(46): App\\Http\\Controllers\\Prueba->prueba()
+#2 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#3 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Route.php(206): Illuminate\\Routing\\Route->runController()
+#4 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(806): Illuminate\\Routing\\Route->run()
+#5 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#6 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(161): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#7 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(127): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest()
+#8 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(89): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter()
+#9 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle()
+#10 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#11 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(805): Illuminate\\Pipeline\\Pipeline->then()
+#12 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack()
+#13 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(748): Illuminate\\Routing\\Router->runRoute()
+#14 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute()
+#15 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(200): Illuminate\\Routing\\Router->dispatch()
+#16 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#17 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#18 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#19 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#20 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#21 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#22 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#23 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#24 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle()
+#25 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#26 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#27 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#28 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#29 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#30 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#31 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#32 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then()
+#33 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#34 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1168): Illuminate\\Foundation\\Http\\Kernel->handle()
+#35 /home/dev/Dev/VisoBra/public/index.php(17): Illuminate\\Foundation\\Application->handleRequest()
+#36 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
+#37 {main}
+"} 
+[2024-05-21 11:26:02] local.ERROR: Too few arguments to function App\Models\Obras::searchPaginate(), 2 passed in /home/dev/Dev/VisoBra/app/Http/Controllers/Prueba.php on line 212 and at least 12 expected {"exception":"[object] (ArgumentCountError(code: 0): Too few arguments to function App\\Models\\Obras::searchPaginate(), 2 passed in /home/dev/Dev/VisoBra/app/Http/Controllers/Prueba.php on line 212 and at least 12 expected at /home/dev/Dev/VisoBra/app/Models/Obras.php:114)
+[stacktrace]
+#0 /home/dev/Dev/VisoBra/app/Http/Controllers/Prueba.php(212): App\\Models\\Obras::searchPaginate()
+#1 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(46): App\\Http\\Controllers\\Prueba->prueba()
+#2 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#3 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Route.php(206): Illuminate\\Routing\\Route->runController()
+#4 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(806): Illuminate\\Routing\\Route->run()
+#5 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#6 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(161): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#7 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(127): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest()
+#8 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(89): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter()
+#9 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle()
+#10 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#11 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(805): Illuminate\\Pipeline\\Pipeline->then()
+#12 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack()
+#13 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(748): Illuminate\\Routing\\Router->runRoute()
+#14 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute()
+#15 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(200): Illuminate\\Routing\\Router->dispatch()
+#16 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#17 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#18 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#19 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#20 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#21 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#22 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#23 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#24 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle()
+#25 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#26 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#27 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#28 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#29 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#30 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#31 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#32 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then()
+#33 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#34 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1168): Illuminate\\Foundation\\Http\\Kernel->handle()
+#35 /home/dev/Dev/VisoBra/public/index.php(17): Illuminate\\Foundation\\Application->handleRequest()
+#36 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
+#37 {main}
+"} 
+[2024-05-21 12:06:44] local.ERROR: Undefined variable $page {"exception":"[object] (ErrorException(code: 0): Undefined variable $page at /home/dev/Dev/VisoBra/app/Http/Controllers/Prueba.php:231)
+[stacktrace]
+#0 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(256): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError()
+#1 /home/dev/Dev/VisoBra/app/Http/Controllers/Prueba.php(231): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}()
+#2 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(46): App\\Http\\Controllers\\Prueba->prueba()
+#3 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#4 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Route.php(206): Illuminate\\Routing\\Route->runController()
+#5 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(806): Illuminate\\Routing\\Route->run()
+#6 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#7 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(161): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#8 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(127): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest()
+#9 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(89): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter()
+#10 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle()
+#11 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#12 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(805): Illuminate\\Pipeline\\Pipeline->then()
+#13 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack()
+#14 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(748): Illuminate\\Routing\\Router->runRoute()
+#15 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute()
+#16 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(200): Illuminate\\Routing\\Router->dispatch()
+#17 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#18 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#19 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#20 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#21 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#22 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#23 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#24 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#25 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle()
+#26 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#27 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#28 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#29 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#30 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#31 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#32 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then()
+#34 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#35 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1168): Illuminate\\Foundation\\Http\\Kernel->handle()
+#36 /home/dev/Dev/VisoBra/public/index.php(17): Illuminate\\Foundation\\Application->handleRequest()
+#37 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
+#38 {main}
+"} 
+[2024-05-21 12:19:50] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:191)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 12:25:29] local.ERROR: syntax error, unexpected single-quoted string "", expecting ")" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected single-quoted string \"\", expecting \")\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:141)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 12:25:29] local.ERROR: syntax error, unexpected single-quoted string "", expecting ")" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected single-quoted string \"\", expecting \")\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:141)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 12:25:50] local.ERROR: syntax error, unexpected identifier "DB", expecting ")" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected identifier \"DB\", expecting \")\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:141)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 12:31:26] local.ERROR: syntax error, unexpected single-quoted string "d", expecting ")" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected single-quoted string \"d\", expecting \")\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:141)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 12:31:26] local.ERROR: syntax error, unexpected single-quoted string "d", expecting ")" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected single-quoted string \"d\", expecting \")\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:141)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 12:31:42] local.ERROR: syntax error, unexpected identifier "DB", expecting ")" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected identifier \"DB\", expecting \")\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:141)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 12:31:42] local.ERROR: syntax error, unexpected identifier "DB", expecting ")" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected identifier \"DB\", expecting \")\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:141)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 12:31:50] local.ERROR: syntax error, unexpected identifier "DB", expecting ")" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected identifier \"DB\", expecting \")\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:141)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 12:32:24] local.ERROR: SQLSTATE[HY093]: Invalid parameter number (Connection: mysql, SQL: select `o`.`id` as `id`, `o`.`codigo_unico_inversion` as `codigoUnicoInversion`, `o`.`codigo_snip`, `o`.`nombre_inversion` as `nombreInversion`, `o`.`estado_inversion` as `estadoInversion`, `o`.`monto_viable` as `montoViable`, `f`.`nombre` as `funcion`, `sub`.`nombre` as `subprograma`, `p`.`nombre` as `programa`, `s`.`nombre` as `sector`, MATCH(o.nombre_inversion) AGAINST(MEJORAMIENTO DEL SERVICIO DE MOVILIDAD URBANA EN VIA DE ACCESO DEL A.H. DARWIN GRANDEZ DE LA CIUDAD DE NAUTA Y EL KM 87 DE LA CARRETERA IQUITOS-NAUTA   DISTRITO DE NAUTA DE LA PROVINCIA DE LORETO DEL DEPARTAMENTO DE LORETO) as relevancia from `obras` as `o` inner join `programa` as `p` on `o`.`programa_id` = `p`.`id` inner join `sector` as `s` on `o`.`sector_id` = `s`.`id` inner join `subprograma` as `sub` on `o`.`subprograma_id` = `sub`.`id` inner join `funcion` as `f` on `o`.`funcion_id` = `f`.`id` left join `geo_obra` as `g` on `o`.`id` = `g`.`obras_id` where MATCH(o.nombre_inversion) AGAINST(?) order by `relevancia` desc limit 20 offset 0) {"exception":"[object] (Illuminate\\Database\\QueryException(code: HY093): SQLSTATE[HY093]: Invalid parameter number (Connection: mysql, SQL: select `o`.`id` as `id`, `o`.`codigo_unico_inversion` as `codigoUnicoInversion`, `o`.`codigo_snip`, `o`.`nombre_inversion` as `nombreInversion`, `o`.`estado_inversion` as `estadoInversion`, `o`.`monto_viable` as `montoViable`, `f`.`nombre` as `funcion`, `sub`.`nombre` as `subprograma`, `p`.`nombre` as `programa`, `s`.`nombre` as `sector`, MATCH(o.nombre_inversion) AGAINST(MEJORAMIENTO DEL SERVICIO DE MOVILIDAD URBANA EN VIA DE ACCESO DEL A.H. DARWIN GRANDEZ DE LA CIUDAD DE NAUTA Y EL KM 87 DE LA CARRETERA IQUITOS-NAUTA   DISTRITO DE NAUTA DE LA PROVINCIA DE LORETO DEL DEPARTAMENTO DE LORETO) as relevancia from `obras` as `o` inner join `programa` as `p` on `o`.`programa_id` = `p`.`id` inner join `sector` as `s` on `o`.`sector_id` = `s`.`id` inner join `subprograma` as `sub` on `o`.`subprograma_id` = `sub`.`id` inner join `funcion` as `f` on `o`.`funcion_id` = `f`.`id` left join `geo_obra` as `g` on `o`.`id` = `g`.`obras_id` where MATCH(o.nombre_inversion) AGAINST(?) order by `relevancia` desc limit 20 offset 0) at /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php:813)
+[stacktrace]
+#0 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(767): Illuminate\\Database\\Connection->runQueryCallback()
+#1 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(398): Illuminate\\Database\\Connection->run()
+#2 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2899): Illuminate\\Database\\Connection->select()
+#3 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2884): Illuminate\\Database\\Query\\Builder->runSelect()
+#4 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(3468): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#5 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2883): Illuminate\\Database\\Query\\Builder->onceWithColumns()
+#6 /home/dev/Dev/VisoBra/app/Models/Obras.php(195): Illuminate\\Database\\Query\\Builder->get()
+#7 /home/dev/Dev/VisoBra/app/Http/Controllers/Prueba.php(212): App\\Models\\Obras::searchPaginate()
+#8 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(46): App\\Http\\Controllers\\Prueba->prueba()
+#9 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#10 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Route.php(206): Illuminate\\Routing\\Route->runController()
+#11 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(806): Illuminate\\Routing\\Route->run()
+#12 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#13 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(161): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#14 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(127): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest()
+#15 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(89): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter()
+#16 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle()
+#17 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#18 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(805): Illuminate\\Pipeline\\Pipeline->then()
+#19 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack()
+#20 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(748): Illuminate\\Routing\\Router->runRoute()
+#21 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute()
+#22 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(200): Illuminate\\Routing\\Router->dispatch()
+#23 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#24 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#25 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#26 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#27 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#28 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#29 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#30 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#31 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle()
+#32 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#34 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#35 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#36 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#37 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#38 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#39 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then()
+#40 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#41 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1168): Illuminate\\Foundation\\Http\\Kernel->handle()
+#42 /home/dev/Dev/VisoBra/public/index.php(17): Illuminate\\Foundation\\Application->handleRequest()
+#43 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
+#44 {main}
+
+[previous exception] [object] (PDOException(code: HY093): SQLSTATE[HY093]: Invalid parameter number at /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php:412)
+[stacktrace]
+#0 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(412): PDOStatement->execute()
+#1 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(800): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}()
+#2 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(767): Illuminate\\Database\\Connection->runQueryCallback()
+#3 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(398): Illuminate\\Database\\Connection->run()
+#4 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2899): Illuminate\\Database\\Connection->select()
+#5 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2884): Illuminate\\Database\\Query\\Builder->runSelect()
+#6 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(3468): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#7 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2883): Illuminate\\Database\\Query\\Builder->onceWithColumns()
+#8 /home/dev/Dev/VisoBra/app/Models/Obras.php(195): Illuminate\\Database\\Query\\Builder->get()
+#9 /home/dev/Dev/VisoBra/app/Http/Controllers/Prueba.php(212): App\\Models\\Obras::searchPaginate()
+#10 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(46): App\\Http\\Controllers\\Prueba->prueba()
+#11 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#12 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Route.php(206): Illuminate\\Routing\\Route->runController()
+#13 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(806): Illuminate\\Routing\\Route->run()
+#14 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#15 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(161): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#16 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(127): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest()
+#17 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(89): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter()
+#18 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle()
+#19 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#20 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(805): Illuminate\\Pipeline\\Pipeline->then()
+#21 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack()
+#22 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(748): Illuminate\\Routing\\Router->runRoute()
+#23 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute()
+#24 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(200): Illuminate\\Routing\\Router->dispatch()
+#25 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#26 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#27 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#28 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#29 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#30 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#31 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#32 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle()
+#34 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#35 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#36 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#37 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#38 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#39 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#40 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#41 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then()
+#42 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#43 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1168): Illuminate\\Foundation\\Http\\Kernel->handle()
+#44 /home/dev/Dev/VisoBra/public/index.php(17): Illuminate\\Foundation\\Application->handleRequest()
+#45 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
+#46 {main}
+"} 
+[2024-05-21 12:35:10] local.ERROR: syntax error, unexpected token ")" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \")\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:196)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 12:35:10] local.ERROR: syntax error, unexpected token ")" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \")\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:196)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 12:35:22] local.ERROR: syntax error, unexpected token "->" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"->\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:199)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 12:35:22] local.ERROR: syntax error, unexpected token "->" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"->\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:199)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 12:35:38] local.ERROR: SQLSTATE[HY093]: Invalid parameter number (Connection: mysql, SQL: select `o`.`id` as `id`, `o`.`codigo_unico_inversion` as `codigoUnicoInversion`, `o`.`codigo_snip`, `o`.`nombre_inversion` as `nombreInversion`, `o`.`estado_inversion` as `estadoInversion`, `o`.`monto_viable` as `montoViable`, `f`.`nombre` as `funcion`, `sub`.`nombre` as `subprograma`, `p`.`nombre` as `programa`, `s`.`nombre` as `sector`, MATCH(o.nombre_inversion) AGAINST(MEJORAMIENTO DEL SERVICIO DE MOVILIDAD URBANA EN VIA DE ACCESO DEL A.H. DARWIN GRANDEZ DE LA CIUDAD DE NAUTA Y EL KM 87 DE LA CARRETERA IQUITOS-NAUTA   DISTRITO DE NAUTA DE LA PROVINCIA DE LORETO DEL DEPARTAMENTO DE LORETO IN NATURAL LANGUAGE MODE) as relevancia from `obras` as `o` inner join `programa` as `p` on `o`.`programa_id` = `p`.`id` inner join `sector` as `s` on `o`.`sector_id` = `s`.`id` inner join `subprograma` as `sub` on `o`.`subprograma_id` = `sub`.`id` inner join `funcion` as `f` on `o`.`funcion_id` = `f`.`id` left join `geo_obra` as `g` on `o`.`id` = `g`.`obras_id` where MATCH(o.nombre_inversion) AGAINST(?) order by `relevancia` desc limit 20 offset 0) {"exception":"[object] (Illuminate\\Database\\QueryException(code: HY093): SQLSTATE[HY093]: Invalid parameter number (Connection: mysql, SQL: select `o`.`id` as `id`, `o`.`codigo_unico_inversion` as `codigoUnicoInversion`, `o`.`codigo_snip`, `o`.`nombre_inversion` as `nombreInversion`, `o`.`estado_inversion` as `estadoInversion`, `o`.`monto_viable` as `montoViable`, `f`.`nombre` as `funcion`, `sub`.`nombre` as `subprograma`, `p`.`nombre` as `programa`, `s`.`nombre` as `sector`, MATCH(o.nombre_inversion) AGAINST(MEJORAMIENTO DEL SERVICIO DE MOVILIDAD URBANA EN VIA DE ACCESO DEL A.H. DARWIN GRANDEZ DE LA CIUDAD DE NAUTA Y EL KM 87 DE LA CARRETERA IQUITOS-NAUTA   DISTRITO DE NAUTA DE LA PROVINCIA DE LORETO DEL DEPARTAMENTO DE LORETO IN NATURAL LANGUAGE MODE) as relevancia from `obras` as `o` inner join `programa` as `p` on `o`.`programa_id` = `p`.`id` inner join `sector` as `s` on `o`.`sector_id` = `s`.`id` inner join `subprograma` as `sub` on `o`.`subprograma_id` = `sub`.`id` inner join `funcion` as `f` on `o`.`funcion_id` = `f`.`id` left join `geo_obra` as `g` on `o`.`id` = `g`.`obras_id` where MATCH(o.nombre_inversion) AGAINST(?) order by `relevancia` desc limit 20 offset 0) at /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php:813)
+[stacktrace]
+#0 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(767): Illuminate\\Database\\Connection->runQueryCallback()
+#1 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(398): Illuminate\\Database\\Connection->run()
+#2 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2899): Illuminate\\Database\\Connection->select()
+#3 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2884): Illuminate\\Database\\Query\\Builder->runSelect()
+#4 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(3468): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#5 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2883): Illuminate\\Database\\Query\\Builder->onceWithColumns()
+#6 /home/dev/Dev/VisoBra/app/Models/Obras.php(195): Illuminate\\Database\\Query\\Builder->get()
+#7 /home/dev/Dev/VisoBra/app/Http/Controllers/Prueba.php(212): App\\Models\\Obras::searchPaginate()
+#8 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(46): App\\Http\\Controllers\\Prueba->prueba()
+#9 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#10 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Route.php(206): Illuminate\\Routing\\Route->runController()
+#11 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(806): Illuminate\\Routing\\Route->run()
+#12 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#13 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(161): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#14 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(127): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest()
+#15 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(89): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter()
+#16 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle()
+#17 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#18 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(805): Illuminate\\Pipeline\\Pipeline->then()
+#19 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack()
+#20 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(748): Illuminate\\Routing\\Router->runRoute()
+#21 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute()
+#22 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(200): Illuminate\\Routing\\Router->dispatch()
+#23 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#24 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#25 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#26 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#27 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#28 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#29 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#30 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#31 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle()
+#32 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#34 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#35 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#36 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#37 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#38 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#39 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then()
+#40 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#41 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1168): Illuminate\\Foundation\\Http\\Kernel->handle()
+#42 /home/dev/Dev/VisoBra/public/index.php(17): Illuminate\\Foundation\\Application->handleRequest()
+#43 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
+#44 {main}
+
+[previous exception] [object] (PDOException(code: HY093): SQLSTATE[HY093]: Invalid parameter number at /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php:412)
+[stacktrace]
+#0 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(412): PDOStatement->execute()
+#1 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(800): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}()
+#2 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(767): Illuminate\\Database\\Connection->runQueryCallback()
+#3 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(398): Illuminate\\Database\\Connection->run()
+#4 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2899): Illuminate\\Database\\Connection->select()
+#5 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2884): Illuminate\\Database\\Query\\Builder->runSelect()
+#6 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(3468): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#7 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2883): Illuminate\\Database\\Query\\Builder->onceWithColumns()
+#8 /home/dev/Dev/VisoBra/app/Models/Obras.php(195): Illuminate\\Database\\Query\\Builder->get()
+#9 /home/dev/Dev/VisoBra/app/Http/Controllers/Prueba.php(212): App\\Models\\Obras::searchPaginate()
+#10 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(46): App\\Http\\Controllers\\Prueba->prueba()
+#11 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#12 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Route.php(206): Illuminate\\Routing\\Route->runController()
+#13 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(806): Illuminate\\Routing\\Route->run()
+#14 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#15 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(161): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#16 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(127): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest()
+#17 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(89): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter()
+#18 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle()
+#19 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#20 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(805): Illuminate\\Pipeline\\Pipeline->then()
+#21 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack()
+#22 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(748): Illuminate\\Routing\\Router->runRoute()
+#23 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute()
+#24 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(200): Illuminate\\Routing\\Router->dispatch()
+#25 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#26 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#27 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#28 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#29 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#30 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#31 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#32 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle()
+#34 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#35 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#36 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#37 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#38 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#39 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#40 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#41 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then()
+#42 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#43 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1168): Illuminate\\Foundation\\Http\\Kernel->handle()
+#44 /home/dev/Dev/VisoBra/public/index.php(17): Illuminate\\Foundation\\Application->handleRequest()
+#45 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
+#46 {main}
+"} 
+[2024-05-21 12:35:45] local.ERROR: SQLSTATE[HY093]: Invalid parameter number (Connection: mysql, SQL: select `o`.`id` as `id`, `o`.`codigo_unico_inversion` as `codigoUnicoInversion`, `o`.`codigo_snip`, `o`.`nombre_inversion` as `nombreInversion`, `o`.`estado_inversion` as `estadoInversion`, `o`.`monto_viable` as `montoViable`, `f`.`nombre` as `funcion`, `sub`.`nombre` as `subprograma`, `p`.`nombre` as `programa`, `s`.`nombre` as `sector`, MATCH(o.nombre_inversion) AGAINST(MEJORAMIENTO DEL SERVICIO DE MOVILIDAD URBANA EN VIA DE ACCESO DEL A.H. DARWIN GRANDEZ DE LA CIUDAD DE NAUTA Y EL KM 87 DE LA CARRETERA IQUITOS-NAUTA   DISTRITO DE NAUTA DE LA PROVINCIA DE LORETO DEL DEPARTAMENTO DE LORETO IN NATURAL LANGUAGE MODE) as relevancia from `obras` as `o` inner join `programa` as `p` on `o`.`programa_id` = `p`.`id` inner join `sector` as `s` on `o`.`sector_id` = `s`.`id` inner join `subprograma` as `sub` on `o`.`subprograma_id` = `sub`.`id` inner join `funcion` as `f` on `o`.`funcion_id` = `f`.`id` left join `geo_obra` as `g` on `o`.`id` = `g`.`obras_id` where MATCH(o.nombre_inversion) AGAINST(?) limit 20 offset 0) {"exception":"[object] (Illuminate\\Database\\QueryException(code: HY093): SQLSTATE[HY093]: Invalid parameter number (Connection: mysql, SQL: select `o`.`id` as `id`, `o`.`codigo_unico_inversion` as `codigoUnicoInversion`, `o`.`codigo_snip`, `o`.`nombre_inversion` as `nombreInversion`, `o`.`estado_inversion` as `estadoInversion`, `o`.`monto_viable` as `montoViable`, `f`.`nombre` as `funcion`, `sub`.`nombre` as `subprograma`, `p`.`nombre` as `programa`, `s`.`nombre` as `sector`, MATCH(o.nombre_inversion) AGAINST(MEJORAMIENTO DEL SERVICIO DE MOVILIDAD URBANA EN VIA DE ACCESO DEL A.H. DARWIN GRANDEZ DE LA CIUDAD DE NAUTA Y EL KM 87 DE LA CARRETERA IQUITOS-NAUTA   DISTRITO DE NAUTA DE LA PROVINCIA DE LORETO DEL DEPARTAMENTO DE LORETO IN NATURAL LANGUAGE MODE) as relevancia from `obras` as `o` inner join `programa` as `p` on `o`.`programa_id` = `p`.`id` inner join `sector` as `s` on `o`.`sector_id` = `s`.`id` inner join `subprograma` as `sub` on `o`.`subprograma_id` = `sub`.`id` inner join `funcion` as `f` on `o`.`funcion_id` = `f`.`id` left join `geo_obra` as `g` on `o`.`id` = `g`.`obras_id` where MATCH(o.nombre_inversion) AGAINST(?) limit 20 offset 0) at /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php:813)
+[stacktrace]
+#0 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(767): Illuminate\\Database\\Connection->runQueryCallback()
+#1 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(398): Illuminate\\Database\\Connection->run()
+#2 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2899): Illuminate\\Database\\Connection->select()
+#3 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2884): Illuminate\\Database\\Query\\Builder->runSelect()
+#4 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(3468): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#5 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2883): Illuminate\\Database\\Query\\Builder->onceWithColumns()
+#6 /home/dev/Dev/VisoBra/app/Models/Obras.php(195): Illuminate\\Database\\Query\\Builder->get()
+#7 /home/dev/Dev/VisoBra/app/Http/Controllers/Prueba.php(212): App\\Models\\Obras::searchPaginate()
+#8 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(46): App\\Http\\Controllers\\Prueba->prueba()
+#9 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#10 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Route.php(206): Illuminate\\Routing\\Route->runController()
+#11 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(806): Illuminate\\Routing\\Route->run()
+#12 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#13 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(161): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#14 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(127): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest()
+#15 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(89): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter()
+#16 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle()
+#17 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#18 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(805): Illuminate\\Pipeline\\Pipeline->then()
+#19 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack()
+#20 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(748): Illuminate\\Routing\\Router->runRoute()
+#21 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute()
+#22 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(200): Illuminate\\Routing\\Router->dispatch()
+#23 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#24 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#25 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#26 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#27 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#28 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#29 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#30 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#31 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle()
+#32 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#34 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#35 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#36 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#37 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#38 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#39 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then()
+#40 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#41 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1168): Illuminate\\Foundation\\Http\\Kernel->handle()
+#42 /home/dev/Dev/VisoBra/public/index.php(17): Illuminate\\Foundation\\Application->handleRequest()
+#43 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
+#44 {main}
+
+[previous exception] [object] (PDOException(code: HY093): SQLSTATE[HY093]: Invalid parameter number at /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php:412)
+[stacktrace]
+#0 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(412): PDOStatement->execute()
+#1 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(800): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}()
+#2 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(767): Illuminate\\Database\\Connection->runQueryCallback()
+#3 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(398): Illuminate\\Database\\Connection->run()
+#4 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2899): Illuminate\\Database\\Connection->select()
+#5 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2884): Illuminate\\Database\\Query\\Builder->runSelect()
+#6 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(3468): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#7 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2883): Illuminate\\Database\\Query\\Builder->onceWithColumns()
+#8 /home/dev/Dev/VisoBra/app/Models/Obras.php(195): Illuminate\\Database\\Query\\Builder->get()
+#9 /home/dev/Dev/VisoBra/app/Http/Controllers/Prueba.php(212): App\\Models\\Obras::searchPaginate()
+#10 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(46): App\\Http\\Controllers\\Prueba->prueba()
+#11 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#12 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Route.php(206): Illuminate\\Routing\\Route->runController()
+#13 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(806): Illuminate\\Routing\\Route->run()
+#14 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#15 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(161): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#16 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(127): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest()
+#17 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(89): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter()
+#18 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle()
+#19 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#20 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(805): Illuminate\\Pipeline\\Pipeline->then()
+#21 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack()
+#22 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(748): Illuminate\\Routing\\Router->runRoute()
+#23 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute()
+#24 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(200): Illuminate\\Routing\\Router->dispatch()
+#25 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#26 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#27 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#28 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#29 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#30 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#31 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#32 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle()
+#34 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#35 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#36 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#37 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#38 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#39 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#40 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#41 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then()
+#42 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#43 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1168): Illuminate\\Foundation\\Http\\Kernel->handle()
+#44 /home/dev/Dev/VisoBra/public/index.php(17): Illuminate\\Foundation\\Application->handleRequest()
+#45 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
+#46 {main}
+"} 
+[2024-05-21 12:38:34] local.ERROR: SQLSTATE[HY093]: Invalid parameter number (Connection: mysql, SQL: select `o`.`id` as `id`, `o`.`codigo_unico_inversion` as `codigoUnicoInversion`, `o`.`codigo_snip`, `o`.`nombre_inversion` as `nombreInversion`, `o`.`estado_inversion` as `estadoInversion`, `o`.`monto_viable` as `montoViable`, `f`.`nombre` as `funcion`, `sub`.`nombre` as `subprograma`, `p`.`nombre` as `programa`, `s`.`nombre` as `sector`, MATCH(o.nombre_inversion) AGAINST(MEJORAMIENTO DEL SERVICIO DE MOVILIDAD URBANA EN VIA DE ACCESO DEL A.H. DARWIN GRANDEZ DE LA CIUDAD DE NAUTA Y EL KM 87 DE LA CARRETERA IQUITOS-NAUTA   DISTRITO DE NAUTA DE LA PROVINCIA DE LORETO DEL DEPARTAMENTO DE LORETO IN NATURAL LANGUAGE MODE) as relevancia from `obras` as `o` inner join `programa` as `p` on `o`.`programa_id` = `p`.`id` inner join `sector` as `s` on `o`.`sector_id` = `s`.`id` inner join `subprograma` as `sub` on `o`.`subprograma_id` = `sub`.`id` inner join `funcion` as `f` on `o`.`funcion_id` = `f`.`id` left join `geo_obra` as `g` on `o`.`id` = `g`.`obras_id` where MATCH(o.nombre_inversion) AGAINST(?) limit 20 offset 0) {"exception":"[object] (Illuminate\\Database\\QueryException(code: HY093): SQLSTATE[HY093]: Invalid parameter number (Connection: mysql, SQL: select `o`.`id` as `id`, `o`.`codigo_unico_inversion` as `codigoUnicoInversion`, `o`.`codigo_snip`, `o`.`nombre_inversion` as `nombreInversion`, `o`.`estado_inversion` as `estadoInversion`, `o`.`monto_viable` as `montoViable`, `f`.`nombre` as `funcion`, `sub`.`nombre` as `subprograma`, `p`.`nombre` as `programa`, `s`.`nombre` as `sector`, MATCH(o.nombre_inversion) AGAINST(MEJORAMIENTO DEL SERVICIO DE MOVILIDAD URBANA EN VIA DE ACCESO DEL A.H. DARWIN GRANDEZ DE LA CIUDAD DE NAUTA Y EL KM 87 DE LA CARRETERA IQUITOS-NAUTA   DISTRITO DE NAUTA DE LA PROVINCIA DE LORETO DEL DEPARTAMENTO DE LORETO IN NATURAL LANGUAGE MODE) as relevancia from `obras` as `o` inner join `programa` as `p` on `o`.`programa_id` = `p`.`id` inner join `sector` as `s` on `o`.`sector_id` = `s`.`id` inner join `subprograma` as `sub` on `o`.`subprograma_id` = `sub`.`id` inner join `funcion` as `f` on `o`.`funcion_id` = `f`.`id` left join `geo_obra` as `g` on `o`.`id` = `g`.`obras_id` where MATCH(o.nombre_inversion) AGAINST(?) limit 20 offset 0) at /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php:813)
+[stacktrace]
+#0 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(767): Illuminate\\Database\\Connection->runQueryCallback()
+#1 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(398): Illuminate\\Database\\Connection->run()
+#2 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2899): Illuminate\\Database\\Connection->select()
+#3 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2884): Illuminate\\Database\\Query\\Builder->runSelect()
+#4 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(3468): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#5 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2883): Illuminate\\Database\\Query\\Builder->onceWithColumns()
+#6 /home/dev/Dev/VisoBra/app/Models/Obras.php(195): Illuminate\\Database\\Query\\Builder->get()
+#7 /home/dev/Dev/VisoBra/app/Http/Controllers/Prueba.php(212): App\\Models\\Obras::searchPaginate()
+#8 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(46): App\\Http\\Controllers\\Prueba->prueba()
+#9 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#10 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Route.php(206): Illuminate\\Routing\\Route->runController()
+#11 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(806): Illuminate\\Routing\\Route->run()
+#12 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#13 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(161): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#14 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(127): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest()
+#15 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(89): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter()
+#16 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle()
+#17 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#18 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(805): Illuminate\\Pipeline\\Pipeline->then()
+#19 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack()
+#20 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(748): Illuminate\\Routing\\Router->runRoute()
+#21 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute()
+#22 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(200): Illuminate\\Routing\\Router->dispatch()
+#23 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#24 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#25 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#26 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#27 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#28 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#29 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#30 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#31 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle()
+#32 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#34 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#35 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#36 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#37 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#38 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#39 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then()
+#40 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#41 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1168): Illuminate\\Foundation\\Http\\Kernel->handle()
+#42 /home/dev/Dev/VisoBra/public/index.php(17): Illuminate\\Foundation\\Application->handleRequest()
+#43 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
+#44 {main}
+
+[previous exception] [object] (PDOException(code: HY093): SQLSTATE[HY093]: Invalid parameter number at /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php:412)
+[stacktrace]
+#0 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(412): PDOStatement->execute()
+#1 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(800): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}()
+#2 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(767): Illuminate\\Database\\Connection->runQueryCallback()
+#3 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(398): Illuminate\\Database\\Connection->run()
+#4 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2899): Illuminate\\Database\\Connection->select()
+#5 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2884): Illuminate\\Database\\Query\\Builder->runSelect()
+#6 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(3468): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#7 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2883): Illuminate\\Database\\Query\\Builder->onceWithColumns()
+#8 /home/dev/Dev/VisoBra/app/Models/Obras.php(195): Illuminate\\Database\\Query\\Builder->get()
+#9 /home/dev/Dev/VisoBra/app/Http/Controllers/Prueba.php(212): App\\Models\\Obras::searchPaginate()
+#10 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(46): App\\Http\\Controllers\\Prueba->prueba()
+#11 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#12 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Route.php(206): Illuminate\\Routing\\Route->runController()
+#13 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(806): Illuminate\\Routing\\Route->run()
+#14 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#15 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(161): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#16 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(127): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest()
+#17 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(89): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter()
+#18 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle()
+#19 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#20 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(805): Illuminate\\Pipeline\\Pipeline->then()
+#21 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack()
+#22 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(748): Illuminate\\Routing\\Router->runRoute()
+#23 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute()
+#24 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(200): Illuminate\\Routing\\Router->dispatch()
+#25 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#26 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#27 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#28 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#29 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#30 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#31 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#32 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle()
+#34 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#35 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#36 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#37 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#38 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#39 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#40 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#41 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then()
+#42 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#43 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1168): Illuminate\\Foundation\\Http\\Kernel->handle()
+#44 /home/dev/Dev/VisoBra/public/index.php(17): Illuminate\\Foundation\\Application->handleRequest()
+#45 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
+#46 {main}
+"} 
