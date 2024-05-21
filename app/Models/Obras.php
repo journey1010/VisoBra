@@ -127,17 +127,18 @@ class Obras extends Model
         ?string $distrito = null, 
     ){
         $query  = DB::table('obras as o')
-            ->select(
-                'o.id as id',
-                'o.codigo_unico_inversion as codigoUnicoInversion', 
-                'o.codigo_snip',
-                'o.nombre_inversion as nombreInversion',
-                'o.estado_inversion as estadoInversion',
-                'o.monto_viable as montoViable',
-                'f.nombre as funcion',
-                'sub.nombre as subprograma',
-                'p.nombre as programa',
-                's.nombre as sector'            )
+            ->selectRaw('
+                o.id as id,
+                o.codigo_unico_inversion as codigoUnicoInversion, 
+                o.codigo_snip,
+                o.nombre_inversion as nombreInversion,
+                o.estado_inversion as estadoInversion,
+                o.monto_viable as montoViable,
+                f.nombre as funcion,
+                sub.nombre as subprograma,
+                p.nombre as programa,
+                s.nombre as sector,
+                MATCH(o.nombre_inversion) AGAINST(? IN NATURAL LANGUAGE MODE) as relevancia', [$nombreObra])
             ->join('programa as p','o.programa_id', '=', 'p.id')
             ->join('sector as s', 'o.sector_id', '=', 's.id')
             ->join('subprograma as sub', 'o.subprograma_id', '=', 'sub.id')
@@ -186,12 +187,16 @@ class Obras extends Model
 
         if ($nombreObra) {
             $query->whereRaw('MATCH(o.nombre_inversion) AGAINST(?)', [$nombreObra]);
-            // $query->orderBy('relevancia', 'desc');
+            $query->orderBy('relevancia', 'desc');
+            $itemsPerPage = 3;
         }
 
-        $offset = ($page - 1) * $itemsPerPage;
-        $results = $query->offset($offset)->limit($itemsPerPage)->get();
+        $results = $query->paginate($itemsPerPage, ['*'], 'page', $page);
+        $obras = [
+            'items' => $results->items(),
+            'total_items' => $results->total(),
+        ];
 
-        return $results;
+        return $obras;
     }
 }

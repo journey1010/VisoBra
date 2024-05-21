@@ -2335,3 +2335,695 @@ Stack trace:
 #45 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
 #46 {main}
 "} 
+[2024-05-21 12:41:04] local.ERROR: syntax error, unexpected identifier "o", expecting ")" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected identifier \"o\", expecting \")\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:132)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 12:41:04] local.ERROR: syntax error, unexpected identifier "o", expecting ")" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected identifier \"o\", expecting \")\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:132)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 12:41:10] local.ERROR: syntax error, unexpected single-quoted string ",", expecting ")" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected single-quoted string \",\", expecting \")\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:134)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 12:41:10] local.ERROR: syntax error, unexpected single-quoted string ",", expecting ")" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected single-quoted string \",\", expecting \")\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:134)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 12:41:19] local.ERROR: syntax error, unexpected token "as", expecting ")" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"as\", expecting \")\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:134)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 12:41:19] local.ERROR: syntax error, unexpected token "as", expecting ")" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"as\", expecting \")\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:134)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 12:41:35] local.ERROR: syntax error, unexpected token "match", expecting ")" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"match\", expecting \")\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:141)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 12:41:35] local.ERROR: syntax error, unexpected token "match", expecting ")" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"match\", expecting \")\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:141)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 12:41:46] local.ERROR: syntax error, unexpected identifier "programa", expecting ")" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected identifier \"programa\", expecting \")\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:143)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 12:41:46] local.ERROR: syntax error, unexpected identifier "programa", expecting ")" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected identifier \"programa\", expecting \")\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:143)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 12:45:03] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:192)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 12:45:03] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:192)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 12:45:10] local.ERROR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LENGUAGE MODE) order by `relevancia` asc limit 17 offset 0' at line 12 (Connection: mysql, SQL: select 
+                o.id as id,
+                o.codigo_unico_inversion as codigoUnicoInversion, 
+                o.codigo_snip,
+                o.nombre_inversion as nombreInversion,
+                o.estado_inversion as estadoInversion,
+                o.monto_viable as montoViable,
+                f.nombre as funcion,
+                sub.nombre as subprograma,
+                p.nombre as programa,
+                s.nombre as sector,
+                MATCH(o.nombre_inversion) AGAINST(MEJORAMIENTO DEL SERVICIO DE MOVILIDAD URBANA EN VIA DE ACCESO DEL A.H. DARWIN GRANDEZ DE LA CIUDAD DE NAUTA Y EL KM 87 DE LA CARRETERA IQUITOS-NAUTA   DISTRITO DE NAUTA DE LA PROVINCIA DE LORETO DEL DEPARTAMENTO DE LORETO IN NATURAL LANGUAGE MODE) as relevancia from `obras` as `o` inner join `programa` as `p` on `o`.`programa_id` = `p`.`id` inner join `sector` as `s` on `o`.`sector_id` = `s`.`id` inner join `subprograma` as `sub` on `o`.`subprograma_id` = `sub`.`id` inner join `funcion` as `f` on `o`.`funcion_id` = `f`.`id` left join `geo_obra` as `g` on `o`.`id` = `g`.`obras_id` where MATCH(o.nombre_inversion) AGAINST(MEJORAMIENTO DEL SERVICIO DE MOVILIDAD URBANA EN VIA DE ACCESO DEL A.H. DARWIN GRANDEZ DE LA CIUDAD DE NAUTA Y EL KM 87 DE LA CARRETERA IQUITOS-NAUTA   DISTRITO DE NAUTA DE LA PROVINCIA DE LORETO DEL DEPARTAMENTO DE LORETO IN NATURAL LENGUAGE MODE) order by `relevancia` asc limit 17 offset 0) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42000): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LENGUAGE MODE) order by `relevancia` asc limit 17 offset 0' at line 12 (Connection: mysql, SQL: select 
+                o.id as id,
+                o.codigo_unico_inversion as codigoUnicoInversion, 
+                o.codigo_snip,
+                o.nombre_inversion as nombreInversion,
+                o.estado_inversion as estadoInversion,
+                o.monto_viable as montoViable,
+                f.nombre as funcion,
+                sub.nombre as subprograma,
+                p.nombre as programa,
+                s.nombre as sector,
+                MATCH(o.nombre_inversion) AGAINST(MEJORAMIENTO DEL SERVICIO DE MOVILIDAD URBANA EN VIA DE ACCESO DEL A.H. DARWIN GRANDEZ DE LA CIUDAD DE NAUTA Y EL KM 87 DE LA CARRETERA IQUITOS-NAUTA   DISTRITO DE NAUTA DE LA PROVINCIA DE LORETO DEL DEPARTAMENTO DE LORETO IN NATURAL LANGUAGE MODE) as relevancia from `obras` as `o` inner join `programa` as `p` on `o`.`programa_id` = `p`.`id` inner join `sector` as `s` on `o`.`sector_id` = `s`.`id` inner join `subprograma` as `sub` on `o`.`subprograma_id` = `sub`.`id` inner join `funcion` as `f` on `o`.`funcion_id` = `f`.`id` left join `geo_obra` as `g` on `o`.`id` = `g`.`obras_id` where MATCH(o.nombre_inversion) AGAINST(MEJORAMIENTO DEL SERVICIO DE MOVILIDAD URBANA EN VIA DE ACCESO DEL A.H. DARWIN GRANDEZ DE LA CIUDAD DE NAUTA Y EL KM 87 DE LA CARRETERA IQUITOS-NAUTA   DISTRITO DE NAUTA DE LA PROVINCIA DE LORETO DEL DEPARTAMENTO DE LORETO IN NATURAL LENGUAGE MODE) order by `relevancia` asc limit 17 offset 0) at /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php:813)
+[stacktrace]
+#0 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(767): Illuminate\\Database\\Connection->runQueryCallback()
+#1 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(398): Illuminate\\Database\\Connection->run()
+#2 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2899): Illuminate\\Database\\Connection->select()
+#3 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2884): Illuminate\\Database\\Query\\Builder->runSelect()
+#4 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(3468): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#5 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2883): Illuminate\\Database\\Query\\Builder->onceWithColumns()
+#6 /home/dev/Dev/VisoBra/app/Models/Obras.php(195): Illuminate\\Database\\Query\\Builder->get()
+#7 /home/dev/Dev/VisoBra/app/Http/Controllers/Prueba.php(212): App\\Models\\Obras::searchPaginate()
+#8 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(46): App\\Http\\Controllers\\Prueba->prueba()
+#9 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#10 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Route.php(206): Illuminate\\Routing\\Route->runController()
+#11 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(806): Illuminate\\Routing\\Route->run()
+#12 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#13 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(161): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#14 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(127): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest()
+#15 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(89): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter()
+#16 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle()
+#17 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#18 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(805): Illuminate\\Pipeline\\Pipeline->then()
+#19 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack()
+#20 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(748): Illuminate\\Routing\\Router->runRoute()
+#21 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute()
+#22 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(200): Illuminate\\Routing\\Router->dispatch()
+#23 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#24 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#25 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#26 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#27 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#28 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#29 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#30 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#31 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle()
+#32 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#34 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#35 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#36 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#37 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#38 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#39 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then()
+#40 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#41 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1168): Illuminate\\Foundation\\Http\\Kernel->handle()
+#42 /home/dev/Dev/VisoBra/public/index.php(17): Illuminate\\Foundation\\Application->handleRequest()
+#43 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
+#44 {main}
+
+[previous exception] [object] (PDOException(code: 42000): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LENGUAGE MODE) order by `relevancia` asc limit 17 offset 0' at line 12 at /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php:407)
+[stacktrace]
+#0 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(407): PDO->prepare()
+#1 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(800): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}()
+#2 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(767): Illuminate\\Database\\Connection->runQueryCallback()
+#3 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(398): Illuminate\\Database\\Connection->run()
+#4 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2899): Illuminate\\Database\\Connection->select()
+#5 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2884): Illuminate\\Database\\Query\\Builder->runSelect()
+#6 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(3468): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#7 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2883): Illuminate\\Database\\Query\\Builder->onceWithColumns()
+#8 /home/dev/Dev/VisoBra/app/Models/Obras.php(195): Illuminate\\Database\\Query\\Builder->get()
+#9 /home/dev/Dev/VisoBra/app/Http/Controllers/Prueba.php(212): App\\Models\\Obras::searchPaginate()
+#10 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(46): App\\Http\\Controllers\\Prueba->prueba()
+#11 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#12 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Route.php(206): Illuminate\\Routing\\Route->runController()
+#13 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(806): Illuminate\\Routing\\Route->run()
+#14 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#15 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(161): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#16 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(127): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest()
+#17 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(89): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter()
+#18 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle()
+#19 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#20 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(805): Illuminate\\Pipeline\\Pipeline->then()
+#21 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack()
+#22 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(748): Illuminate\\Routing\\Router->runRoute()
+#23 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute()
+#24 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(200): Illuminate\\Routing\\Router->dispatch()
+#25 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#26 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#27 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#28 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#29 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#30 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#31 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#32 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle()
+#34 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#35 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#36 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#37 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#38 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#39 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#40 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#41 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then()
+#42 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#43 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1168): Illuminate\\Foundation\\Http\\Kernel->handle()
+#44 /home/dev/Dev/VisoBra/public/index.php(17): Illuminate\\Foundation\\Application->handleRequest()
+#45 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
+#46 {main}
+"} 
+[2024-05-21 12:47:09] local.ERROR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LENGUAGE MODE) order by `relevancia` asc limit 10 offset 0' at line 12 (Connection: mysql, SQL: select 
+                o.id as id,
+                o.codigo_unico_inversion as codigoUnicoInversion, 
+                o.codigo_snip,
+                o.nombre_inversion as nombreInversion,
+                o.estado_inversion as estadoInversion,
+                o.monto_viable as montoViable,
+                f.nombre as funcion,
+                sub.nombre as subprograma,
+                p.nombre as programa,
+                s.nombre as sector,
+                MATCH(o.nombre_inversion) AGAINST(MEJORAMIENTO DEL SERVICIO DE MOVILIDAD URBANA EN VIA DE ACCESO DEL A.H. DARWIN GRANDEZ DE LA CIUDAD DE NAUTA Y EL KM 87 DE LA CARRETERA IQUITOS-NAUTA   DISTRITO DE NAUTA DE LA PROVINCIA DE LORETO DEL DEPARTAMENTO DE LORETO IN NATURAL LANGUAGE MODE) as relevancia from `obras` as `o` inner join `programa` as `p` on `o`.`programa_id` = `p`.`id` inner join `sector` as `s` on `o`.`sector_id` = `s`.`id` inner join `subprograma` as `sub` on `o`.`subprograma_id` = `sub`.`id` inner join `funcion` as `f` on `o`.`funcion_id` = `f`.`id` left join `geo_obra` as `g` on `o`.`id` = `g`.`obras_id` where MATCH(o.nombre_inversion) AGAINST(MEJORAMIENTO DEL SERVICIO DE MOVILIDAD URBANA EN VIA DE ACCESO DEL A.H. DARWIN GRANDEZ DE LA CIUDAD DE NAUTA Y EL KM 87 DE LA CARRETERA IQUITOS-NAUTA   DISTRITO DE NAUTA DE LA PROVINCIA DE LORETO DEL DEPARTAMENTO DE LORETO IN NATURAL LENGUAGE MODE) order by `relevancia` asc limit 10 offset 0) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42000): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LENGUAGE MODE) order by `relevancia` asc limit 10 offset 0' at line 12 (Connection: mysql, SQL: select 
+                o.id as id,
+                o.codigo_unico_inversion as codigoUnicoInversion, 
+                o.codigo_snip,
+                o.nombre_inversion as nombreInversion,
+                o.estado_inversion as estadoInversion,
+                o.monto_viable as montoViable,
+                f.nombre as funcion,
+                sub.nombre as subprograma,
+                p.nombre as programa,
+                s.nombre as sector,
+                MATCH(o.nombre_inversion) AGAINST(MEJORAMIENTO DEL SERVICIO DE MOVILIDAD URBANA EN VIA DE ACCESO DEL A.H. DARWIN GRANDEZ DE LA CIUDAD DE NAUTA Y EL KM 87 DE LA CARRETERA IQUITOS-NAUTA   DISTRITO DE NAUTA DE LA PROVINCIA DE LORETO DEL DEPARTAMENTO DE LORETO IN NATURAL LANGUAGE MODE) as relevancia from `obras` as `o` inner join `programa` as `p` on `o`.`programa_id` = `p`.`id` inner join `sector` as `s` on `o`.`sector_id` = `s`.`id` inner join `subprograma` as `sub` on `o`.`subprograma_id` = `sub`.`id` inner join `funcion` as `f` on `o`.`funcion_id` = `f`.`id` left join `geo_obra` as `g` on `o`.`id` = `g`.`obras_id` where MATCH(o.nombre_inversion) AGAINST(MEJORAMIENTO DEL SERVICIO DE MOVILIDAD URBANA EN VIA DE ACCESO DEL A.H. DARWIN GRANDEZ DE LA CIUDAD DE NAUTA Y EL KM 87 DE LA CARRETERA IQUITOS-NAUTA   DISTRITO DE NAUTA DE LA PROVINCIA DE LORETO DEL DEPARTAMENTO DE LORETO IN NATURAL LENGUAGE MODE) order by `relevancia` asc limit 10 offset 0) at /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php:813)
+[stacktrace]
+#0 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(767): Illuminate\\Database\\Connection->runQueryCallback()
+#1 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(398): Illuminate\\Database\\Connection->run()
+#2 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2899): Illuminate\\Database\\Connection->select()
+#3 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2884): Illuminate\\Database\\Query\\Builder->runSelect()
+#4 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(3468): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#5 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2883): Illuminate\\Database\\Query\\Builder->onceWithColumns()
+#6 /home/dev/Dev/VisoBra/app/Models/Obras.php(195): Illuminate\\Database\\Query\\Builder->get()
+#7 /home/dev/Dev/VisoBra/app/Http/Controllers/Prueba.php(212): App\\Models\\Obras::searchPaginate()
+#8 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(46): App\\Http\\Controllers\\Prueba->prueba()
+#9 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#10 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Route.php(206): Illuminate\\Routing\\Route->runController()
+#11 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(806): Illuminate\\Routing\\Route->run()
+#12 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#13 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(161): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#14 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(127): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest()
+#15 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(89): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter()
+#16 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle()
+#17 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#18 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(805): Illuminate\\Pipeline\\Pipeline->then()
+#19 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack()
+#20 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(748): Illuminate\\Routing\\Router->runRoute()
+#21 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute()
+#22 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(200): Illuminate\\Routing\\Router->dispatch()
+#23 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#24 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#25 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#26 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#27 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#28 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#29 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#30 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#31 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle()
+#32 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#34 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#35 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#36 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#37 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#38 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#39 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then()
+#40 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#41 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1168): Illuminate\\Foundation\\Http\\Kernel->handle()
+#42 /home/dev/Dev/VisoBra/public/index.php(17): Illuminate\\Foundation\\Application->handleRequest()
+#43 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
+#44 {main}
+
+[previous exception] [object] (PDOException(code: 42000): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LENGUAGE MODE) order by `relevancia` asc limit 10 offset 0' at line 12 at /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php:407)
+[stacktrace]
+#0 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(407): PDO->prepare()
+#1 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(800): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}()
+#2 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(767): Illuminate\\Database\\Connection->runQueryCallback()
+#3 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(398): Illuminate\\Database\\Connection->run()
+#4 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2899): Illuminate\\Database\\Connection->select()
+#5 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2884): Illuminate\\Database\\Query\\Builder->runSelect()
+#6 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(3468): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#7 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2883): Illuminate\\Database\\Query\\Builder->onceWithColumns()
+#8 /home/dev/Dev/VisoBra/app/Models/Obras.php(195): Illuminate\\Database\\Query\\Builder->get()
+#9 /home/dev/Dev/VisoBra/app/Http/Controllers/Prueba.php(212): App\\Models\\Obras::searchPaginate()
+#10 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(46): App\\Http\\Controllers\\Prueba->prueba()
+#11 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#12 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Route.php(206): Illuminate\\Routing\\Route->runController()
+#13 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(806): Illuminate\\Routing\\Route->run()
+#14 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#15 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(161): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#16 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(127): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest()
+#17 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(89): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter()
+#18 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle()
+#19 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#20 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(805): Illuminate\\Pipeline\\Pipeline->then()
+#21 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack()
+#22 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(748): Illuminate\\Routing\\Router->runRoute()
+#23 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute()
+#24 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(200): Illuminate\\Routing\\Router->dispatch()
+#25 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#26 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#27 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#28 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#29 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#30 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#31 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#32 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle()
+#34 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#35 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#36 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#37 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#38 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#39 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#40 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#41 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then()
+#42 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#43 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1168): Illuminate\\Foundation\\Http\\Kernel->handle()
+#44 /home/dev/Dev/VisoBra/public/index.php(17): Illuminate\\Foundation\\Application->handleRequest()
+#45 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
+#46 {main}
+"} 
+[2024-05-21 12:47:11] local.ERROR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LENGUAGE MODE) order by `relevancia` asc limit 10 offset 0' at line 12 (Connection: mysql, SQL: select 
+                o.id as id,
+                o.codigo_unico_inversion as codigoUnicoInversion, 
+                o.codigo_snip,
+                o.nombre_inversion as nombreInversion,
+                o.estado_inversion as estadoInversion,
+                o.monto_viable as montoViable,
+                f.nombre as funcion,
+                sub.nombre as subprograma,
+                p.nombre as programa,
+                s.nombre as sector,
+                MATCH(o.nombre_inversion) AGAINST(MEJORAMIENTO DEL SERVICIO DE MOVILIDAD URBANA EN VIA DE ACCESO DEL A.H. DARWIN GRANDEZ DE LA CIUDAD DE NAUTA Y EL KM 87 DE LA CARRETERA IQUITOS-NAUTA   DISTRITO DE NAUTA DE LA PROVINCIA DE LORETO DEL DEPARTAMENTO DE LORETO IN NATURAL LANGUAGE MODE) as relevancia from `obras` as `o` inner join `programa` as `p` on `o`.`programa_id` = `p`.`id` inner join `sector` as `s` on `o`.`sector_id` = `s`.`id` inner join `subprograma` as `sub` on `o`.`subprograma_id` = `sub`.`id` inner join `funcion` as `f` on `o`.`funcion_id` = `f`.`id` left join `geo_obra` as `g` on `o`.`id` = `g`.`obras_id` where MATCH(o.nombre_inversion) AGAINST(MEJORAMIENTO DEL SERVICIO DE MOVILIDAD URBANA EN VIA DE ACCESO DEL A.H. DARWIN GRANDEZ DE LA CIUDAD DE NAUTA Y EL KM 87 DE LA CARRETERA IQUITOS-NAUTA   DISTRITO DE NAUTA DE LA PROVINCIA DE LORETO DEL DEPARTAMENTO DE LORETO IN NATURAL LENGUAGE MODE) order by `relevancia` asc limit 10 offset 0) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42000): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LENGUAGE MODE) order by `relevancia` asc limit 10 offset 0' at line 12 (Connection: mysql, SQL: select 
+                o.id as id,
+                o.codigo_unico_inversion as codigoUnicoInversion, 
+                o.codigo_snip,
+                o.nombre_inversion as nombreInversion,
+                o.estado_inversion as estadoInversion,
+                o.monto_viable as montoViable,
+                f.nombre as funcion,
+                sub.nombre as subprograma,
+                p.nombre as programa,
+                s.nombre as sector,
+                MATCH(o.nombre_inversion) AGAINST(MEJORAMIENTO DEL SERVICIO DE MOVILIDAD URBANA EN VIA DE ACCESO DEL A.H. DARWIN GRANDEZ DE LA CIUDAD DE NAUTA Y EL KM 87 DE LA CARRETERA IQUITOS-NAUTA   DISTRITO DE NAUTA DE LA PROVINCIA DE LORETO DEL DEPARTAMENTO DE LORETO IN NATURAL LANGUAGE MODE) as relevancia from `obras` as `o` inner join `programa` as `p` on `o`.`programa_id` = `p`.`id` inner join `sector` as `s` on `o`.`sector_id` = `s`.`id` inner join `subprograma` as `sub` on `o`.`subprograma_id` = `sub`.`id` inner join `funcion` as `f` on `o`.`funcion_id` = `f`.`id` left join `geo_obra` as `g` on `o`.`id` = `g`.`obras_id` where MATCH(o.nombre_inversion) AGAINST(MEJORAMIENTO DEL SERVICIO DE MOVILIDAD URBANA EN VIA DE ACCESO DEL A.H. DARWIN GRANDEZ DE LA CIUDAD DE NAUTA Y EL KM 87 DE LA CARRETERA IQUITOS-NAUTA   DISTRITO DE NAUTA DE LA PROVINCIA DE LORETO DEL DEPARTAMENTO DE LORETO IN NATURAL LENGUAGE MODE) order by `relevancia` asc limit 10 offset 0) at /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php:813)
+[stacktrace]
+#0 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(767): Illuminate\\Database\\Connection->runQueryCallback()
+#1 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(398): Illuminate\\Database\\Connection->run()
+#2 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2899): Illuminate\\Database\\Connection->select()
+#3 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2884): Illuminate\\Database\\Query\\Builder->runSelect()
+#4 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(3468): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#5 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2883): Illuminate\\Database\\Query\\Builder->onceWithColumns()
+#6 /home/dev/Dev/VisoBra/app/Models/Obras.php(195): Illuminate\\Database\\Query\\Builder->get()
+#7 /home/dev/Dev/VisoBra/app/Http/Controllers/Prueba.php(212): App\\Models\\Obras::searchPaginate()
+#8 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(46): App\\Http\\Controllers\\Prueba->prueba()
+#9 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#10 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Route.php(206): Illuminate\\Routing\\Route->runController()
+#11 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(806): Illuminate\\Routing\\Route->run()
+#12 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#13 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(161): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#14 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(127): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest()
+#15 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(89): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter()
+#16 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle()
+#17 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#18 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(805): Illuminate\\Pipeline\\Pipeline->then()
+#19 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack()
+#20 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(748): Illuminate\\Routing\\Router->runRoute()
+#21 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute()
+#22 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(200): Illuminate\\Routing\\Router->dispatch()
+#23 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#24 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#25 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#26 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#27 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#28 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#29 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#30 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#31 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle()
+#32 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#34 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#35 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#36 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#37 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#38 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#39 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then()
+#40 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#41 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1168): Illuminate\\Foundation\\Http\\Kernel->handle()
+#42 /home/dev/Dev/VisoBra/public/index.php(17): Illuminate\\Foundation\\Application->handleRequest()
+#43 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
+#44 {main}
+
+[previous exception] [object] (PDOException(code: 42000): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LENGUAGE MODE) order by `relevancia` asc limit 10 offset 0' at line 12 at /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php:407)
+[stacktrace]
+#0 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(407): PDO->prepare()
+#1 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(800): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}()
+#2 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(767): Illuminate\\Database\\Connection->runQueryCallback()
+#3 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(398): Illuminate\\Database\\Connection->run()
+#4 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2899): Illuminate\\Database\\Connection->select()
+#5 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2884): Illuminate\\Database\\Query\\Builder->runSelect()
+#6 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(3468): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#7 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2883): Illuminate\\Database\\Query\\Builder->onceWithColumns()
+#8 /home/dev/Dev/VisoBra/app/Models/Obras.php(195): Illuminate\\Database\\Query\\Builder->get()
+#9 /home/dev/Dev/VisoBra/app/Http/Controllers/Prueba.php(212): App\\Models\\Obras::searchPaginate()
+#10 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(46): App\\Http\\Controllers\\Prueba->prueba()
+#11 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#12 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Route.php(206): Illuminate\\Routing\\Route->runController()
+#13 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(806): Illuminate\\Routing\\Route->run()
+#14 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#15 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(161): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#16 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(127): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest()
+#17 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(89): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter()
+#18 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle()
+#19 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#20 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(805): Illuminate\\Pipeline\\Pipeline->then()
+#21 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack()
+#22 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(748): Illuminate\\Routing\\Router->runRoute()
+#23 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute()
+#24 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(200): Illuminate\\Routing\\Router->dispatch()
+#25 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#26 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#27 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#28 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#29 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#30 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#31 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#32 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle()
+#34 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#35 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#36 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#37 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#38 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#39 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#40 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#41 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then()
+#42 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#43 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1168): Illuminate\\Foundation\\Http\\Kernel->handle()
+#44 /home/dev/Dev/VisoBra/public/index.php(17): Illuminate\\Foundation\\Application->handleRequest()
+#45 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
+#46 {main}
+"} 
+[2024-05-21 12:47:27] local.ERROR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LENGUAGE MODE) order by `relevancia` asc limit 20 offset 0' at line 12 (Connection: mysql, SQL: select 
+                o.id as id,
+                o.codigo_unico_inversion as codigoUnicoInversion, 
+                o.codigo_snip,
+                o.nombre_inversion as nombreInversion,
+                o.estado_inversion as estadoInversion,
+                o.monto_viable as montoViable,
+                f.nombre as funcion,
+                sub.nombre as subprograma,
+                p.nombre as programa,
+                s.nombre as sector,
+                MATCH(o.nombre_inversion) AGAINST(MEJORAMIENTO DEL SERVICIO DE MOVILIDAD URBANA EN VIA DE ACCESO DEL A.H. DARWIN GRANDEZ DE LA CIUDAD DE NAUTA Y EL KM 87 DE LA CARRETERA IQUITOS-NAUTA   DISTRITO DE NAUTA DE LA PROVINCIA DE LORETO DEL DEPARTAMENTO DE LORETO IN NATURAL LANGUAGE MODE) as relevancia from `obras` as `o` inner join `programa` as `p` on `o`.`programa_id` = `p`.`id` inner join `sector` as `s` on `o`.`sector_id` = `s`.`id` inner join `subprograma` as `sub` on `o`.`subprograma_id` = `sub`.`id` inner join `funcion` as `f` on `o`.`funcion_id` = `f`.`id` left join `geo_obra` as `g` on `o`.`id` = `g`.`obras_id` where MATCH(o.nombre_inversion) AGAINST(MEJORAMIENTO DEL SERVICIO DE MOVILIDAD URBANA EN VIA DE ACCESO DEL A.H. DARWIN GRANDEZ DE LA CIUDAD DE NAUTA Y EL KM 87 DE LA CARRETERA IQUITOS-NAUTA   DISTRITO DE NAUTA DE LA PROVINCIA DE LORETO DEL DEPARTAMENTO DE LORETO IN NATURAL LENGUAGE MODE) order by `relevancia` asc limit 20 offset 0) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42000): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LENGUAGE MODE) order by `relevancia` asc limit 20 offset 0' at line 12 (Connection: mysql, SQL: select 
+                o.id as id,
+                o.codigo_unico_inversion as codigoUnicoInversion, 
+                o.codigo_snip,
+                o.nombre_inversion as nombreInversion,
+                o.estado_inversion as estadoInversion,
+                o.monto_viable as montoViable,
+                f.nombre as funcion,
+                sub.nombre as subprograma,
+                p.nombre as programa,
+                s.nombre as sector,
+                MATCH(o.nombre_inversion) AGAINST(MEJORAMIENTO DEL SERVICIO DE MOVILIDAD URBANA EN VIA DE ACCESO DEL A.H. DARWIN GRANDEZ DE LA CIUDAD DE NAUTA Y EL KM 87 DE LA CARRETERA IQUITOS-NAUTA   DISTRITO DE NAUTA DE LA PROVINCIA DE LORETO DEL DEPARTAMENTO DE LORETO IN NATURAL LANGUAGE MODE) as relevancia from `obras` as `o` inner join `programa` as `p` on `o`.`programa_id` = `p`.`id` inner join `sector` as `s` on `o`.`sector_id` = `s`.`id` inner join `subprograma` as `sub` on `o`.`subprograma_id` = `sub`.`id` inner join `funcion` as `f` on `o`.`funcion_id` = `f`.`id` left join `geo_obra` as `g` on `o`.`id` = `g`.`obras_id` where MATCH(o.nombre_inversion) AGAINST(MEJORAMIENTO DEL SERVICIO DE MOVILIDAD URBANA EN VIA DE ACCESO DEL A.H. DARWIN GRANDEZ DE LA CIUDAD DE NAUTA Y EL KM 87 DE LA CARRETERA IQUITOS-NAUTA   DISTRITO DE NAUTA DE LA PROVINCIA DE LORETO DEL DEPARTAMENTO DE LORETO IN NATURAL LENGUAGE MODE) order by `relevancia` asc limit 20 offset 0) at /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php:813)
+[stacktrace]
+#0 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(767): Illuminate\\Database\\Connection->runQueryCallback()
+#1 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(398): Illuminate\\Database\\Connection->run()
+#2 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2899): Illuminate\\Database\\Connection->select()
+#3 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2884): Illuminate\\Database\\Query\\Builder->runSelect()
+#4 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(3468): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#5 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2883): Illuminate\\Database\\Query\\Builder->onceWithColumns()
+#6 /home/dev/Dev/VisoBra/app/Models/Obras.php(195): Illuminate\\Database\\Query\\Builder->get()
+#7 /home/dev/Dev/VisoBra/app/Http/Controllers/Prueba.php(212): App\\Models\\Obras::searchPaginate()
+#8 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(46): App\\Http\\Controllers\\Prueba->prueba()
+#9 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#10 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Route.php(206): Illuminate\\Routing\\Route->runController()
+#11 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(806): Illuminate\\Routing\\Route->run()
+#12 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#13 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(161): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#14 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(127): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest()
+#15 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(89): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter()
+#16 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle()
+#17 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#18 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(805): Illuminate\\Pipeline\\Pipeline->then()
+#19 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack()
+#20 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(748): Illuminate\\Routing\\Router->runRoute()
+#21 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute()
+#22 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(200): Illuminate\\Routing\\Router->dispatch()
+#23 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#24 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#25 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#26 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#27 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#28 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#29 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#30 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#31 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle()
+#32 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#34 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#35 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#36 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#37 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#38 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#39 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then()
+#40 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#41 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1168): Illuminate\\Foundation\\Http\\Kernel->handle()
+#42 /home/dev/Dev/VisoBra/public/index.php(17): Illuminate\\Foundation\\Application->handleRequest()
+#43 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
+#44 {main}
+
+[previous exception] [object] (PDOException(code: 42000): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LENGUAGE MODE) order by `relevancia` asc limit 20 offset 0' at line 12 at /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php:407)
+[stacktrace]
+#0 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(407): PDO->prepare()
+#1 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(800): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}()
+#2 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(767): Illuminate\\Database\\Connection->runQueryCallback()
+#3 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(398): Illuminate\\Database\\Connection->run()
+#4 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2899): Illuminate\\Database\\Connection->select()
+#5 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2884): Illuminate\\Database\\Query\\Builder->runSelect()
+#6 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(3468): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#7 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2883): Illuminate\\Database\\Query\\Builder->onceWithColumns()
+#8 /home/dev/Dev/VisoBra/app/Models/Obras.php(195): Illuminate\\Database\\Query\\Builder->get()
+#9 /home/dev/Dev/VisoBra/app/Http/Controllers/Prueba.php(212): App\\Models\\Obras::searchPaginate()
+#10 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(46): App\\Http\\Controllers\\Prueba->prueba()
+#11 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#12 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Route.php(206): Illuminate\\Routing\\Route->runController()
+#13 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(806): Illuminate\\Routing\\Route->run()
+#14 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#15 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(161): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#16 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(127): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest()
+#17 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(89): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter()
+#18 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle()
+#19 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#20 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(805): Illuminate\\Pipeline\\Pipeline->then()
+#21 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack()
+#22 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(748): Illuminate\\Routing\\Router->runRoute()
+#23 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute()
+#24 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(200): Illuminate\\Routing\\Router->dispatch()
+#25 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#26 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#27 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#28 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#29 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#30 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#31 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#32 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle()
+#34 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#35 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#36 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#37 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#38 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#39 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#40 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#41 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then()
+#42 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#43 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1168): Illuminate\\Foundation\\Http\\Kernel->handle()
+#44 /home/dev/Dev/VisoBra/public/index.php(17): Illuminate\\Foundation\\Application->handleRequest()
+#45 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
+#46 {main}
+"} 
+[2024-05-21 12:47:46] local.ERROR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LENGUAGE MODE) order by `relevancia` desc limit 20 offset 0' at line 12 (Connection: mysql, SQL: select 
+                o.id as id,
+                o.codigo_unico_inversion as codigoUnicoInversion, 
+                o.codigo_snip,
+                o.nombre_inversion as nombreInversion,
+                o.estado_inversion as estadoInversion,
+                o.monto_viable as montoViable,
+                f.nombre as funcion,
+                sub.nombre as subprograma,
+                p.nombre as programa,
+                s.nombre as sector,
+                MATCH(o.nombre_inversion) AGAINST(MEJORAMIENTO DEL SERVICIO DE MOVILIDAD URBANA EN VIA DE ACCESO DEL A.H. DARWIN GRANDEZ DE LA CIUDAD DE NAUTA Y EL KM 87 DE LA CARRETERA IQUITOS-NAUTA   DISTRITO DE NAUTA DE LA PROVINCIA DE LORETO DEL DEPARTAMENTO DE LORETO IN NATURAL LANGUAGE MODE) as relevancia from `obras` as `o` inner join `programa` as `p` on `o`.`programa_id` = `p`.`id` inner join `sector` as `s` on `o`.`sector_id` = `s`.`id` inner join `subprograma` as `sub` on `o`.`subprograma_id` = `sub`.`id` inner join `funcion` as `f` on `o`.`funcion_id` = `f`.`id` left join `geo_obra` as `g` on `o`.`id` = `g`.`obras_id` where MATCH(o.nombre_inversion) AGAINST(MEJORAMIENTO DEL SERVICIO DE MOVILIDAD URBANA EN VIA DE ACCESO DEL A.H. DARWIN GRANDEZ DE LA CIUDAD DE NAUTA Y EL KM 87 DE LA CARRETERA IQUITOS-NAUTA   DISTRITO DE NAUTA DE LA PROVINCIA DE LORETO DEL DEPARTAMENTO DE LORETO IN NATURAL LENGUAGE MODE) order by `relevancia` desc limit 20 offset 0) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42000): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LENGUAGE MODE) order by `relevancia` desc limit 20 offset 0' at line 12 (Connection: mysql, SQL: select 
+                o.id as id,
+                o.codigo_unico_inversion as codigoUnicoInversion, 
+                o.codigo_snip,
+                o.nombre_inversion as nombreInversion,
+                o.estado_inversion as estadoInversion,
+                o.monto_viable as montoViable,
+                f.nombre as funcion,
+                sub.nombre as subprograma,
+                p.nombre as programa,
+                s.nombre as sector,
+                MATCH(o.nombre_inversion) AGAINST(MEJORAMIENTO DEL SERVICIO DE MOVILIDAD URBANA EN VIA DE ACCESO DEL A.H. DARWIN GRANDEZ DE LA CIUDAD DE NAUTA Y EL KM 87 DE LA CARRETERA IQUITOS-NAUTA   DISTRITO DE NAUTA DE LA PROVINCIA DE LORETO DEL DEPARTAMENTO DE LORETO IN NATURAL LANGUAGE MODE) as relevancia from `obras` as `o` inner join `programa` as `p` on `o`.`programa_id` = `p`.`id` inner join `sector` as `s` on `o`.`sector_id` = `s`.`id` inner join `subprograma` as `sub` on `o`.`subprograma_id` = `sub`.`id` inner join `funcion` as `f` on `o`.`funcion_id` = `f`.`id` left join `geo_obra` as `g` on `o`.`id` = `g`.`obras_id` where MATCH(o.nombre_inversion) AGAINST(MEJORAMIENTO DEL SERVICIO DE MOVILIDAD URBANA EN VIA DE ACCESO DEL A.H. DARWIN GRANDEZ DE LA CIUDAD DE NAUTA Y EL KM 87 DE LA CARRETERA IQUITOS-NAUTA   DISTRITO DE NAUTA DE LA PROVINCIA DE LORETO DEL DEPARTAMENTO DE LORETO IN NATURAL LENGUAGE MODE) order by `relevancia` desc limit 20 offset 0) at /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php:813)
+[stacktrace]
+#0 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(767): Illuminate\\Database\\Connection->runQueryCallback()
+#1 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(398): Illuminate\\Database\\Connection->run()
+#2 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2899): Illuminate\\Database\\Connection->select()
+#3 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2884): Illuminate\\Database\\Query\\Builder->runSelect()
+#4 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(3468): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#5 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2883): Illuminate\\Database\\Query\\Builder->onceWithColumns()
+#6 /home/dev/Dev/VisoBra/app/Models/Obras.php(194): Illuminate\\Database\\Query\\Builder->get()
+#7 /home/dev/Dev/VisoBra/app/Http/Controllers/Prueba.php(212): App\\Models\\Obras::searchPaginate()
+#8 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(46): App\\Http\\Controllers\\Prueba->prueba()
+#9 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#10 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Route.php(206): Illuminate\\Routing\\Route->runController()
+#11 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(806): Illuminate\\Routing\\Route->run()
+#12 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#13 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(161): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#14 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(127): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest()
+#15 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(89): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter()
+#16 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle()
+#17 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#18 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(805): Illuminate\\Pipeline\\Pipeline->then()
+#19 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack()
+#20 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(748): Illuminate\\Routing\\Router->runRoute()
+#21 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute()
+#22 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(200): Illuminate\\Routing\\Router->dispatch()
+#23 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#24 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#25 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#26 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#27 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#28 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#29 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#30 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#31 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle()
+#32 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#34 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#35 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#36 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#37 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#38 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#39 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then()
+#40 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#41 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1168): Illuminate\\Foundation\\Http\\Kernel->handle()
+#42 /home/dev/Dev/VisoBra/public/index.php(17): Illuminate\\Foundation\\Application->handleRequest()
+#43 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
+#44 {main}
+
+[previous exception] [object] (PDOException(code: 42000): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LENGUAGE MODE) order by `relevancia` desc limit 20 offset 0' at line 12 at /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php:407)
+[stacktrace]
+#0 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(407): PDO->prepare()
+#1 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(800): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}()
+#2 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(767): Illuminate\\Database\\Connection->runQueryCallback()
+#3 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Connection.php(398): Illuminate\\Database\\Connection->run()
+#4 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2899): Illuminate\\Database\\Connection->select()
+#5 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2884): Illuminate\\Database\\Query\\Builder->runSelect()
+#6 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(3468): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#7 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2883): Illuminate\\Database\\Query\\Builder->onceWithColumns()
+#8 /home/dev/Dev/VisoBra/app/Models/Obras.php(194): Illuminate\\Database\\Query\\Builder->get()
+#9 /home/dev/Dev/VisoBra/app/Http/Controllers/Prueba.php(212): App\\Models\\Obras::searchPaginate()
+#10 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(46): App\\Http\\Controllers\\Prueba->prueba()
+#11 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#12 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Route.php(206): Illuminate\\Routing\\Route->runController()
+#13 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(806): Illuminate\\Routing\\Route->run()
+#14 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#15 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(161): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#16 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(127): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest()
+#17 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(89): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter()
+#18 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle()
+#19 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#20 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(805): Illuminate\\Pipeline\\Pipeline->then()
+#21 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack()
+#22 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(748): Illuminate\\Routing\\Router->runRoute()
+#23 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Routing/Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute()
+#24 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(200): Illuminate\\Routing\\Router->dispatch()
+#25 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#26 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#27 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#28 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#29 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#30 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#31 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#32 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle()
+#34 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#35 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#36 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#37 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#38 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#39 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#40 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#41 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then()
+#42 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#43 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1168): Illuminate\\Foundation\\Http\\Kernel->handle()
+#44 /home/dev/Dev/VisoBra/public/index.php(17): Illuminate\\Foundation\\Application->handleRequest()
+#45 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
+#46 {main}
+"} 
+[2024-05-21 12:49:02] local.ERROR: syntax error, unexpected token "}", expecting variable or "{" or "$" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\", expecting variable or \"{\" or \"$\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:192)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 12:49:02] local.ERROR: syntax error, unexpected token "}", expecting variable or "{" or "$" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\", expecting variable or \"{\" or \"$\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:192)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 12:52:18] local.ERROR: syntax error, unexpected token "return", expecting variable or "{" or "$" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"return\", expecting variable or \"{\" or \"$\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:197)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 12:52:18] local.ERROR: syntax error, unexpected token "return", expecting variable or "{" or "$" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"return\", expecting variable or \"{\" or \"$\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:197)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 12:52:36] local.ERROR: syntax error, unexpected token "return" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"return\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:199)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 12:52:36] local.ERROR: syntax error, unexpected token "return" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"return\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:199)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 12:52:47] local.ERROR: syntax error, unexpected token "return" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"return\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:200)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 12:52:47] local.ERROR: syntax error, unexpected token "return" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"return\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:200)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 12:52:50] local.ERROR: syntax error, unexpected token "return" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"return\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:200)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 12:52:55] local.ERROR: syntax error, unexpected token "return" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"return\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:200)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 12:52:55] local.ERROR: syntax error, unexpected token "return" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"return\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:200)
+[stacktrace]
+#0 {main}
+"} 
