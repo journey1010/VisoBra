@@ -110,7 +110,7 @@ class Obras extends Model
      * Busqueda por codigo unico de inversion, snip, nombre, provincia, distrito
     */
 
-    public static function searchPaginate(?int $codeUnique = null, ?int $snip =  null, ?string $nombreObra = null, ?string $provincia = null, ?string $distrito = null)
+    public static function searchPaginate(?int $codeUnique = null, ?int $snip =  null, ?string $nombreObra = null, ?string $provincia = null, ?string $nivelGobierno, ?string $distrito = null, int $page = 1, int $itemsPerPage = 20)
     {
             
     }
