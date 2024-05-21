@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Requests\SearchObras;
+use App\Http\Requests\SearchTotals;
 use Illuminate\Http\JsonResponse;
 use App\Models\Obras as ObrasModel;
 use Exception;
@@ -67,7 +68,7 @@ class Obras extends Controller
         }
     }
 
-    public function searchTotals(Request $request)
+    public function searchTotals(SearchTotals $request)
     {
         try{  
             $idObra =$request->all();

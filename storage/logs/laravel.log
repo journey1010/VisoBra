@@ -668,3 +668,131 @@
 #46 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
 #47 {main}
 "} 
+[2024-05-21 14:58:50] local.ERROR: syntax error, unexpected token "as", expecting ")" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"as\", expecting \")\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:130)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 14:59:31] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:249)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 14:59:31] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:249)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 15:03:18] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:251)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 15:03:18] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:251)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 15:03:25] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:251)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 15:03:25] local.ERROR: syntax error, unexpected token "}" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:251)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 15:03:47] local.ERROR: syntax error, unexpected token ")", expecting variable or "{" or "$" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \")\", expecting variable or \"{\" or \"$\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:251)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 15:03:47] local.ERROR: syntax error, unexpected token ")", expecting variable or "{" or "$" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \")\", expecting variable or \"{\" or \"$\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:251)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 15:03:50] local.ERROR: syntax error, unexpected token ")", expecting variable or "{" or "$" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \")\", expecting variable or \"{\" or \"$\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:251)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 15:04:50] local.ERROR: syntax error, unexpected token ")", expecting variable or "{" or "$" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \")\", expecting variable or \"{\" or \"$\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:251)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 15:05:50] local.ERROR: syntax error, unexpected token ")", expecting variable or "{" or "$" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \")\", expecting variable or \"{\" or \"$\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:251)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 15:06:36] local.ERROR: syntax error, unexpected token ";", expecting "(" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \";\", expecting \"(\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:253)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 15:06:36] local.ERROR: syntax error, unexpected token ";", expecting "(" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \";\", expecting \"(\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:253)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 15:06:41] local.ERROR: syntax error, unexpected token ";", expecting "(" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \";\", expecting \"(\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:253)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 15:06:41] local.ERROR: syntax error, unexpected token ";", expecting "(" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \";\", expecting \"(\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:253)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 15:06:50] local.ERROR: syntax error, unexpected token ";", expecting identifier or variable or "{" or "$" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \";\", expecting identifier or variable or \"{\" or \"$\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:250)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 15:07:06] local.ERROR: syntax error, unexpected token ";", expecting "(" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \";\", expecting \"(\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:253)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 15:07:06] local.ERROR: syntax error, unexpected token ";", expecting "(" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \";\", expecting \"(\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:253)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 15:07:50] local.ERROR: syntax error, unexpected token ";", expecting "(" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \";\", expecting \"(\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:253)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 15:08:50] local.ERROR: syntax error, unexpected token ";", expecting "(" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \";\", expecting \"(\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:253)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 15:09:12] local.ERROR: syntax error, unexpected token ";", expecting "(" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \";\", expecting \"(\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:253)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 15:09:12] local.ERROR: syntax error, unexpected token ";", expecting "(" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \";\", expecting \"(\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:253)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 15:09:19] local.ERROR: syntax error, unexpected token ";", expecting "(" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \";\", expecting \"(\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:253)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 15:09:19] local.ERROR: syntax error, unexpected token ";", expecting "(" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \";\", expecting \"(\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:253)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 15:09:50] local.ERROR: syntax error, unexpected token ";", expecting "(" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \";\", expecting \"(\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:253)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 15:09:55] local.ERROR: syntax error, unexpected token ";", expecting "(" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \";\", expecting \"(\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:253)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 15:09:55] local.ERROR: syntax error, unexpected token ";", expecting "(" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \";\", expecting \"(\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:253)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 15:10:03] local.ERROR: syntax error, unexpected token ";", expecting "(" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \";\", expecting \"(\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:253)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 15:10:03] local.ERROR: syntax error, unexpected token ";", expecting "(" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \";\", expecting \"(\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:253)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 15:10:25] local.ERROR: syntax error, unexpected token "}", expecting ";" or "{" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\", expecting \";\" or \"{\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:254)
+[stacktrace]
+#0 {main}
+"} 
+[2024-05-21 15:10:25] local.ERROR: syntax error, unexpected token "}", expecting ";" or "{" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\", expecting \";\" or \"{\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:254)
+[stacktrace]
+#0 {main}
+"} 

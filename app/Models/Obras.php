@@ -207,16 +207,7 @@ class Obras extends Model
             o.id as id,
             o.codigo_unico_inversion as codigoUnicoInversion, 
             o.codigo_snip,
-            o.nombre_inversion as nombreInversion,
-            o.estado_inversion as estadoInversion,
-            o.monto_viable as montoViable,
-            f.nombre as funcion,
-            sub.nombre as subprograma,
-            p.nombre as programa,
-            s.nombre as sector,
-            o.situacion,
-            o.estado_inversion as estadoInversion,
-            o.entidad,
+            o.nombre_inver 
             o.unidad_opmi as unidadOpmi,
             o.responsable_opmi as responsableOpmi,
             o.unidad_uei as unidadUei,
@@ -232,17 +223,7 @@ class Obras extends Model
             o.nivel_viabilidad as nivelViabilidad,
             o.responsable_viabilidad as responsableViabilidad,
             o.fecha_viabilidad as fechaViabilidad,
-            o.costo_actualizado as costoActualizado,
-            o.descripcion_alternativa as descripcionAlternativa,
-            o.beneficiaros_habitantes as beneficiariosHabitantes,
-            o.devengado_año_vigente as devengadoAñoVigente,
-            o.devengado_año_anterior as devengadoAñoAnterior,
-            o.pim_año_vigente as pimAñoVigente,
-            o.devengado_acumulado as devengadoAcumulado,
-            o.marco,
-            o.saldo_por_financiar as saldoPorFinanciar,
-            o.año_mes_primer_devengado as añoMesPrimerDevengado,
-            o.año_mes_ultimo_devengado as añoMesUltimoDevengado,
+            o.costo_actual _ultimo_devengado as añoMesUltimoDevengado,
             o.incluido_programacion_pmi as incluidoProgramacionPmi,
             o.ganador_fronipel as ganadorFronipel,
             o.registro_cierre as registroCierre,
@@ -262,5 +243,15 @@ class Obras extends Model
         ->where('o.id', '=', $id);
         $results = $query->first();
         return $results;
+    }
+
+    public static function searchTotals(?string $provincia = null, ?string $departamento = null, ?string  $nivelGobierno = null)
+    {
+        $query = DB::table('obras as o')->join('geo_obra as g', 'o.id', '=', 'g.obras_id');
+    }
+
+    private function totalsProvincia(DB $query)
+    {
+        
     }
 }

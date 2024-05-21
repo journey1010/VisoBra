@@ -2,13 +2,12 @@
 
 namespace App\Http\Requests;
 
-use Exception;
-use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Http\JsonResponse;
 use Illuminate\Contracts\Validation\Validator;
+use Illuminate\Foundation\Http\FormRequest;
 use illuminate\Http\Exceptions\HttpResponseException;
+use Illuminate\Http\JsonResponse;
 
-class searchTotals extends FormRequest
+class SearchTotals extends FormRequest
 {
 
     protected $stopOnFirstFailure = true;
@@ -25,7 +24,7 @@ class searchTotals extends FormRequest
         $json = new JsonResponse([
             'message' => messageValidation($validator),
         ], 422);
-        throw new Exception($json);
+        throw new HttpResponseException($json);
     }
     /**
      * Get the validation rules that apply to the request.
