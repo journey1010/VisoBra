@@ -199,4 +199,68 @@ class Obras extends Model
 
         return $obras;
     }
+
+    public static function searchById(int $id)
+    {
+        $query  = DB::table('obras as o')
+        ->selectRaw('
+            o.id as id,
+            o.codigo_unico_inversion as codigoUnicoInversion, 
+            o.codigo_snip,
+            o.nombre_inversion as nombreInversion,
+            o.estado_inversion as estadoInversion,
+            o.monto_viable as montoViable,
+            f.nombre as funcion,
+            sub.nombre as subprograma,
+            p.nombre as programa,
+            s.nombre as sector,
+            o.situacion,
+            o.estado_inversion as estadoInversion,
+            o.entidad,
+            o.unidad_opmi as unidadOpmi,
+            o.responsable_opmi as responsableOpmi,
+            o.unidad_uei as unidadUei,
+            o.responsable_uei as responsableUei,
+            o.unidad_uf as unidadFunciona,
+            o.responsable_uf as responsableUf,
+            o.entidad_opi as entidadOpi,
+            o.responsable_opi as responsableOpi,
+            o.ejecutora,
+            o.fecha_registro as fechaRegistro,
+            o.ultimo_estudio as ultimoEstudio,
+            o.estado_estudio as estadoEstudio,
+            o.nivel_viabilidad as nivelViabilidad,
+            o.responsable_viabilidad as responsableViabilidad,
+            o.fecha_viabilidad as fechaViabilidad,
+            o.costo_actualizado as costoActualizado,
+            o.descripcion_alternativa as descripcionAlternativa,
+            o.beneficiaros_habitantes as beneficiariosHabitantes,
+            o.devengado_año_vigente as devengadoAñoVigente,
+            o.devengado_año_anterior as devengadoAñoAnterior,
+            o.pim_año_vigente as pimAñoVigente,
+            o.devengado_acumulado as devengadoAcumulado,
+            o.marco,
+            o.saldo_por_financiar as saldoPorFinanciar,
+            o.año_mes_primer_devengado as añoMesPrimerDevengado,
+            o.año_mes_ultimo_devengado as añoMesUltimoDevengado,
+            o.incluido_programacion_pmi as incluidoProgramacionPmi,
+            o.ganador_fronipel as ganadorFronipel,
+            o.registro_cierre as registroCierre,
+            c.contrataciones as contrataciones,
+            g.provincia as provincia,
+            g.distrito as distrito,
+            ST_X(g.coordenadas) as longitud,
+            ST_Y(g.coordenadas) as latitud,
+            foto.files_path as fotos')
+        ->join('programa as p','o.programa_id', '=', 'p.id')
+        ->join('sector as s', 'o.sector_id', '=', 's.id')
+        ->join('subprograma as sub', 'o.subprograma_id', '=', 'sub.id')
+        ->join('funcion as f', 'o.funcion_id', '=', 'f.id')
+        ->leftJoin('geo_obra as g', 'o.id', '=', 'g.obras_id')
+        ->leftJoin('contrataciones_obra as c', 'o.id', '=', 'c.obra_id')
+        ->leftJoin('fotos_obra as foto', 'o.id', '=', 'foto.obra_id')
+        ->where('o.id', '=', $id);
+        $results = $query->first();
+        return $results;
+    }
 }

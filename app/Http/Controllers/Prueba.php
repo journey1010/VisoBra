@@ -209,7 +209,7 @@ class Prueba extends Controller
 
     public function prueba(HttpClientInterface $http)
     {
-            $obras = ObrasM::searchPaginate( nombreObra: 'MEJORAMIENTO DEL SERVICIO DE MOVILIDAD URBANA EN VIA DE ACCESO DEL A.H. DARWIN GRANDEZ DE LA CIUDAD DE NAUTA Y EL KM 87 DE LA CARRETERA IQUITOS-NAUTA   DISTRITO DE NAUTA DE LA PROVINCIA DE LORETO DEL DEPARTAMENTO DE LORETO');
-            return $obras;
+        $obras = ObrasM::searchById(1);
+        return $obras;
     }
 }
