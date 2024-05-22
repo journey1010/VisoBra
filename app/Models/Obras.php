@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Database\Query\Builder;
 
 class Obras extends Model
 {
@@ -245,13 +246,54 @@ class Obras extends Model
         return $results;
     }
 
-    public static function searchTotals(?string $provincia = null, ?string $departamento = null, ?string  $nivelGobierno = null)
+    public static function searchTotals(?bool $distrito = null, ?bool $provincia = null, ?bool $departamento = null, ?string $nivelGobierno = null)
     {
+        $trueCount = ($distrito ? 1 : 0) + ($provincia ? 1 : 0) + ($departamento ? 1 : 0);
+        if ($trueCount > 1) {
+            return [];
+        }
+
         $query = DB::table('obras as o')->join('geo_obra as g', 'o.id', '=', 'g.obras_id');
+
+        if((!$departamento && !$provincia && !$distrito) || $departamento){
+            $query = self::totalsDefaults($query, $nivelGobierno);
+        }
+        if($provincia){
+            $query = self::totalsProvincia($query, $nivelGobierno);
+        }
+        if($distrito){
+            $query = self::totalDistrito($query, $nivelGobierno);
+        }
+        dd($query->get());
+        return $query->get();
     }
 
-    private function totalsProvincia(DB $query)
+    private static function totalsProvincia(Builder $query, ?string $nivelGobierno): Builder
     {
-        
+        $builder = $query->selectRaw('g.provincia, COUNT(o.id) as cantidad');
+        $builder->groupBy('g.provincia');
+        if($nivelGobierno){
+            $builder->where('o.nivel_gobierno', '=', $nivelGobierno);
+        }
+        return $builder;
+    }
+
+    private static function totalDistrito(Builder $query, ?string $nivelGobierno): Builder
+    {
+        $builder = $query->selectRaw('g.distrito, COUNT(o.id) as cantidad');
+        $builder->groupBy('g.distrito');
+        if($nivelGobierno){
+            $builder->where('o.nivel_gobierno', '=', $nivelGobierno);
+        }
+        return $builder;
+    }
+
+    private static function totalsDefaults(Builder $query, ?string $nivelGobierno)
+    {
+        $builder = $query->selectRaw('COUNT(o.id) as cantidad');
+        if($nivelGobierno){
+            $builder->where('o.nivel_gobierno', '=', $nivelGobierno);
+        }
+        return $builder;
     }
 }

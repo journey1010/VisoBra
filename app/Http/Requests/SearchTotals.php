@@ -34,9 +34,9 @@ class SearchTotals extends FormRequest
     public function rules(): array
     {
         return [
-            'departamento' => 'nullable|string',
-            'provincia' => 'nullable|string',
-            'distrito' => 'nullable|string',
+            'departamento' => 'nullable|boolean',
+            'provincia' => 'nullable|boolean',
+            'distrito' => 'nullable|boolean',
             'nivelGobierno' => 'nullable|string|in:GR,GL,GN'
         ];
     }

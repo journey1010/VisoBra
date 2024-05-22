@@ -71,13 +71,12 @@ class Obras extends Controller
     public function searchTotals(SearchTotals $request)
     {
         try{  
-            $idObra =$request->all();
-            if(!is_int($idObra)){
-                return response()->json([
-                    'message' => 'Formato de ID para obra debe ser numérico'
-                ], 422);
-            }
-            $results = ObrasModel::searchById($idObra);
+            $results = ObrasModel::searchTotals(
+                $request->distrito,
+                $request->provincia,
+                $request->departamento,
+                $request->nivelGobierno
+            );
             if(!$results){
                 return response()->json([
                     'message' => 'No se encontraron resultados'
@@ -87,7 +86,8 @@ class Obras extends Controller
            return response()->json($results, 200);
         }catch(Exception $e){
             return response()->json([
-                'message' => 'Estamos experimentando problemas temporales.'
+                'message' => 'Estamos experimentando problemas temporales.',
+                $e->getMessage()
             ], 500);
         }
     }
