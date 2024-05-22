@@ -91,11 +91,16 @@ class FotoEndpoint implements DataHandler
             if($index == 'obra_id'){
                 continue;
             }
+
+            $rt= ($item['RUTA_FOTO'] == 'No se encontraron fotos.' || $item['RUTA_FOTO'] == null) ? null : $item['RUTA_FOTO'];
+            $rt2 = ($item['RUTA_FOTO_2'] == 'No se encontraron fotos.' || $item['RUTA_FOTO_2'] == null) ? null : $item['RUTA_FOTO_2'];
+            $rt3 = ($item['RUTA_FOTO_3'] == 'No se encontraron fotos.' || $item['RUTA_FOTO_3'] == null) ? null : $item['RUTA_FOTO_3'];
+            $rt4 = ($item['RUTA_FOTO_4'] == 'No se encontraron fotos.' || $item['RUTA_FOTO_4'] == null) ? null : $item['RUTA_FOTO_4'];
             $store[$index] = [
-                'RUTA_FOTO' => $item['RUTA_FOTO'],
-                'RUTA_FOTO_2' => $item['RUTA_FOTO_2'] ,
-                'RUTA_FOTO_3' => $item['RUTA_FOTO_3'],
-                'RUTA_FOTO_4' => $item['RUTA_FOTO_4']
+                'RUTA_FOTO' => $rt,
+                'RUTA_FOTO_2' => $rt2 ,
+                'RUTA_FOTO_3' => $rt3,
+                'RUTA_FOTO_4' => $rt4
             ];
         }
     

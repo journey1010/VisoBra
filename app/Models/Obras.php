@@ -208,7 +208,7 @@ class Obras extends Model
             o.id as id,
             o.codigo_unico_inversion as codigoUnicoInversion, 
             o.codigo_snip,
-            o.nombre_inver 
+            o.nombre_inversion,
             o.unidad_opmi as unidadOpmi,
             o.responsable_opmi as responsableOpmi,
             o.unidad_uei as unidadUei,
@@ -224,7 +224,15 @@ class Obras extends Model
             o.nivel_viabilidad as nivelViabilidad,
             o.responsable_viabilidad as responsableViabilidad,
             o.fecha_viabilidad as fechaViabilidad,
-            o.costo_actual _ultimo_devengado as añoMesUltimoDevengado,
+            o.costo_actualizado as costoActualizado,
+            o.descripcion_alternativa as descripcionAlternativa,
+            o.beneficiaros_habitantes as beneficiariosHabitantes,
+            o.devengado_año_vigente as devengadoAñoVigente,
+            o.devengado_año_anterior as devengadoAñoAnterior,
+            o.pim_año_vigente as pimAñoVigente,
+            o.devengado_acumulado as devengadoAcumulado,
+            o.año_mes_primer_devengado as añoMesUltimoDevengado,
+            o.año_mes_ultimo_devengado as añoMesUltimoDevengado,
             o.incluido_programacion_pmi as incluidoProgramacionPmi,
             o.ganador_fronipel as ganadorFronipel,
             o.registro_cierre as registroCierre,
@@ -243,6 +251,10 @@ class Obras extends Model
         ->leftJoin('fotos_obra as foto', 'o.id', '=', 'foto.obra_id')
         ->where('o.id', '=', $id);
         $results = $query->first();
+        if ($results) {
+            $results->contrataciones = json_decode($results->contrataciones, true);
+            $results->fotos = json_decode($results->fotos, true);
+        }
         return $results;
     }
 
