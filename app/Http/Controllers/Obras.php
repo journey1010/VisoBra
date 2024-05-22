@@ -15,19 +15,19 @@ class Obras extends Controller
     {
         try{
             $results = ObrasModel::searchPaginate(
-                $request->input('estadoInversion'),
-                $request->input('funcion'),
-                $request->input('subprograma'),
-                $request->input('programa'),
-                $request->input('sector'),
-                $request->input('codeUnique'),
-                $request->input('snip'),
-                $request->input('nombreObra'),
-                $request->input('provincia'),
-                $request->input('nivelGobierno'),
-                $request->input('distrito'),
-                $request->input('page', 1),
-                $request->input('itemsPerPage', 20)
+                estadoInversion: $request->estadoInversion,
+                funcion: $request->funcion,
+                subprograma: $request->subprograma,
+                programa: $request->programa,
+                sector: $request->sector,
+                codeUnique: $request->codeUnique,
+                snip: $request->snip,
+                nombreObra: $request->nombreObra,
+                provincia: $request->provincia,
+                nivelGobierno: $request->nivelGobierno,
+                distrito:$request->distrito,
+                page: $request->page ?? 1,
+                itemsPerPage: $request->itemsPerPage ?? 20
             );
 
             if(!$results){
@@ -38,8 +38,10 @@ class Obras extends Controller
 
             return response()->json($results, 200);
         }catch(Exception $e){
+            dd($e->getMessage());
             return response()->json([
-                'message' => 'Estamos experimentando problemas temporales.'
+                'message' => 'Estamos experimentando problemas temporales.',
+                
             ], 500);
         }
     }

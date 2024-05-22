@@ -209,7 +209,7 @@ class Prueba extends Controller
 
     public function prueba(HttpClientInterface $http)
     {
-        $obras = ObrasM::searchTotals();
+        $obras = ObrasM::searchPaginate();
         return $obras;
     }
 }

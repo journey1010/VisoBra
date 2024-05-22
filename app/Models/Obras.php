@@ -139,7 +139,7 @@ class Obras extends Model
                 sub.nombre as subprograma,
                 p.nombre as programa,
                 s.nombre as sector,
-                MATCH(o.nombre_inversion) AGAINST(? IN NATURAL LANGUAGE MODE) as relevancia', [$nombreObra])
+                MATCH(o.nombre_inversion) AGAINST(?) as relevancia', [$nombreObra])
             ->join('programa as p','o.programa_id', '=', 'p.id')
             ->join('sector as s', 'o.sector_id', '=', 's.id')
             ->join('subprograma as sub', 'o.subprograma_id', '=', 'sub.id')
@@ -264,7 +264,7 @@ class Obras extends Model
         if($distrito){
             $query = self::totalDistrito($query, $nivelGobierno);
         }
-        dd($query->get());
+
         return $query->get();
     }
 
