@@ -12,14 +12,17 @@ class Fotos extends Controller
     public function colection(FotosRequest $request): JsonResponse
     {
         try{
-            $resultados = FotosModel::whereYear('created_at')
+            $year  = date('Y');
+
+            $resultados = FotosModel::whereYear('created_at', $year)
                         ->whereNotNull('files_path')
                         ->inRandomOrder()
                         ->limit($request->items)
-                        ->get();
-            $pureData = json_encode($resultados, true);
+                        ->get()
+                        ->pluck('files_path');
+            $clean = $resultados->flatten()->take($request->items)->all();
             
-            return response()->json($resultados, 200);
+            return response()->json($clean, 200);
         }catch(Exception $e){
             return response()->json();
         }
