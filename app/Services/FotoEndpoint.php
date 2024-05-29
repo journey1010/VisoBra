@@ -92,22 +92,25 @@ class FotoEndpoint implements DataHandler
                 continue;
             }
 
-            $rt= ($item['RUTA_FOTO'] == 'No se encontraron fotos.' || $item['RUTA_FOTO'] == null) ? null : $item['RUTA_FOTO'];
-            $rt2 = ($item['RUTA_FOTO_2'] == 'No se encontraron fotos.' || $item['RUTA_FOTO_2'] == null) ? null : $item['RUTA_FOTO_2'];
-            $rt3 = ($item['RUTA_FOTO_3'] == 'No se encontraron fotos.' || $item['RUTA_FOTO_3'] == null) ? null : $item['RUTA_FOTO_3'];
-            $rt4 = ($item['RUTA_FOTO_4'] == 'No se encontraron fotos.' || $item['RUTA_FOTO_4'] == null) ? null : $item['RUTA_FOTO_4'];
-            $store[$index] = [
-                'RUTA_FOTO' => $rt,
-                'RUTA_FOTO_2' => $rt2 ,
-                'RUTA_FOTO_3' => $rt3,
-                'RUTA_FOTO_4' => $rt4
-            ];
+            if ($item['RUTA_FOTO'] !== 'No se encontraron fotos.' && $item['RUTA_FOTO'] !== null) {
+                $store[$index][] = $item['RUTA_FOTO'];
+            }
+            if ($item['RUTA_FOTO_2'] !== 'No se encontraron fotos.' && $item['RUTA_FOTO_2'] !== null) {
+                $store[$index][] = $item['RUTA_FOTO_2'];
+            }
+            if ($item['RUTA_FOTO_3'] !== 'No se encontraron fotos.' && $item['RUTA_FOTO_3'] !== null) {
+                $store[$index][] = $item['RUTA_FOTO_3'];
+            }
+            if ($item['RUTA_FOTO_4'] !== 'No se encontraron fotos.' && $item['RUTA_FOTO_4'] !== null) {
+                $store[$index][] = $item['RUTA_FOTO_4'];
+            }
         }
-    
-        Fotos::create([
-            'obra_id' => $data['obra_id'],
-            'files_path' => $store 
-        ]);
+        if(!empty($store)){
+            Fotos::create([
+                'obra_id' => $data['obra_id'],
+                'files_path' => $store 
+            ]);
+        }    
     }
 
     public function update(int $id, array $data)

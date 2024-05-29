@@ -21,7 +21,7 @@ class Fotos extends Model
     {
         return Attribute::make(
             set: fn (array $value) => json_encode($value),
-            get: fn (string $value) => json_decode($value, true),
+            get: fn (mixed $value) => json_decode($value, true),
         );
     }
 }
