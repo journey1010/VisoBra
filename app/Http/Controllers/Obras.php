@@ -35,10 +35,8 @@ class Obras extends Controller
                     'message' => 'No se encontraron resultados'
                 ],404);
             }
-
             return response()->json($results, 200);
         }catch(Exception $e){
-            dd($e->getMessage());
             return response()->json([
                 'message' => 'Estamos experimentando problemas temporales.',
                 
@@ -89,7 +87,6 @@ class Obras extends Controller
         }catch(Exception $e){
             return response()->json([
                 'message' => 'Estamos experimentando problemas temporales.',
-                $e->getMessage()
             ], 500);
         }
     }
