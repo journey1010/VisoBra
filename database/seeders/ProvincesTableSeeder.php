@@ -13,7 +13,7 @@ class ProvincesTableSeeder extends Seeder
      */
     public function run(): void
     {
-        $provinces = json_decode(file_get_contents(storage_path('app/ubigeo/ubigeo_peru_2016_provincias.json')), true);
+        $provinces = json_decode(file_get_contents(storage_path('ubigeo/ubigeo_peru_2016_provincias.json')), true);
         foreach ($provinces as $province) {
             $id = (int) $province['department_id'];
             $departmentId = DB::table('departments')->where('id', $id )->first();

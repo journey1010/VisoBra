@@ -13,7 +13,7 @@ class DepartmentsTableSeeder extends Seeder
      */
     public function run(): void
     {
-        $departments = json_decode(file_get_contents(storage_path('app/ubigeo/ubigeo_peru_2016_departamentos.json')), true);
+        $departments = json_decode(file_get_contents(storage_path('ubigeo/ubigeo_peru_2016_departamentos.json')), true);
         DB::unprepared('ALTER TABLE departments  AUTO_INCREMENT = 0');
         foreach ($departments as $department) {
             DB::table('departments')->insert([

@@ -13,7 +13,7 @@ class DistrictsTableSeeder extends Seeder
      */
     public function run(): void
     {
-        $districts = json_decode(file_get_contents(storage_path('app/ubigeo/ubigeo_peru_2016_distritos.json')), true);
+        $districts = json_decode(file_get_contents(storage_path('ubigeo/ubigeo_peru_2016_distritos.json')), true);
         foreach ($districts as $district) {
             $idDepartament = (int) $district['department_id'];
 
