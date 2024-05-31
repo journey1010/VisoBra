@@ -7,6 +7,7 @@ use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Exceptions\HttpResponseException;
 use Illuminate\Contracts\Validation\Validator;
 
+
 class Qr extends FormRequest
 {
     protected $stopOnFirstFailure = true;
@@ -27,7 +28,6 @@ class Qr extends FormRequest
     {
         return true;
     }
-    
 
     /**
      * Get the validation rules that apply to the request.
@@ -37,7 +37,7 @@ class Qr extends FormRequest
     public function rules(): array
     {
         return [
-            'cui' => 'require|integer|exists:obras,codigo_unico_inversion'
+            'cui' => 'required|integer|exists:obras,codigo_unico_inversion'
         ];
     }
 
