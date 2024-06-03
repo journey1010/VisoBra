@@ -52,6 +52,6 @@ class ProcessInsertObras implements ShouldQueue
 
     public function tags(): array
     {
-        return ['Process_obra'];
+        return ['Process_obra_insert'];
     }
 }

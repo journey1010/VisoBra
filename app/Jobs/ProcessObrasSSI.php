@@ -2,33 +2,32 @@
 
 namespace App\Jobs;
 
-use App\Exceptions\DataHandlerException;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 
-
 use App\Services\HttpClient;
-use App\Services\ObrasEndpoint;
+use App\Services\ObrasSsiEndpoint;
 use App\Services\Reporting;
 use App\Services\Notify;
 use App\Services\Mailer;
 use Exception;
-use App\Exceptions\HttpClientException;
+use App\Exceptions\DataHandlerException;
 
-class ProcessUpdateObra implements ShouldQueue
+
+class ProcessObrasSSI implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
-    private $nombreInversion;
+    private $cui;
     private $id;
 
-    public function __construct(int $id, string $nombreInversion)
+    public function __construct(int $id, int $cui)
     {
+        $this->cui = $cui;
         $this->id = $id;
-        $this->nombreInversion = $nombreInversion;
     }
 
     /**
@@ -37,20 +36,17 @@ class ProcessUpdateObra implements ShouldQueue
     public function handle(): void
     {
         try{
-            $obras = new ObrasEndpoint(new HttpClient);
+            $obras = new ObrasSsiEndpoint(new HttpClient);
             $obras->configureHttpClient();
             $obras->changeParams([
-                'cboNom' => 5,
-                'txtNom' => $this->nombreInversion,
+                'id' => $this->cui,
             ]);
             
             $response = $obras->fetchValidateResponse();
             if($response === null){
-                throw new DataHandlerException('Update obra job: Error al obtener datos para la obra con id : ' . $this->id );
+                throw new DataHandlerException('Update obra job: Error al obtener datos para la obra con id : ' . $this->cui );
             }
             $obras->update($this->id, $response);
-        } catch(HttpClientException $e){
-
         } catch(Exception $e){
             $notifier = new Notify(new Mailer());
             $notifier->clientNotify(
@@ -59,10 +55,5 @@ class ProcessUpdateObra implements ShouldQueue
                 subject: 'Fallo en visoobra al obtener datos');
             Reporting::loggin($e, 100);
         }
-    }
-
-    public function tags(): array
-    {
-        return ['Process_obra_update'];
     }
 }

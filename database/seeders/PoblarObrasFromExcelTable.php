@@ -6,9 +6,6 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Jobs\ProcessFromExcel;
 
-
-
-
 class PoblarObrasFromExcelTable extends Seeder
 {
     /**

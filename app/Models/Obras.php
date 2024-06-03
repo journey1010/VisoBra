@@ -99,7 +99,7 @@ class Obras extends Model
      * Convert string of date type (Ym) a validate date of type Y-m
      * @return date Y-m
      */
-    private function conmainObrasvertDate(string|null $date)
+    private function convertDate(string|null $date)
     {
         if(!$date){
             return null;

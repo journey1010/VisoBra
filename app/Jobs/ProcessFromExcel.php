@@ -84,4 +84,9 @@ class ProcessFromExcel implements ShouldQueue
             Reporting::loggin($e, 100);
         }
     }
+
+    public function tags(): array
+    {
+        return ['Process_obra_excel'];
+    }
 }

@@ -6,7 +6,6 @@ use App\Http\Controllers\FilterTotales;
 use App\Http\Controllers\Fotos;
 use App\Http\Controllers\Qr;
 use App\Http\Controllers\Ubigeo;
-use App\Http\Controllers\Test;
 
 Route::get('/obras/search', [Obras::class, 'searchObras']);
 Route::get('/obras/search/by', [Obras::class, 'searchById']);
@@ -17,4 +16,3 @@ Route::get('/obras/qr', [Qr::class, 'make']);
 Route::get('/ubigeo/departments', [Ubigeo::class, 'departments']);
 Route::get('/ubigeo/province', [Ubigeo::class, 'provinces']);
 Route::get('/ubigeo/districts',  [Ubigeo::class,  'districts']);
-Route::get('/prueba', [Test::class, 'test']);
