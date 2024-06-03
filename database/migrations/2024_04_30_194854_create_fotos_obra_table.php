@@ -20,6 +20,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('obra_id')->constrained('obras');
             $table->json('files_path')->nullable();
+            $table->string('endpoint_name')->unique();
             $table->timestamps();
         });
     }

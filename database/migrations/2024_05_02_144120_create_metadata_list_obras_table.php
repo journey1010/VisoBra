@@ -21,6 +21,7 @@ return new class extends Migration
             $table->integer('pages_size');
             $table->integer('total_rows');
             $table->integer('total_pages');
+            $table->string('endpoint_name');
             $table->timestamps();
         });
     }

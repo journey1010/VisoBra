@@ -23,18 +23,18 @@ return new class extends Migration
     {
         Schema::create('obras', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('funcion_id')->constrained('funcion');
-            $table->foreignId('programa_id')->constrained('programa');
-            $table->foreignId('subprograma_id')->constrained('subprograma');
-            $table->foreignId('sector_id')->constrained('sector');
+            $table->foreignId('funcion_id')->nullable()->constrained('funcion');
+            $table->foreignId('programa_id')->nullable()->constrained('programa');
+            $table->foreignId('subprograma_id')->nullable()->constrained('subprograma');
+            $table->foreignId('sector_id')->nullable()->constrained('sector');
             $table->string('codigo_unico_inversion')->nullable()->unique(); //CA
             $table->string('codigo_snip')->nullable()->unique(); //CA
             $table->string('nombre_inversion', 1000)->nullable()->fulltext(); //CA
-            $table->float('monto_viable', 3); //CA
-            $table->string('situacion'); //CA
-            $table->string('estado_inversion'); //CA
-            $table->enum('nivel_gobierno', ['GL', 'GR', 'GN']);  //CA
-            $table->string('entidad'); //CA
+            $table->float('monto_viable', 3)->nullable(); //CA
+            $table->string('situacion')->nullable(); //CA
+            $table->string('estado_inversion')->nullable(); //CA
+            $table->enum('nivel_gobierno', ['GL', 'GR', 'GN'])->nullable();  //CA
+            $table->string('entidad')->nullable(); //CA
             $table->string('unidad_opmi')->nullable(); //CA
             $table->string('responsable_opmi')->nullable(); //CA
             $table->string('unidad_uei')->nullable(); //CA
@@ -57,7 +57,7 @@ return new class extends Migration
             $table->float('devengado_año_anterior')->nullable(); //CA
             $table->integer('pim_año_vigente')->nullable(); //CA
             $table->float('devengado_acumulado',3)->nullable(); //CA
-            $table->enum('marco', ['SNIP', 'INVIERTE']); //CA
+            $table->enum('marco', ['SNIP', 'INVIERTE'])->nullable(); //CA
             $table->float('saldo_por_financiar', 3)->nullable(); //CA
             $table->char('año_mes_primer_devengado', 7)->nullable(); //CA
             $table->char('año_mes_ultimo_devengado', 7)->nullable(); //CA

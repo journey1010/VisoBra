@@ -140,10 +140,10 @@ class Obras extends Model
                 p.nombre as programa,
                 s.nombre as sector,
                 MATCH(o.nombre_inversion) AGAINST(?) as relevancia', [$nombreObra])
-            ->join('programa as p','o.programa_id', '=', 'p.id')
-            ->join('sector as s', 'o.sector_id', '=', 's.id')
-            ->join('subprograma as sub', 'o.subprograma_id', '=', 'sub.id')
-            ->join('funcion as f', 'o.funcion_id', '=', 'f.id')
+            ->leftJoin('programa as p','o.programa_id', '=', 'p.id')
+            ->leftJoin('sector as s', 'o.sector_id', '=', 's.id')
+            ->leftJoin('subprograma as sub', 'o.subprograma_id', '=', 'sub.id')
+            ->leftJoin('funcion as f', 'o.funcion_id', '=', 'f.id')
             ->leftJoin('geo_obra as g', 'o.id', '=', 'g.obras_id');
 
         if ($estadoInversion) {
@@ -242,10 +242,10 @@ class Obras extends Model
             ST_X(g.coordenadas) as longitud,
             ST_Y(g.coordenadas) as latitud,
             foto.files_path as fotos')
-        ->join('programa as p','o.programa_id', '=', 'p.id')
-        ->join('sector as s', 'o.sector_id', '=', 's.id')
-        ->join('subprograma as sub', 'o.subprograma_id', '=', 'sub.id')
-        ->join('funcion as f', 'o.funcion_id', '=', 'f.id')
+        ->leftJoin('programa as p','o.programa_id', '=', 'p.id')
+        ->leftJoin('sector as s', 'o.sector_id', '=', 's.id')
+        ->leftJoin('subprograma as sub', 'o.subprograma_id', '=', 'sub.id')
+        ->leftJoin('funcion as f', 'o.funcion_id', '=', 'f.id')
         ->leftJoin('geo_obra as g', 'o.id', '=', 'g.obras_id')
         ->leftJoin('contrataciones_obra as c', 'o.id', '=', 'c.obra_id')
         ->leftJoin('fotos_obra as foto', 'o.id', '=', 'foto.obra_id')

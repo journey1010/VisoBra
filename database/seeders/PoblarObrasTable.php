@@ -28,7 +28,7 @@ class PoblarObrasTable extends Seeder
 
             $response = $obras->fetchValidateResponse();
             if($response === null){
-                throw new DataHandlerException('Fallo al obtener datos para poblar obras');
+                throw new DataHandlerException('Fallo al obtener datos para poblar obras, Seeder PoblarObrasTable');
             }
             
             Metadata::create([
