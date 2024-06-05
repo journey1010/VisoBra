@@ -94,7 +94,7 @@ class GeobraEndpoint implements DataHandler
             'provincia' => $clean['PROVINCIA'],
             'departamento' => $clean ['DEPARTAMEN'],
             'distrito' =>  $clean['DISTRITO'],
-            'coordenadas' => [$clean['X'], $clean['Y']],
+            'coordenadas' => [$clean['Y'], $clean['X']],
         ]);
     }
 
