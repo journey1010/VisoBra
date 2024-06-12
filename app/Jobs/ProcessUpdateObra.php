@@ -54,7 +54,7 @@ class ProcessUpdateObra implements ShouldQueue
         } catch(Exception $e){
             $notifier = new Notify(new Mailer());
             $notifier->clientNotify(
-                to: 'ginopalfo001608@gmail.com', 
+                to: 'soporteapps@regionloreto.gob.pe', 
                 message: $e->getMessage(),
                 subject: 'Fallo en visoobra al obtener datos');
             Reporting::loggin($e, 100);

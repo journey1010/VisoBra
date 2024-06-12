@@ -129,7 +129,7 @@ class SearchNewObras extends Command
         $notifier = new Notify(new Mailer());
         $notifier->configLimiter(3, 'Geobra');
         $notifier->clientNotify(
-            'ginopalfo001608@gmail.com',
+            'soporteapps@regionloreto.gob.pe',
             $e->getMessage(),
             'Fallo en visoobra al obtener datos'
         );

@@ -66,7 +66,7 @@ class ProccessFotos implements ShouldQueue
             $notifier = new Notify(new Mailer());
             $notifier->configLimiter(3, 'Geobra');
             $notifier->clientNotify(
-                to: 'ginopalfo001608@gmail.com',
+                to: 'soporteapps@regionloreto.gob.pe',
                 message: $e->getMessage(),
                 subject: 'Fallo en visoobra al obtener datos'
             );
