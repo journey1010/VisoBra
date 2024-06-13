@@ -35,6 +35,7 @@ class PoblarObrasTable extends Seeder
                  'pages_size' => $response['PageSize'],
                  'total_rows' => $response['TotalRows'],
                  'total_pages' => $response['TotalPage'],
+                 'endpoint_name' => 'obras_endpoint'
             ]);
 
             $obras->changeParams(['PageSize' => 100]);
