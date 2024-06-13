@@ -30,17 +30,15 @@ class Qr extends Controller
 
             $path = $qr->make();
             $relativePath = str_replace(storage_path('app/public'), 'storage', $path);
-            $url = url($relativePath);
 
             DeleteQr::dispatch($path)->delay(now()->addMinutes(1));
 
             return response()->json([
-                'url' => $url,
+                'url' => $relativePath,
             ]);
         } catch (Exception $e) {
             return response()->json([
-                'message' => 'Tenemos problemas, muchos problemas. Espere un momento.',
-                'error' => $e->getMessage()
+                'message' => 'Tenemos problemas, muchos problemas. Espere un momento.'
             ], 500);
         }
     }

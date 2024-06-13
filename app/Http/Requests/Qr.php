@@ -37,7 +37,7 @@ class Qr extends FormRequest
     public function rules(): array
     {
         return [
-            'cui' => 'required|integer|exists:obras,codigo_unico_inversion'
+            'cui' => 'required|integer'
         ];
     }
 
