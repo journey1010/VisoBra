@@ -39,14 +39,14 @@ class SearchObras extends FormRequest
     public function rules(): array
     {
         return [
-            'codeUnique' => 'nullable|number',
-            'snip' => 'nullable|number',
+            'codeUnique' => 'nullable|integer',
+            'snip' => 'nullable|integer',
             'nombreObra' => 'nullable|string|max:400',
             'provincia' => 'nullable|string',
             'nivelGobierno' => 'nullable|string|in:GR,GL,GN',
             'distrito ' => 'nullable|string',
-            'page' => 'nullable|number',
-            'itemsPerPage' => 'nullable|int',
+            'page' => 'nullable|integer',
+            'itemsPerPage' => 'nullable|integer',
             'estadoInversion' => 'nullable|string',
             'funcion' => 'nullable|string',
             'subprograma' => 'nullable|string',

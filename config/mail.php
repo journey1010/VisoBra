@@ -46,6 +46,10 @@ return [
             'password' => env('MAIL_PASSWORD'),
             'timeout' => null,
             'local_domain' => env('MAIL_EHLO_DOMAIN'),
+            'allow_self_signed' => env('MAIL_SELF_SIGNED_CERT', true),
+            'verify_peer' => false,
+            'verify_peer_name' => false,
+
         ],
 
         'ses' => [

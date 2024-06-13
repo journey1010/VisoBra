@@ -28,13 +28,14 @@ class PoblarObrasTable extends Seeder
 
             $response = $obras->fetchValidateResponse();
             if($response === null){
-                throw new DataHandlerException('Fallo al obtener datos para poblar obras');
+                throw new DataHandlerException('Fallo al obtener datos para poblar obras, Seeder PoblarObrasTable');
             }
             
             Metadata::create([
                  'pages_size' => $response['PageSize'],
                  'total_rows' => $response['TotalRows'],
                  'total_pages' => $response['TotalPage'],
+                 'endpoint_name' => 'obras_endpoint'
             ]);
 
             $obras->changeParams(['PageSize' => 100]);
@@ -46,7 +47,7 @@ class PoblarObrasTable extends Seeder
         }catch(Exception $e){
             $notifier = new Notify(new Mailer());
             $notifier->clientNotify(
-                to: 'ginopalfo001608@gmail.com', 
+                to: 'soporteapps@regionloreto.gob.pe', 
                 message: $e->getMessage(),
                 subject: 'Fallo en visoobra al obtener datos');
             Reporting::loggin($e, 100);

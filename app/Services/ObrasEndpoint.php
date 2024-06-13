@@ -242,7 +242,7 @@ class ObrasEndpoint implements DataHandler
     public function  isThereNewData(int $pageSize, int $totalRows, int $totalPage): bool|int
     {
         
-        $metadata = Metadata::find(1); 
+        $metadata = Metadata::where('endpoint_name', '=', 'obras_endpoint')->first(); 
         if(!$metadata){
             throw new DataHandlerException('No hay registro de metadatos : table (metadata_list_obras)');
         }
@@ -253,7 +253,7 @@ class ObrasEndpoint implements DataHandler
             return false;
         }
     
-        Metadata::upMetada(1, $pageSize, $totalRows, $totalPage);
+        Metadata::upMetada($metadata->id, $pageSize, $totalRows, $totalPage, 'obras_endpoint');
         return $diference;
     }
 }
