@@ -38,13 +38,6 @@ class ProcessInsertObras implements ShouldQueue
             $obras = new ObrasEndpoint(new HttpClient());
             $obras->store($this->data);
         }catch(\Exception $e){
-            $notifier = new Notify(new Mailer());
-            $notifier->configLimiter(3, 'Geobra');
-            $notifier->clientNotify(
-                to: 'soporteapps@regionloreto.gob.pe',
-                message: $e->getMessage(),
-                subject: 'Fallo en visoobra al obtener datos'
-            );
             Reporting::loggin($e, 100);
         }
    

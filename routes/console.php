@@ -10,6 +10,9 @@ use App\Console\Commands\SearchNewObras;
 use App\Console\Commands\ProcessExcel;
 use App\Console\Commands\ProcessOfiMef;
 
+
+Schedule::command('horizon:snapshot')->everyFiveMinutes();
+
 Schedule::command(SearchNewObras::class)
           ->weekly()
           ->timezone('America/Lima');
