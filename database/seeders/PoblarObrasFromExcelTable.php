@@ -33,7 +33,7 @@ class PoblarObrasFromExcelTable extends Seeder
             "tipo" => "DPTO"
         ];
 
-        ProcessFromExcel::dispatch($data, 'store', 'endpoint_excel_2');
+        ProcessFromExcel::dispatch($data, 'store', 'endpoint_excel_2')->delay(600);
 
     }
 }
