@@ -76,11 +76,6 @@ class ProcessFromExcel implements ShouldQueue
             $obras->spreed->drop();
 
         }catch(Throwable $e){
-            $notifier = new Notify(new Mailer());
-            $notifier->clientNotify(
-                to: 'soporteapps@regionloreto.gob.pe', 
-                message: $e->getMessage(),
-                subject: 'Fallo en visoobra al obtener datos');
             Reporting::loggin($e, 100);
         }
     }

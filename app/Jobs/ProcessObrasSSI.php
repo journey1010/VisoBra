@@ -48,11 +48,6 @@ class ProcessObrasSSI implements ShouldQueue
             }
             $obras->update($this->id, $response);
         } catch(Exception $e){
-            $notifier = new Notify(new Mailer());
-            $notifier->clientNotify(
-                to: 'soporteapss@regionloreto.gob.pe', 
-                message: $e->getMessage(),
-                subject: 'Fallo en visoobra al obtener datos');
             Reporting::loggin($e, 100);
         }
     }
