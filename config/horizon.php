@@ -201,6 +201,8 @@ return [
                 'maxProcesses' => 20,
                 'balanceMaxShift' => 1,
                 'balanceCooldown' => 3,
+                'memory' => 1200,
+                'timeout' => 3600,
             ],
         ],
 
