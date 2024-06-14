@@ -24,7 +24,7 @@ class PoblarObrasFromExcelTable extends Seeder
 
         ProcessFromExcel::dispatch($data, 'store', 'endpoint_excel_1');
 
-        $data = [
+        $data2 = [
             "sect" => "",
             "plie" => 0,
             "dpto" => "16",
@@ -33,7 +33,7 @@ class PoblarObrasFromExcelTable extends Seeder
             "tipo" => "DPTO"
         ];
 
-        ProcessFromExcel::dispatch($data, 'store', 'endpoint_excel_2')->delay(600);
+        ProcessFromExcel::dispatch($data2, 'store', 'endpoint_excel_2')->delay(600);
 
     }
 }
