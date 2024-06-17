@@ -30,6 +30,8 @@ class AuthController extends Controller
         $user = User::where('email', $credentials['email'])->first();
 
         if ($user && Hash::check($credentials['password'], $user->password)) {
+
+            $exists = DB::table('user_online')->where('users_id', 1)->exists();
             DB::table('user_online')->insert([
                 'users_id' => $user->id,
                 'created_at' => date('Y-m-d H:i:s')

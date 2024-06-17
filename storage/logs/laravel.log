@@ -36612,3 +36612,19 @@ Stack trace:
 [stacktrace]
 #0 {main}
 "} 
+[2024-06-17 14:03:13] production.ERROR: Uncaught BadMethodCallException: Method Illuminate\Database\MySqlConnection::first does not exist. in /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Macroable/Traits/Macroable.php:112
+Stack trace:
+#0 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(456): Illuminate\Database\Connection->__call()
+#1 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(357): Illuminate\Database\DatabaseManager->__call()
+#2 Command line code(1): Illuminate\Support\Facades\Facade::__callStatic()
+#3 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught BadMethodCallException: Method Illuminate\\Database\\MySqlConnection::first does not exist. in /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Macroable/Traits/Macroable.php:112
+Stack trace:
+#0 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(456): Illuminate\\Database\\Connection->__call()
+#1 /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(357): Illuminate\\Database\\DatabaseManager->__call()
+#2 Command line code(1): Illuminate\\Support\\Facades\\Facade::__callStatic()
+#3 {main}
+  thrown at /home/dev/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Macroable/Traits/Macroable.php:112)
+[stacktrace]
+#0 {main}
+"} 

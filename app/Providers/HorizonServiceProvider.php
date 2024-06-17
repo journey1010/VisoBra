@@ -31,8 +31,8 @@ class HorizonServiceProvider extends HorizonApplicationServiceProvider
         Gate::define('viewHorizon', function ($user) {            
             $exists = DB::table('user_online')->where('users_id', 1)->exists();
             if($exists){
-                DB::table('user_online')->where('users_id', 1)->update([
-                    'created_at' => date('Y-m-d H:i:s')
+                DB::table('user_online')->where('id', 1)->update([
+                    'updated_at' => date('Y-m-d H:i:s')
                 ]);
                 return true; 
             }
