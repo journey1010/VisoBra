@@ -5,7 +5,7 @@ namespace App\Providers;
 use Illuminate\Support\Facades\Gate;
 use Laravel\Horizon\Horizon;
 use Laravel\Horizon\HorizonApplicationServiceProvider;
-use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class HorizonServiceProvider extends HorizonApplicationServiceProvider
 {
@@ -29,10 +29,10 @@ class HorizonServiceProvider extends HorizonApplicationServiceProvider
     protected function gate(): void
     {
         Gate::define('viewHorizon', function ($user) {
-            if (Auth::user()) {
-                return true;
+            $user = DB::table('user_online')->where('users_id', 1)->first();
+            if($user){
+                return  true; 
             }
-
             return false;
         });
     }

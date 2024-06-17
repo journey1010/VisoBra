@@ -6,6 +6,7 @@ use Illuminate\Http\JsonResponse;
 use App\Http\Requests\Auth\Horizon;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 
 class AuthController extends Controller
@@ -29,7 +30,10 @@ class AuthController extends Controller
         $user = User::where('email', $credentials['email'])->first();
 
         if ($user && Hash::check($credentials['password'], $user->password)) {
-            Auth::login($user);
+            DB::table('user_online')->insert([
+                'users_id' => $user->id,
+                'created_at' => date('Y-m-d H:i:s')
+            ]);
             return response()->json([
                 'status' => 'success',
                 'message' => 'Credenciales correctas'
