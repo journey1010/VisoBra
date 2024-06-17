@@ -37,7 +37,7 @@ class HorizonServiceProvider extends HorizonApplicationServiceProvider
             //return ;
             return response()->json([
                 'status' => in_array($ipAddress, $allowedIps)
-            ])
+            ]);
         });
     }
 }
