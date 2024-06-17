@@ -3,6 +3,6 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 
-Route::get('/', [AuthController::class, 'index']);
-Route::get('/login', [AuthController::class, 'index']);
-Route::post('/auth/horizon/dashboard', [AuthController::class, 'login'])->name('login.dashboard');
+Route::get('/v1/', [AuthController::class, 'index']);
+Route::get('/v1/login', [AuthController::class, 'index']);
+Route::post('/v1/auth/horizon/dashboard', [AuthController::class, 'login'])->name('login.dashboard');
