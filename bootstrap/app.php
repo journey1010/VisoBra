@@ -14,7 +14,7 @@ return Application::configure(basePath: dirname(__DIR__))
                 ->group(base_path('routes/api.php'));
      
             Route::middleware('web')
-                ->middleware('throttle:web')
+                ->middleware('throttle:web', \Illuminate\Session\Middleware\StartSession::class)
                 ->group(base_path('routes/web.php'));
         },
     )
