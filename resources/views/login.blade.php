@@ -63,7 +63,7 @@
                             });
 
                             setTimeout(function() {
-                                window.location.href = '/horizon';
+                                window.location.href = '/v1/horizon';
                             }, 1500);
                         } else {
                             Swal.fire({
