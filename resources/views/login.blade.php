@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf_token" content="{{ csrf_token() }}" />
-    <link rel="icon" href="https://visobra.regionloreto.gob.pe/v1/gorel_favicon.ico}}" type="image/x-icon">
+    <link rel="icon" href="https://visobra.regionloreto.gob.pe/v1/gorel_favicon.ico" type="image/x-icon">
     <title>Visobra</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -20,7 +20,7 @@
                         <img src="https://visobra.regionloreto.gob.pe/v1/lucatiel.png"  class="card-img-top img-fluid" alt="..." >
                         <h3 class="card-header text-center">Login</h3>
                         <div class="card-body">
-                            <form id="loginForm" method="POST" action="{{ route ('login.dashboard') }}">
+                            <form id="loginForm" method="POST" action="https://visobra.regionloreto.gob.pe/panel/auth/horizon/dashboard">
                                 @csrf
                                 <div class="form-group mb-3">
                                     <input type="text" placeholder="Email" id="email" class="form-control"
