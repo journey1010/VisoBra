@@ -28,10 +28,13 @@ class HorizonServiceProvider extends HorizonApplicationServiceProvider
      */
     protected function gate(): void
     {
-        Gate::define('viewHorizon', function ($user) {
-            $user = DB::table('user_online')->where('users_id', 1)->first();
-            if($user){
-                return  true; 
+        Gate::define('viewHorizon', function ($user) {            
+            $exists = DB::table('user_online')->where('users_id', 1)->exists();
+            if($exists){
+                DB::table('user_online')->where('users_id', 1)->update([
+                    'created_at' => date('Y-m-d H:i:s')
+                ]);
+                return true; 
             }
             return false;
         });

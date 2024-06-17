@@ -1,0 +1,1 @@
+[2024-06-17 12:39:22] production.CRITICAL: cURL error 28: Operation timed out after 1000000 milliseconds with 0 bytes received (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for https://ofi5.mef.gob.pe/inviertews/Ssi/expRepSSIDet  
