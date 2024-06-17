@@ -34,10 +34,7 @@ class HorizonServiceProvider extends HorizonApplicationServiceProvider
                  '45.5.58.105'
             ];
             $ipAddress= $request->ip();
-            //return ;
-            return response()->json([
-                'status' => in_array($ipAddress, $allowedIps)
-            ]);
+            return in_array($ipAddress, $allowedIps);
         });
     }
 }
