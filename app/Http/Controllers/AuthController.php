@@ -20,8 +20,9 @@ class AuthController extends Controller
     {
         $credentials = $request->only('email','password');
         $credentials['status'] = true;
-        if(Auth::attempt($credentials)){
+        if(Auth::attempt($credentials, true)){
             $request->session()->regenerate();
+            
             return response()->json([
                 'status' => 'success',
                 'message' => 'Credenciales correctas'
