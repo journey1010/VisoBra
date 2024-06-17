@@ -14,7 +14,13 @@ return Application::configure(basePath: dirname(__DIR__))
                 ->group(base_path('routes/api.php'));
      
             Route::middleware('web')
-                ->middleware('throttle:web', \Illuminate\Session\Middleware\StartSession::class, \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class)
+                ->middleware('throttle:web', 
+                \Illuminate\Session\Middleware\StartSession::class, 
+                \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
+                \Illuminate\Session\Middleware\StartSession::class,
+                \Illuminate\View\Middleware\ShareErrorsFromSession::class,
+                \Illuminate\Session\Middleware\AuthenticateSession::class,
+                )
                 ->group(base_path('routes/web.php'));
         },
     )
