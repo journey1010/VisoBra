@@ -22,6 +22,7 @@ class AuthController extends Controller
         $credentials['status'] = true;
         if(Auth::attempt($credentials)){
             $request->session()->regenerate();
+            
             return response()->json([
                 'status' => 'success',
                 'message' => 'Credenciales correctas'
