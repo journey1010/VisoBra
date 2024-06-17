@@ -192,14 +192,6 @@ class PoblarTablas extends Seeder
                 'created_at' => date('Y-m-d :H:i:s'),
             ]);
         }
-
-        DB::table('users')->insert([
-            'name' => 'Lucatiel',
-            'last_name' => 'Administrador',
-            'dni' => '11111111',
-            'email' => 'lucatiel@gmail.com',
-            'password' => Hash::make('Hola5.2')  
-        ]);
     }
 
 }

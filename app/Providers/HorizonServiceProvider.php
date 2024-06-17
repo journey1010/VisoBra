@@ -5,7 +5,7 @@ namespace App\Providers;
 use Illuminate\Support\Facades\Gate;
 use Laravel\Horizon\Horizon;
 use Laravel\Horizon\HorizonApplicationServiceProvider;
-use Illuminate\Support\Facades\DB;
+use Illuminate\Http\Request;
 
 class HorizonServiceProvider extends HorizonApplicationServiceProvider
 {
@@ -28,15 +28,13 @@ class HorizonServiceProvider extends HorizonApplicationServiceProvider
      */
     protected function gate(): void
     {
-        Gate::define('viewHorizon', function ($user) {            
-            $exists = DB::table('user_online')->where('users_id', 1)->exists();
-            if($exists){
-                DB::table('user_online')->where('id', 1)->update([
-                    'updated_at' => date('Y-m-d H:i:s')
-                ]);
-                return true; 
-            }
-            return false;
+
+        Gate::define('viewHorizon', function (Request $request) {         
+            $allowedIps = [
+                '45.5.58.105'
+            ];
+            $ipAddress= $request->ip();
+            return in_array($ipAddress, $allowedIps);
         });
     }
 }
