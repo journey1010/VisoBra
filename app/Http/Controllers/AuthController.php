@@ -11,7 +11,7 @@ class AuthController extends Controller
     public function index()
     {
         if(Auth::check()){
-            return redirect('panel/horizon');
+            return redirect('/horizon');
         }
         return view('login');
     }
