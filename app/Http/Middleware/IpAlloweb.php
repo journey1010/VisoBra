@@ -24,5 +24,6 @@ class IpAlloweb
         if(in_array($ipAddress, $allowedIps)){
             return $next($request);
         }
+        abort(403);
     }
 }
