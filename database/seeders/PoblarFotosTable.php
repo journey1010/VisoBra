@@ -16,6 +16,7 @@ class PoblarFotosTable extends Seeder
     {
         $registros = Obras::select('id', 'codigo_unico_inversion')
             ->whereNotNull('codigo_snip')
+            ->whereNotNull('codigo_unico_inversion')
             ->get();
         foreach($registros as $registro){
             ProccessFotos::dispatch($registro->id, $registro->codigo_unico_inversion, 'store');
