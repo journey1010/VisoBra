@@ -26,7 +26,7 @@ return Application::configure(basePath: dirname(__DIR__))
             Request::HEADER_X_FORWARDED_PORT |
             Request::HEADER_X_FORWARDED_PROTO |
             Request::HEADER_X_FORWARDED_AWS_ELB
-        );
+        , at:'127.0.0.1');
         $middleware->alias([
             'ipAllowed' => IpAlloweb::class
         ]);
