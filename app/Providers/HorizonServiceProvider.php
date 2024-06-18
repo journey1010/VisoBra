@@ -30,11 +30,7 @@ class HorizonServiceProvider extends HorizonApplicationServiceProvider
     {
 
         Gate::define('viewHorizon', function (Request $request) {         
-            $allowedIps = [
-                 '45.5.58.105'
-            ];
-            $ipAddress= $request->ip();
-            return in_array($ipAddress, $allowedIps);
+            return true;
         });
     }
 }
