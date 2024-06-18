@@ -98,11 +98,13 @@ class ExcelEndpoint implements DataHandler
         $lazyCollection = LazyCollection::make($data);
         $pureData = $this->spreed->processData($lazyCollection);
         $pureData->each(function ($row) {
-            if (!Obras::where('codigo_unico_inversion', $row['CUI'])->exists()) {
-                Obras::create([
-                    'codigo_unico_inversion' => $row['CUI'],
-                    'nivel_gobierno' => $row['NIVEL_GOBIERNO']
-                ]);
+            if (!is_null($row['CUI']) && !is_null($row['NIVEL_GOBIERNO'])) {
+                if (!Obras::where('codigo_unico_inversion', $row['CUI'])->exists()) {
+                    Obras::create([
+                        'codigo_unico_inversion' => $row['CUI'],
+                        'nivel_gobierno' => $row['NIVEL_GOBIERNO']
+                    ]);
+                }
             }
         });
     }
