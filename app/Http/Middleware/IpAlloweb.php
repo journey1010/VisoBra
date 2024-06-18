@@ -16,7 +16,8 @@ class IpAlloweb
     public function handle(Request $request, Closure $next): Response
     {            
         $allowedIps = [
-            '45.5.58.105'
+            '45.5.58.105',
+            '2803:9810:60a8:c810:d131:834c:4e6c:e3d0'
             ];
         $ipAddress= $request->ip();
         if(in_array($ipAddress, $allowedIps)){

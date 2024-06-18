@@ -1346,3 +1346,26 @@ Stack trace:
 [stacktrace]
 #0 {main}
 "} 
+[2024-06-17 23:55:48] production.ERROR: file_get_contents(/home/journii/Dev/VisoBra/.env): Failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): file_get_contents(/home/journii/Dev/VisoBra/.env): Failed to open stream: No such file or directory at /home/journii/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Console/KeyGenerateCommand.php:100)
+[stacktrace]
+#0 /home/journii/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(256): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError()
+#1 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}()
+#2 /home/journii/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Console/KeyGenerateCommand.php(100): file_get_contents()
+#3 /home/journii/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Console/KeyGenerateCommand.php(82): Illuminate\\Foundation\\Console\\KeyGenerateCommand->writeNewEnvironmentFileWith()
+#4 /home/journii/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Console/KeyGenerateCommand.php(47): Illuminate\\Foundation\\Console\\KeyGenerateCommand->setKeyInEnvironmentFile()
+#5 /home/journii/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\\Foundation\\Console\\KeyGenerateCommand->handle()
+#6 /home/journii/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#7 /home/journii/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure()
+#8 /home/journii/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#9 /home/journii/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Container/Container.php(662): Illuminate\\Container\\BoundMethod::call()
+#10 /home/journii/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Console/Command.php(212): Illuminate\\Container\\Container->call()
+#11 /home/journii/Dev/VisoBra/vendor/symfony/console/Command/Command.php(279): Illuminate\\Console\\Command->execute()
+#12 /home/journii/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Console/Command.php(181): Symfony\\Component\\Console\\Command\\Command->run()
+#13 /home/journii/Dev/VisoBra/vendor/symfony/console/Application.php(1049): Illuminate\\Console\\Command->run()
+#14 /home/journii/Dev/VisoBra/vendor/symfony/console/Application.php(318): Symfony\\Component\\Console\\Application->doRunCommand()
+#15 /home/journii/Dev/VisoBra/vendor/symfony/console/Application.php(169): Symfony\\Component\\Console\\Application->doRun()
+#16 /home/journii/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(196): Symfony\\Component\\Console\\Application->run()
+#17 /home/journii/Dev/VisoBra/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1183): Illuminate\\Foundation\\Console\\Kernel->handle()
+#18 /home/journii/Dev/VisoBra/artisan(13): Illuminate\\Foundation\\Application->handleCommand()
+#19 {main}
+"} 
