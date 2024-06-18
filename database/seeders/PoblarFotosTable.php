@@ -15,7 +15,6 @@ class PoblarFotosTable extends Seeder
     public function run(): void
     {
         $registros = Obras::select('id', 'codigo_unico_inversion')
-            ->whereNotNull('codigo_snip')
             ->whereNotNull('codigo_unico_inversion')
             ->get();
         foreach($registros as $registro){
