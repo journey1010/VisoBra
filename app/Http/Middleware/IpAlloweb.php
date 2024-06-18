@@ -4,7 +4,6 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Log;
 use Symfony\Component\HttpFoundation\Response;
 
 class IpAlloweb
@@ -22,10 +21,8 @@ class IpAlloweb
             '138.84.39.70'
             ];
         $ipAddress= $request->ip();
-        Log::alert($ipAddress);
         if(in_array($ipAddress, $allowedIps)){
             return $next($request);
-        }  
-        abort(403);
+        }
     }
 }

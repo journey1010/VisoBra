@@ -3,9 +3,9 @@
 namespace App\Providers;
 
 use Illuminate\Support\Facades\Gate;
-use Laravel\Horizon\Horizon;
 use Laravel\Horizon\HorizonApplicationServiceProvider;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 
 class HorizonServiceProvider extends HorizonApplicationServiceProvider
 {
@@ -28,9 +28,16 @@ class HorizonServiceProvider extends HorizonApplicationServiceProvider
      */
     protected function gate(): void
     {
-
-        Gate::define('viewHorizon', function (Request $request) {         
-            return true;
+        Gate::define('viewHorizon', function (Request $request) {
+            $allowedIps = [
+                '45.5.58.105',
+                '2803:9810:60a8:c810:d131:834c:4e6c:e3d0',
+                '138.84.39.70',
+            ];
+        
+            $ipAddress = trim($request->ip());
+        
+            return in_array($ipAddress, $allowedIps) ? Response::allow() : false;
         });
     }
 }
