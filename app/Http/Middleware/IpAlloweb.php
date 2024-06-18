@@ -18,7 +18,8 @@ class IpAlloweb
     {            
         $allowedIps = [
             '45.5.58.105',
-            '2803:9810:60a8:c810:d131:834c:4e6c:e3d0'
+            '2803:9810:60a8:c810:d131:834c:4e6c:e3d0',
+            '138.84.39.70'
             ];
         $ipAddress= $request->ip();
         Log::alert($ipAddress);
