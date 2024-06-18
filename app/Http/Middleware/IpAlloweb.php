@@ -20,7 +20,7 @@ class IpAlloweb
             '45.5.58.105',
             '2803:9810:60a8:c810:d131:834c:4e6c:e3d0'
             ];
-        $ipAddress= $request->ip();
+        $ipAddress= $request->header('HEADER_X_FORWARDED_FOR');
         Log::alert($ipAddress);
         if(in_array($ipAddress, $allowedIps)){
             return $next($request);
