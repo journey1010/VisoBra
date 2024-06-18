@@ -212,7 +212,7 @@ return [
         'local' => [
             'supervisor-1' => [
                 'connection' => 'redis',
-                'maxProcesses' => 5,
+                'maxProcesses' => 15,
                 'balanceMaxShift' => 1,
                 'balanceCooldown' => 3,
                 'memory' => 2200,
