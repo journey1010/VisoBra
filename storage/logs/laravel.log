@@ -169,3 +169,15 @@ Stack trace:
 #22 /home/dev/Dev/VisoBra/artisan(13): Illuminate\\Foundation\\Application->handleCommand()
 #23 {main}
 "} 
+[2024-06-19 14:04:26] local.ERROR: syntax error, unexpected token "class" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"class\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:12)
+[stacktrace]
+#0 {main}
+"} 
+[2024-06-19 14:04:28] local.ERROR: syntax error, unexpected token "class" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"class\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:12)
+[stacktrace]
+#0 {main}
+"} 
+[2024-06-19 14:04:28] local.ERROR: syntax error, unexpected token "class" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"class\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:12)
+[stacktrace]
+#0 {main}
+"} 

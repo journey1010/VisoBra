@@ -31,7 +31,8 @@ class Ubigeo extends Controller
             ], 200);
         }catch(Exception $e){
             return response()->json([
-                'message' => 'Ocurrio un problema al consultar los datos'
+                'message' => 'Ocurrio un problema al consultar los datos',
+
             ], 500);
         }
     }
@@ -45,7 +46,7 @@ class Ubigeo extends Controller
             ], 200);
         }catch(Exception $e){
             return response()->json([
-                'message' => 'Ocurrio un problema al consultar los datos'
+                'message' => 'Ocurrio un problema al consultar los datos',
             ], 500);
         }
     }
