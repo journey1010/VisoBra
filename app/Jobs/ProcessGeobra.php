@@ -11,9 +11,7 @@ use Illuminate\Queue\SerializesModels;
 
 use App\Services\HttpClient;
 use App\Services\GeobraEndpoint;
-use App\Services\Notify;
 use App\Services\Reporting;
-use App\Services\Mailer;
 
 class ProcessGeobra implements ShouldQueue
 {

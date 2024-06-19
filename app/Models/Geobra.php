@@ -24,7 +24,7 @@ class Geobra extends Model
     protected function coordenadas(): Attribute
     {
         return Attribute::make(
-            set : fn (array $value) => DB::raw("ST_GeomFromText('POINT($value[1] $value[0])')"),
+            set : fn (array $value) => DB::raw("ST_GeomFromText('POINT($value[0] $value[1])')"),
         );
     }
 
