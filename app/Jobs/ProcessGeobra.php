@@ -41,7 +41,7 @@ class ProcessGeobra implements ShouldQueue
         try {
             $geobra = new GeobraEndpoint(new HttpClient());
      
-            $geobra->configureHttpClient();
+            $geobra->configureHttpClient(3, 300, 300);
             $geobra->changeParams(['where' => $this->codeUnique]);
             $response = $geobra->fetchValidResponse();
         

@@ -53,6 +53,10 @@ class ObrasSsiEndpoint implements DataHandler
         'MES_ANO_ULT_DEV'=>'año_mes_ultimo_devengado',
         'IND_REG_FONIPREL'=>'ganador_fronipel',
         'CIERRE_REGISTRADO'=>'registro_cierre',
+        'DES_UNIDAD_UEI'=> 'unidad_uei',
+        'DES_UNIDAD_UF' => 'unidad_uf',
+        'NOMBRE_OPMI' => 'unidad_opmi',
+        'ENTIDAD' => 'entidad'
     ];
 
     protected $dataStore = [];
