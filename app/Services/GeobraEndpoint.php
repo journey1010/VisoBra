@@ -89,20 +89,27 @@ class GeobraEndpoint implements DataHandler
     public function store(array $data)
     {  
         $clean  = $data['features'][0]['attributes'];
-        
-        if($clean['X'] < $clean['Y']){
-            $coordenas = [$clean['X'], $clean['Y']];
-        }else {
-            $coordenas = [$clean['Y'], $clean['X']];
-        }
 
-        Geobra::create([
-            'obras_id' => $data['obras_id'],
-            'provincia' => $clean['PROVINCIA'],
-            'departamento' => $clean ['DEPARTAMEN'],
-            'distrito' =>  $clean['DISTRITO'],
-            'coordenadas' =>  $coordenas,
-        ]);
+        if(array_key_exists('X', $clean)){
+            if($clean['X'] < $clean['Y']){
+                $coordenas = [$clean['X'], $clean['Y']];
+            }else {
+                $coordenas = [$clean['Y'], $clean['X']];
+            }
+        }else{
+
+        }
+        
+        $exists = Geobra::where('obras_id', $data['obras_id'])->exists();
+        if(!$exists){
+            Geobra::create([
+                'obras_id' => $data['obras_id'],
+                'provincia' => $clean['PROVINCIA'],
+                'departamento' => $clean ['DEPARTAMEN'],
+                'distrito' =>  $clean['DISTRITO'],
+                'coordenadas' =>  $coordenas,
+            ]);
+        }
     }
 
     public function validateFormat(array $data): bool

@@ -46,6 +46,6 @@ class ProcessExcel extends Command
             "tipo" => "DPTO"
         ];
 
-        ProcessFromExcel::dispatch($data, 'update', 'endpoint_excel_2');
+        ProcessFromExcel::dispatch($data, 'update', 'endpoint_excel_2')->delay(1000);
     }
 }

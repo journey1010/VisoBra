@@ -27,10 +27,13 @@ class ProcessOfiMef extends Command
      */
     public function handle()
     {
-        $registros =  Obras::select('id','codigo_unico_inversion')
-                ->where('estado_inversion', '=', 'ACTIVO')
-                ->whereNotNull('codigo_unico_inversion')
-                ->get();
+        $registros = Obras::select('id', 'codigo_unico_inversion')
+                            ->where(function($query) {
+                                $query->where('estado_inversion', '=', 'ACTIVO')
+                                    ->orWhereNull('estado_inversion');
+                            })
+                            ->whereNotNull('codigo_unico_inversion')
+                            ->get();
         foreach($registros as $registro){
             ProcessObrasSSI::dispatch($registro->id, $registro->codigo_unico_inversion);
         }
