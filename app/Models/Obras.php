@@ -189,7 +189,7 @@ class Obras extends Model
         if ($nombreObra) {
             $query->whereRaw('MATCH(o.nombre_inversion) AGAINST(?)', [$nombreObra]);
             $query->orderBy('relevancia', 'desc');
-            $itemsPerPage = 3;
+            $itemsPerPage = 6;
         }else{
             $query->orderBy('año_mes_ultimo_devengado', 'desc');
         }
