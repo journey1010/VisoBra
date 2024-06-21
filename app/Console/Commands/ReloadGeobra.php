@@ -37,7 +37,7 @@ class ReloadGeobra extends Command
                      ->whereNotNull('o.codigo_unico_inversion')
                      ->get();
         foreach($registros as $registro){
-            ProcessGeobra::dispatch($registro->id, $registro->codigo_unico_inversion);
+            ProcessGeobra::dispatch($registro->id, $registro->codigo_unico_inversion)->delay(120);
         }
     }
 }
