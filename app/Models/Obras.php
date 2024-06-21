@@ -101,10 +101,17 @@ class Obras extends Model
      */
     private function convertDate(string|null $date)
     {
-        if(!$date){
+        if (!$date) {
             return null;
         }
+    
         $dateConvert = date_create_from_format('Ym', $date);
+    
+        if (!$dateConvert) {
+            // Handle the error as needed, e.g., return null, throw an exception, log the error, etc.
+            return null;
+        }
+    
         return $dateConvert->format('Y-m');
     }
 
