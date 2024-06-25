@@ -120,12 +120,19 @@ class FotoEndpoint implements DataHandler
             if($index == 'obra_id'){
                 continue;
             }
-            $store[$index] = [
-                'RUTA_FOTO' => $item['RUTA_FOTO'] ?? null,
-                'RUTA_FOTO_2' => $item['RUTA_FOTO_2'] ?? null,
-                'RUTA_FOTO_3' => $item['RUTA_FOTO_3'] ?? null,
-                'RUTA_FOTO_4' => $item['RUTA_FOTO_4'] ?? null
-            ];
+
+            if ($item['RUTA_FOTO'] !== 'No se encontraron fotos.' && $item['RUTA_FOTO'] !== null) {
+                $store[$index][] = $item['RUTA_FOTO'];
+            }
+            if ($item['RUTA_FOTO_2'] !== 'No se encontraron fotos.' && $item['RUTA_FOTO_2'] !== null) {
+                $store[$index][] = $item['RUTA_FOTO_2'];
+            }
+            if ($item['RUTA_FOTO_3'] !== 'No se encontraron fotos.' && $item['RUTA_FOTO_3'] !== null) {
+                $store[$index][] = $item['RUTA_FOTO_3'];
+            }
+            if ($item['RUTA_FOTO_4'] !== 'No se encontraron fotos.' && $item['RUTA_FOTO_4'] !== null) {
+                $store[$index][] = $item['RUTA_FOTO_4'];
+            }
         }
 
         $fotos = Fotos::where('obra_id', $id)->first(); 
@@ -133,10 +140,12 @@ class FotoEndpoint implements DataHandler
             $fotos->files_path = $store;
             $fotos->save();
         } else {
-            Fotos::create([
-                'obra_id' => $id,
-                'files_path' => $store 
-            ]);
+            if(!empty($store)){
+                Fotos::create([
+                    'obra_id' => $data['obra_id'],
+                    'files_path' => $store 
+                ]);
+            }
         }
     }
 }
