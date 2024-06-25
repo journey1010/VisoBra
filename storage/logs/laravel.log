@@ -362,3 +362,19 @@ Stack trace:
 [stacktrace]
 #0 {main}
 "} 
+[2024-06-25 17:34:26] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:283)
+[stacktrace]
+#0 {main}
+"} 
+[2024-06-25 17:35:26] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:283)
+[stacktrace]
+#0 {main}
+"} 
+[2024-06-25 17:36:26] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:283)
+[stacktrace]
+#0 {main}
+"} 
+[2024-06-25 17:37:26] local.ERROR: syntax error, unexpected token "if" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"if\" at /home/dev/Dev/VisoBra/app/Models/Obras.php:283)
+[stacktrace]
+#0 {main}
+"} 
