@@ -292,7 +292,7 @@ class Obras extends Model
 
     private static function totalsProvincia(Builder $query, ?string $nivelGobierno): Builder
     {
-        $builder = $query->selectRaw('g.provincia, COUNT(o.id) as cantidad');
+        $builder = $query->selectRaw('g.provincia, ST_X(g.coordenadas) as lat, ST_Y(g.coordenadas) as lon, COUNT(o.id) as cantidad');
         $builder->groupBy('g.provincia');
         if($nivelGobierno){
             $builder->where('o.nivel_gobierno', '=', $nivelGobierno);
@@ -302,7 +302,7 @@ class Obras extends Model
 
     private static function totalDistrito(Builder $query, ?string $nivelGobierno): Builder
     {
-        $builder = $query->selectRaw('g.distrito, COUNT(o.id) as cantidad');
+        $builder = $query->selectRaw('g.distrito, ST_X(g.coordenadas) as lat, ST_Y(g.coordenadas) as lon, COUNT(o.id) as cantidad');
         $builder->groupBy('g.distrito');
         if($nivelGobierno){
             $builder->where('o.nivel_gobierno', '=', $nivelGobierno);
