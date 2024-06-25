@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Query\Builder;
+use Illuminate\Support\Collection;
 
 class Obras extends Model
 {
@@ -275,7 +276,9 @@ class Obras extends Model
             return [];
         }
 
-        $query = DB::table('obras as o')->join('geo_obra as g', 'o.id', '=', 'g.obras_id');
+        $query = DB::table('geobra as g')
+                     ->join('districts as d', 'g.distrito', '=', 'd.name')
+                     ->join('obras as o', 'g.')
 
         if((!$departamento && !$provincia && !$distrito) || $departamento){
             $query = self::totalsDefaults($query, $nivelGobierno);
@@ -290,18 +293,31 @@ class Obras extends Model
         return $query->get();
     }
 
-    private static function totalsProvincia(Builder $query, ?string $nivelGobierno): Builder
+    private static function totalsProvincia(Builder $query, ?string $nivelGobierno): Collection
     {
-        $builder = $query->selectRaw('g.provincia, ST_X(g.coordenadas) as lat, ST_Y(g.coordenadas) as lon, COUNT(o.id) as cantidad');
-        $builder->groupBy('g.provincia');
+        $query = DB::table('geobra as g')
+                    ->join('districts as d', 'g.distrito', '=', 'd.name')
+                    ->join('obras as o', 'g.obras_id', '=', 'o.id')
+                    ->selectRaw('
+                        g.provincia as provincia, 
+                        ST_X(g.coordenadas) as lat, 
+                        ST_Y(g.coordenadas) as lon, 
+                        COUNT(o.id) as items'
+                    )
+                    ->where('')
+                    ->groupBy('g.provincia');
         if($nivelGobierno){
             $builder->where('o.nivel_gobierno', '=', $nivelGobierno);
         }
         return $builder;
     }
 
-    private static function totalDistrito(Builder $query, ?string $nivelGobierno): Builder
+    private static function totalDistrito(Builder $query, ?string $nivelGobierno): Collection
     {
+        $query = DB::table('geobra as g')
+                    ->join('districts as d', 'g.distrito', '=', 'd.name')
+                    ->join('obras as o', 'g.');
+
         $builder = $query->selectRaw('g.distrito, ST_X(g.coordenadas) as lat, ST_Y(g.coordenadas) as lon, COUNT(o.id) as cantidad');
         $builder->groupBy('g.distrito');
         if($nivelGobierno){
