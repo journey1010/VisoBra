@@ -129,6 +129,11 @@ class GeobraEndpoint implements DataHandler
             throw new DataHandlerException('Fallo en validacion de datos en geobraendpoint:' .$e->getMessage());
         }
     }
+
+    private function validateProvince()
+    {
+        
+    }
     
     public function update(int $id, array $data)
     {
