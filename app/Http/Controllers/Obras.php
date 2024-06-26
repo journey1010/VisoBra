@@ -39,7 +39,7 @@ class Obras extends Controller
         }catch(Exception $e){
             return response()->json([
                 'message' => 'Estamos experimentando problemas temporales.',
-                
+                $e->getMessage()
             ], 500);
         }
     }

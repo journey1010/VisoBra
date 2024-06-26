@@ -42,7 +42,7 @@ class Qr extends Controller
         } catch (Exception $e) {
             return response()->json([
                 'message' => 'Tenemos problemas, muchos problemas. Espere un momento.', 
-                $e->getMessage()
+
             ], 500);
         }
     }

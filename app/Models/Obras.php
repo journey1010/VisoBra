@@ -147,6 +147,7 @@ class Obras extends Model
                 sub.nombre as subprograma,
                 p.nombre as programa,
                 s.nombre as sector,
+                CASE WHEN g.obras_id IS NULL THEN 0 ELSE 1 END as haveLocation,
                 MATCH(o.nombre_inversion) AGAINST(?) as relevancia', [$nombreObra])
             ->leftJoin('programa as p','o.programa_id', '=', 'p.id')
             ->leftJoin('sector as s', 'o.sector_id', '=', 's.id')
@@ -278,7 +279,7 @@ class Obras extends Model
 
         $query = DB::table('geobra as g')
                      ->join('districts as d', 'g.distrito', '=', 'd.name')
-                     ->join('obras as o', 'g.')
+                     ->join('obras as o', 'g.');
 
         if((!$departamento && !$provincia && !$distrito) || $departamento){
             $query = self::totalsDefaults($query, $nivelGobierno);
@@ -293,38 +294,38 @@ class Obras extends Model
         return $query->get();
     }
 
-    private static function totalsProvincia(Builder $query, ?string $nivelGobierno): Collection
-    {
-        $query = DB::table('geobra as g')
-                    ->join('districts as d', 'g.distrito', '=', 'd.name')
-                    ->join('obras as o', 'g.obras_id', '=', 'o.id')
-                    ->selectRaw('
-                        g.provincia as provincia, 
-                        ST_X(g.coordenadas) as lat, 
-                        ST_Y(g.coordenadas) as lon, 
-                        COUNT(o.id) as items'
-                    )
-                    ->where('')
-                    ->groupBy('g.provincia');
-        if($nivelGobierno){
-            $builder->where('o.nivel_gobierno', '=', $nivelGobierno);
-        }
-        return $builder;
-    }
+    // private static function totalsProvincia(Builder $query, ?string $nivelGobierno): Collection
+    // {
+    //     $query = DB::table('geobra as g')
+    //                 ->join('districts as d', 'g.distrito', '=', 'd.name')
+    //                 ->join('obras as o', 'g.obras_id', '=', 'o.id')
+    //                 ->selectRaw('
+    //                     g.provincia as provincia, 
+    //                     ST_X(g.coordenadas) as lat, 
+    //                     ST_Y(g.coordenadas) as lon, 
+    //                     COUNT(o.id) as items'
+    //                 )
+    //                 ->where('')
+    //                 ->groupBy('g.provincia');
+    //     if($nivelGobierno){
+    //         $builder->where('o.nivel_gobierno', '=', $nivelGobierno);
+    //     }
+    //     return $builder;
+    // }
 
-    private static function totalDistrito(Builder $query, ?string $nivelGobierno): Collection
-    {
-        $query = DB::table('geobra as g')
-                    ->join('districts as d', 'g.distrito', '=', 'd.name')
-                    ->join('obras as o', 'g.');
+    // private static function totalDistrito(Builder $query, ?string $nivelGobierno): Collection
+    // {
+    //     $query = DB::table('geobra as g')
+    //                 ->join('districts as d', 'g.distrito', '=', 'd.name')
+    //                 ->join('obras as o', 'g.');
 
-        $builder = $query->selectRaw('g.distrito, ST_X(g.coordenadas) as lat, ST_Y(g.coordenadas) as lon, COUNT(o.id) as cantidad');
-        $builder->groupBy('g.distrito');
-        if($nivelGobierno){
-            $builder->where('o.nivel_gobierno', '=', $nivelGobierno);
-        }
-        return $builder;
-    }
+    //     $builder = $query->selectRaw('g.distrito, ST_X(g.coordenadas) as lat, ST_Y(g.coordenadas) as lon, COUNT(o.id) as cantidad');
+    //     $builder->groupBy('g.distrito');
+    //     if($nivelGobierno){
+    //         $builder->where('o.nivel_gobierno', '=', $nivelGobierno);
+    //     }
+    //     return $builder;
+    // }
 
     private static function totalsDefaults(Builder $query, ?string $nivelGobierno)
     {
