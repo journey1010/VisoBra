@@ -16,13 +16,16 @@ class Qr extends Controller
     {
         try {
             $data = $this->visobraUrl . $request->cui;
-            $logo = storage_path('img/logo.png'); 
+            $logo = storage_path('img/logo.png');
+            $logoResizeToWidth = $request->size ?? 400; 
             $qr = new QrMaker($data, $logo, 600);
+            
 
             $qr->configure([
-                'margin' => 50,
+                'size' => $request->size ?? 400,
+                'margin' => $request->margin ?? 10,
                 'backgroundColor' => [255,255,255],
-                'logoResizeToWidth' => 200,
+                'logoResizeToWidth' => $logoResizeToWidth/2,
                 'logoPunchoutBackground' => false,
                 'roundBlockSizeMode' => 'Margin',
                 'blockColor' => [205,49,51]
@@ -38,7 +41,8 @@ class Qr extends Controller
             ]);
         } catch (Exception $e) {
             return response()->json([
-                'message' => 'Tenemos problemas, muchos problemas. Espere un momento.'
+                'message' => 'Tenemos problemas, muchos problemas. Espere un momento.', 
+                $e->getMessage()
             ], 500);
         }
     }

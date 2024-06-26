@@ -37,14 +37,20 @@ class Qr extends FormRequest
     public function rules(): array
     {
         return [
-            'cui' => 'required|integer'
+            'cui' => 'required|integer',
+            'size' => 'nullable|integer',
+            'margin' => 'nullable|integer'
         ];
     }
 
     public function messages()
     {
         return[
-            'cui.exists' => 'CUI proporcionado no existe'
+            'cui.exists' => 'CUI proporcionado no existe',
+            'size.integer'=> 'El tamaño debe ser entero',
+            'size.required' => 'El tamaño es requerido',
+            'margin.integer'=> 'El margen debe ser entero',
+            'margin.required' => 'El margen es requerido',
         ];
     }
 }
