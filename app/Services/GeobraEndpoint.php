@@ -2,6 +2,7 @@
 
 namespace App\Services;
 
+use Illuminate\Support\Facades\DB;
 use App\Models\Geobra;
 use App\Services\Contracts\DataHandler;
 use App\Exceptions\DataHandlerException;
@@ -96,8 +97,6 @@ class GeobraEndpoint implements DataHandler
             }else {
                 $coordenas = [$clean['Y'], $clean['X']];
             }
-        }else{
-
         }
         
         $exists = Geobra::where('obras_id', $data['obras_id'])->exists();
@@ -124,6 +123,19 @@ class GeobraEndpoint implements DataHandler
                     return false;
                 }
             }
+
+            //verify if departments is correct
+             $provincExists = DB::table('departments')
+                    ->where('name', 'like', '%' . $search['DEPARTAMEN'] . '%')
+                    ->first();
+
+            if(!$provincExists){
+                DB::table('fotos_obra')->where('obra_id', $data['obras_id'])->delete();
+                DB::table('contrataciones_obra')->where('obra_id', $data['obras_id'])->delete();
+                DB::table('obras')->where('id', $data['obras_id'])->delete();
+                return false;
+            }
+
             return true;
         }catch(Exception $e){
             throw new DataHandlerException('Fallo en validacion de datos en geobraendpoint:' .$e->getMessage());

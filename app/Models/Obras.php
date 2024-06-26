@@ -344,7 +344,7 @@ class Obras extends Model
     {
         $query = DB::table('geo_obra as g')
         ->select(
-            'g.provincia',
+            'g.distrito',
             DB::raw('ST_X(g.coordenadas) as lat'),
             DB::raw('ST_Y(g.coordenadas) as lon'),
             DB::raw('COUNT(*) + SUM(CASE WHEN g.distrito like "%todos%" THEN 1 ELSE 0 END) AS total_items')
