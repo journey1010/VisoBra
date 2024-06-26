@@ -67,18 +67,25 @@ class Obras extends Controller
     public function searchTotals(SearchTotals $request)
     {
         try{  
-            $results = ObrasModel::searchTotals(
-                $request->distrito,
-                $request->provincia,
-                $request->departamento,
-                $request->nivelGobierno
-            );
-            if(!$results){
-                return response()->json([
-                    'message' => 'No se encontraron resultados'
-                ],404);
+            $trueCount = ($request->distrito ? 1 : 0) + ($request->provincia ? 1 : 0) + ($request->departamento ? 1 : 0);
+            if ($trueCount > 1) {
+                $results  = ObrasModel::totalsDefaults($request->nivelGobierno, $request->estado);
+                return response()->json($results, 200);
             }
 
+            if((!$request->departamento && !$request->provincia && !$request->distrito) || $request->departamento){
+                $results  = ObrasModel::totalsDefaults($request->nivelGobierno, $request->estado);
+                return response()->json($results, 200);
+            }
+
+            if($request->provincia){
+                $results = ObrasModel::totalsProvincia($request->nivelGobierno, $request->estado);
+            }
+            if($request->distrito){
+                $results = ObrasModel::totalDistrito($request->nivelGobierno, $request->estado);
+            }
+
+        
            return response()->json($results, 200);
         }catch(Exception $e){
             return response()->json([

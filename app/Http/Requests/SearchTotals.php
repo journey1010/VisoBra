@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Http\FormRequest;
-use illuminate\Http\Exceptions\HttpResponseException;
+use Illuminate\Http\Exceptions\HttpResponseException;
 use Illuminate\Http\JsonResponse;
 
 class SearchTotals extends FormRequest
@@ -37,7 +37,8 @@ class SearchTotals extends FormRequest
             'departamento' => 'nullable|boolean',
             'provincia' => 'nullable|boolean',
             'distrito' => 'nullable|boolean',
-            'nivelGobierno' => 'nullable|string|in:GR,GL,GN'
+            'nivelGobierno' => 'nullable|string|in:GR,GL,GN',
+            "estado" => 'required|in:ACTIVO,CERRADO,TODO'
         ];
     }
 
@@ -47,7 +48,8 @@ class SearchTotals extends FormRequest
             'departamento.string' => 'Departamento es textual',
             'provincia.string' => 'Provincia es textual',
             'distrito.string' => 'Distrito es textual',
-            'nivelGobierno.in' =>'Nivel de gobierno solo admite: GR, GL, GN'
+            'nivelGobierno.in' =>'Nivel de gobierno solo admite:GR,GL,GN',
+            'estado.in' => 'Solo se aceptan: ACTIVO, CERRADO'
         ];
     }
 }
