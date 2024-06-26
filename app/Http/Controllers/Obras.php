@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests\SearchObras;
 use App\Http\Requests\SearchTotals;
+use App\Http\Requests\Obra\ById;
 use Illuminate\Http\JsonResponse;
 use App\Models\Obras as ObrasModel;
 use Exception;
@@ -44,16 +45,10 @@ class Obras extends Controller
         }
     }
 
-    public function searchById(Request $request)
+    public function searchById(ById $request)
     {
         try{  
-            $idObra = (int) $request->idObra;
-            if(!is_int($idObra)){
-                return response()->json([
-                    'message' => 'Formato de ID para obra debe ser numérico'
-                ], 422);
-            }
-            $results = ObrasModel::searchById($idObra);
+            $results = ObrasModel::searchById($request->idObra, $request->onlyLocation);
             if(!$results){
                 return response()->json([
                     'message' => 'No se encontraron resultados'
@@ -63,7 +58,8 @@ class Obras extends Controller
             return response()->json($results, 200);
         }catch(Exception $e){
             return response()->json([
-                'message' => 'Estamos experimentando problemas temporales.'
+                'message' => 'Estamos experimentando problemas temporales.',
+                $e->getMessage()
             ], 500);
         }
     }
