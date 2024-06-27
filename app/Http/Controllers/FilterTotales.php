@@ -8,6 +8,9 @@ use Exception;
 
 class FilterTotales extends Controller
 {
+    /**
+     * Deprecated
+     */
     public function filterTotal(FilterObra $request)
     {
         try{

@@ -287,69 +287,86 @@ class Obras extends Model
         return $results;
     }
 
-    public static function searchTotals(?bool $distrito = null, ?bool $provincia = null, ?bool $departamento = null, ?string $nivelGobierno = null)
-    {
-        $trueCount = ($distrito ? 1 : 0) + ($provincia ? 1 : 0) + ($departamento ? 1 : 0);
-        if ($trueCount > 1) {
-            return [];
+    public static function totalsDefaults( ?string $nivelGobierno, string $estado)
+    {       
+        $query = DB::table('geo_obra as g')
+            ->join('obras as o', 'g.obras_id', '=', 'o.id')
+            ->selectRaw('COUNT(o.id) as cantidad');
+        if($nivelGobierno){
+            $query->where('o.nivel_gobierno', '=', $nivelGobierno);
         }
 
-        $query = DB::table('geobra as g')
-                     ->join('districts as d', 'g.distrito', '=', 'd.name')
-                     ->join('obras as o', 'g.');
-
-        if((!$departamento && !$provincia && !$distrito) || $departamento){
-            $query = self::totalsDefaults($query, $nivelGobierno);
-        }
-        if($provincia){
-            $query = self::totalsProvincia($query, $nivelGobierno);
-        }
-        if($distrito){
-            $query = self::totalDistrito($query, $nivelGobierno);
+        switch($estado){
+            case 'ACTIVO':
+                $query->where('o.estado_inversion', '=', 'ACTIVO');
+                break;
+            case 'CERRADO':
+                $query->where('o.estado_inversion', '=', 'CERRADO');
+                break;
+            default:
+                return $query->get();
         }
 
         return $query->get();
     }
 
-    // private static function totalsProvincia(Builder $query, ?string $nivelGobierno): Collection
-    // {
-    //     $query = DB::table('geobra as g')
-    //                 ->join('districts as d', 'g.distrito', '=', 'd.name')
-    //                 ->join('obras as o', 'g.obras_id', '=', 'o.id')
-    //                 ->selectRaw('
-    //                     g.provincia as provincia, 
-    //                     ST_X(g.coordenadas) as lat, 
-    //                     ST_Y(g.coordenadas) as lon, 
-    //                     COUNT(o.id) as items'
-    //                 )
-    //                 ->where('')
-    //                 ->groupBy('g.provincia');
-    //     if($nivelGobierno){
-    //         $builder->where('o.nivel_gobierno', '=', $nivelGobierno);
-    //     }
-    //     return $builder;
-    // }
-
-    // private static function totalDistrito(Builder $query, ?string $nivelGobierno): Collection
-    // {
-    //     $query = DB::table('geobra as g')
-    //                 ->join('districts as d', 'g.distrito', '=', 'd.name')
-    //                 ->join('obras as o', 'g.');
-
-    //     $builder = $query->selectRaw('g.distrito, ST_X(g.coordenadas) as lat, ST_Y(g.coordenadas) as lon, COUNT(o.id) as cantidad');
-    //     $builder->groupBy('g.distrito');
-    //     if($nivelGobierno){
-    //         $builder->where('o.nivel_gobierno', '=', $nivelGobierno);
-    //     }
-    //     return $builder;
-    // }
-
-    private static function totalsDefaults(Builder $query, ?string $nivelGobierno)
+    public static function totalsProvincia(?string $nivelGobierno, string $estado): Collection
     {
-        $builder = $query->selectRaw('COUNT(o.id) as cantidad');
+        $query = DB::table('geo_obra as g')
+                ->select(
+                    'g.provincia',
+                    DB::raw('ST_X(g.coordenadas) as lat'),
+                    DB::raw('ST_Y(g.coordenadas) as lon'),
+                    DB::raw('COUNT(*) + SUM(CASE WHEN g.provincia like "%todos%" THEN 1 ELSE 0 END) AS total_items')
+                )
+                ->join('provinces as p', 'p.name', '=', 'g.provincia')
+                ->join('obras as o', 'g.obras_id', '=', 'o.id')
+                ->where('p.department_id', 16);
+        
         if($nivelGobierno){
-            $builder->where('o.nivel_gobierno', '=', $nivelGobierno);
+            $query->where('o.nivel_gobierno', '=', $nivelGobierno);
         }
-        return $builder;
+
+        switch($estado){
+            case 'ACTIVO':
+                $query->where('o.estado_inversion', '=', 'ACTIVO');
+                break;
+            case 'CERRADO':
+                $query->where('o.estado_inversion', '=', 'CERRADO');
+                break;
+            default:
+                return $query->groupBy('g.provincia')->get();
+        }
+        return $query->groupBy('g.provincia')->get();
+    }
+
+    public static function totalDistrito(?string $nivelGobierno, string $estado): Collection
+    {
+        $query = DB::table('geo_obra as g')
+        ->select(
+            'g.distrito',
+            DB::raw('ST_X(g.coordenadas) as lat'),
+            DB::raw('ST_Y(g.coordenadas) as lon'),
+            DB::raw('COUNT(*) + SUM(CASE WHEN g.distrito like "%todos%" THEN 1 ELSE 0 END) AS total_items')
+        )
+        ->join('districts as d', 'd.name', '=', 'g.distrito')
+        ->join('obras as o', 'g.obras_id', '=', 'o.id')
+        ->where('d.department_id', 16);
+
+        if($nivelGobierno){
+            $query->where('o.nivel_gobierno', '=', $nivelGobierno);
+        }
+
+        switch($estado){
+            case 'ACTIVO':
+                $query->where('o.estado_inversion', '=', 'ACTIVO');
+                break;
+            case 'CERRADO':
+                $query->where('o.estado_inversion', '=', 'CERRADO');
+                break;
+            default:
+                return $query->groupBy('g.distrito')->get();
+        }
+        return $query->groupBy('g.distrito')->get();
     }
 }

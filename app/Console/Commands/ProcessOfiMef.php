@@ -5,6 +5,7 @@ namespace App\Console\Commands;
 use Illuminate\Console\Command;
 use App\Models\Obras;
 use App\Jobs\ProcessObrasSSI;
+use App\Jobs\FixUbication;
 
 class ProcessOfiMef extends Command
 {
@@ -37,5 +38,7 @@ class ProcessOfiMef extends Command
         foreach($registros as $registro){
             ProcessObrasSSI::dispatch($registro->id, $registro->codigo_unico_inversion);
         }
+
+        FixUbication::dispatch()->delay(3600);
     }
 }
