@@ -9,6 +9,7 @@ use Exception;
 use Illuminate\Support\LazyCollection;
 use Carbon\Carbon;
 
+
 /**
  * Class SpreedSheetHandler
  * 
@@ -94,6 +95,11 @@ class SpreedSheetHandler
         } catch (Exception $e) {
             throw new SpreedSheetException('Fallo al mapear datos, error al procesar datos, SpreedSheetHandler: ' . $e->getMessage());
         }
+    }
+
+    public function makeReport(LazyCollection $collection, array $headers)
+    {   
+        
     }
 
     /**

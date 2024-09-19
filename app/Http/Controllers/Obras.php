@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Http\Requests\SearchObras;
 use App\Http\Requests\SearchTotals;
 use App\Http\Requests\Obra\ById;
@@ -15,7 +14,7 @@ class Obras extends Controller
     public function searchObras(SearchObras $request): JsonResponse
     {
         try{
-            $results = ObrasModel::searchPaginate(
+            $results = ObrasModel::searchByFilters(
                 estadoInversion: $request->estadoInversion,
                 funcion: $request->funcion,
                 subprograma: $request->subprograma,
@@ -40,12 +39,11 @@ class Obras extends Controller
         }catch(Exception $e){
             return response()->json([
                 'message' => 'Estamos experimentando problemas temporales.',
-                $e->getMessage()
             ], 500);
         }
     }
 
-    public function searchById(ById $request)
+    public function searchById(ById $request): JsonResponse
     {
         try{  
             $results = ObrasModel::searchById($request->idObra, $request->onlyLocation);
@@ -59,12 +57,11 @@ class Obras extends Controller
         }catch(Exception $e){
             return response()->json([
                 'message' => 'Estamos experimentando problemas temporales.',
-                $e->getMessage()
             ], 500);
         }
     }
 
-    public function searchTotals(SearchTotals $request)
+    public function searchTotals(SearchTotals $request): JsonResponse
     {
         try{  
             $trueCount = ($request->distrito ? 1 : 0) + ($request->provincia ? 1 : 0) + ($request->departamento ? 1 : 0);
@@ -90,8 +87,18 @@ class Obras extends Controller
         }catch(Exception $e){
             return response()->json([
                 'message' => 'Estamos experimentando problemas temporales.',
-                $e->getMessage()
             ], 500);
+        }
+    }
+
+    public function reportFile(SearchObras $request)
+    {
+        try{
+            
+        }catch(Exception $e){
+            return response()->json([
+                'message' => 'Estamos experimentando problemas temporales'
+            ]);
         }
     }
 }          

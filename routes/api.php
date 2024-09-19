@@ -16,3 +16,4 @@ Route::get('/obras/qr', [Qr::class, 'make']);
 Route::get('/ubigeo/departments', [Ubigeo::class, 'departments']);
 Route::get('/ubigeo/province', [Ubigeo::class, 'provinces']);
 Route::get('/ubigeo/districts',  [Ubigeo::class,  'districts']);
+Route::get('/report/filter',  [Obras::class, 'reportFile']);
