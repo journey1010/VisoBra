@@ -10,6 +10,8 @@ use Illuminate\Http\JsonResponse;
 use App\Models\Obras as ObrasModel;
 use App\Jobs\DeleteFile;
 use Exception;
+use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\DB;
 
 class Obras extends Controller
 {
@@ -84,7 +86,14 @@ class Obras extends Controller
                 $results = ObrasModel::totalDistrito($request->nivelGobierno, $request->estado);
             }
 
-        
+            /**
+             * Retrive total of registers actives
+            */
+            $totals = Cache::remember('total_actives', 86400, function(){
+                return DB::table('obras')->where('estado_inversion', '=', 'ACTIVO')->count();
+            });
+            $results['totals'] = $totals;
+
            return response()->json($results, 200);
         }catch(Exception $e){
             return response()->json([
@@ -120,7 +129,6 @@ class Obras extends Controller
             $spreed = new SpreedSheetHandler;
             $spreed->makeReport($results, $path);
             DeleteFile::dispatch($path)->delay(now()->addMinutes(1));
-
             return response()->download($path);
         }catch(Exception $e){
             return response()->json([
