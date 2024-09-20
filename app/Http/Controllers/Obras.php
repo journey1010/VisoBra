@@ -34,7 +34,7 @@ class Obras extends Controller
                 itemsPerPage: $request->itemsPerPage ?? 20
             );
 
-            if(!$results){
+            if($results['total_items'] == 0){
                 return response()->json([
                     'message' => 'No se encontraron resultados'
                 ],404);
