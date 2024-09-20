@@ -1,0 +1,5 @@
+.vscode/
+bootstrap/
+storage/
+vendor/
+.env
