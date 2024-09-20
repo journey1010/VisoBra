@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Exception;
 use App\Http\Requests\Qr as QrRequest;
 use Illuminate\Http\JsonResponse;
-use App\Jobs\DeleteQr;
+use App\Jobs\DeleteFile;
 use App\Services\Qr as QrMaker;
 
 class Qr extends Controller
@@ -34,7 +34,7 @@ class Qr extends Controller
             $path = $qr->make();
             $relativePath = str_replace(storage_path('app/public'), 'storage', $path);
 
-            DeleteQr::dispatch($path)->delay(now()->addMinutes(1));
+            DeleteFile::dispatch($path)->delay(now()->addMinutes(1));
 
             return response()->json([
                 'url' => $relativePath,
