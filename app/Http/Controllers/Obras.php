@@ -4,9 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\SearchObras;
 use App\Http\Requests\SearchTotals;
+use App\Services\SpreedSheetHandler;
 use App\Http\Requests\Obra\ById;
 use Illuminate\Http\JsonResponse;
 use App\Models\Obras as ObrasModel;
+use App\Jobs\DeleteFile;
 use Exception;
 
 class Obras extends Controller
@@ -94,11 +96,36 @@ class Obras extends Controller
     public function reportFile(SearchObras $request)
     {
         try{
-            
+            $results = ObrasModel::searchByFilters(
+                estadoInversion: $request->estadoInversion,
+                funcion: $request->funcion,
+                subprograma: $request->subprograma,
+                programa: $request->programa,
+                sector: $request->sector,
+                codeUnique: $request->codeUnique,
+                snip: $request->snip,
+                nombreObra: $request->nombreObra,
+                provincia: $request->provincia,
+                nivelGobierno: $request->nivelGobierno,
+                distrito:$request->distrito,
+            );
+
+            if($results->first() === null){
+                return response()->json([
+                    'message' => 'Sin resultados'
+                ], 404);
+            }
+
+            $path = storage_path('app/public/' . 'report-' . date('Y-m-d-i-h-s') . '.xlsx');
+            $spreed = new SpreedSheetHandler;
+            $spreed->makeReport($results, $path);
+            DeleteFile::dispatch($path)->delay(now()->addMinutes(1));
+
+            return response()->download($path);
         }catch(Exception $e){
             return response()->json([
                 'message' => 'Estamos experimentando problemas temporales'
-            ]);
+            ], 500);
         }
     }
 }          

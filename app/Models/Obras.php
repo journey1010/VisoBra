@@ -119,11 +119,11 @@ class Obras extends Model
     /**
      * Busqueda por codigo unico de inversion, snip, nombre, provincia, distrito
      * Search by cui, snip, nombre, province, districts, etc records in obras table
-     * @return array if paginate is distinct of null and its true. Otherwise return collection
+     * @return array|\Illuminate\Support\LazyCollection if paginate is distinct of null and its true. Otherwise return collection
     */
     public static function searchByFilters(
-        ?int $page = 1, 
-        ?int $itemsPerPage = 20,
+        ?int $page = null, 
+        ?int $itemsPerPage = null,
         ?string $estadoInversion = null,
         ?string $funcion = null,
         ?string $subprograma = null,
@@ -135,7 +135,6 @@ class Obras extends Model
         ?string $provincia = null, 
         ?string $nivelGobierno = null, 
         ?string $distrito = null, 
-        ?bool $paginate = null
     ){
         $query  = DB::table('obras as o')
             ->selectRaw('
@@ -205,7 +204,7 @@ class Obras extends Model
             $query->orderBy('año_mes_ultimo_devengado', 'desc');
         }
         
-        if(!is_null($paginate) && $paginate == true){
+        if(!is_null($page) && !is_null($itemsPerPage)){
             $results = $query->paginate($itemsPerPage, ['*'], 'page', $page);
 
             $obras = [

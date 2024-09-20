@@ -8,7 +8,10 @@ use App\Exceptions\SpreedSheetException;
 use Exception;
 use Illuminate\Support\LazyCollection;
 use Carbon\Carbon;
-
+use Box\Spout\Writer\Common\Creator\WriterEntityFactory;
+use Box\Spout\Writer\Common\Creator\Style\StyleBuilder;
+use Box\Spout\Common\Entity\Style\CellAlignment;
+use Box\Spout\Common\Entity\Style\Color;
 
 /**
  * Class SpreedSheetHandler
@@ -97,9 +100,51 @@ class SpreedSheetHandler
         }
     }
 
-    public function makeReport(LazyCollection $collection, array $headers)
-    {   
+    public function makeReport(LazyCollection $collection, string $path)
+    {      
+        $writer = WriterEntityFactory::createXLSXWriter();
+        $writer->openToFile($path);
         
+        /**Stylign headers */
+        $style = (new StyleBuilder())
+            ->setFontBold()
+            ->setFontSize(11)
+            ->setFontColor(Color::BLACK)
+            ->setShouldWrapText(true)
+            ->setCellAlignment(CellAlignment::CENTER)
+            ->setBackgroundColor(Color::YELLOW)
+            ->build();
+
+        $headers = WriterEntityFactory::createRowFromArray([
+            'Código único de Inversión',
+            'Código SNIP',
+            'Nombre Inversión',
+            'Estado Inversión',
+            'Monto Viable',
+            'Función',
+            'Subprograma',
+            'Programa',
+            'Sector',
+        ], $style);
+        
+        $writer->addRow($headers);
+        
+        $collection->each(function($items) use ($writer){
+            $row = WriterEntityFactory::createRowFromArray([
+                $items->codigoUnicoInversion,
+                $items->codigo_snip,
+                $items->nombreInversion,
+                $items->estadoInversion,
+                $items->montoViable,
+                $items->funcion, 
+                $items->subprograma,
+                $items->programa,
+                $items->sector
+            ]);
+            $writer->addRow($row);
+        });
+        
+        $writer->close();
     }
 
     /**
