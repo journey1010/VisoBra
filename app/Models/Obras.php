@@ -148,6 +148,8 @@ class Obras extends Model
                 sub.nombre as subprograma,
                 p.nombre as programa,
                 s.nombre as sector,
+                g.provincia as provincia, 
+                g.distrito as distrito,
                 CASE WHEN g.obras_id IS NULL THEN 0 ELSE 1 END as haveLocation,
                 MATCH(o.nombre_inversion) AGAINST(?) as relevancia', [$nombreObra])
             ->leftJoin('programa as p','o.programa_id', '=', 'p.id')
