@@ -10,8 +10,6 @@ use Illuminate\Http\JsonResponse;
 use App\Models\Obras as ObrasModel;
 use App\Jobs\DeleteFile;
 use Exception;
-use Illuminate\Support\Facades\Cache;
-use Illuminate\Support\Facades\DB;
 
 class Obras extends Controller
 {
