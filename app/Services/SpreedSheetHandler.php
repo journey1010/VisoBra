@@ -104,13 +104,13 @@ class SpreedSheetHandler
     {      
         $writer = WriterEntityFactory::createXLSXWriter();
         $writer->openToFile($path);
-        
+
         /**Stylign headers */
         $style = (new StyleBuilder())
             ->setFontBold()
             ->setFontSize(11)
             ->setFontColor(Color::BLACK)
-            ->setShouldWrapText(true)
+            ->setShouldWrapText(false)
             ->setCellAlignment(CellAlignment::CENTER)
             ->setBackgroundColor(Color::YELLOW)
             ->build();

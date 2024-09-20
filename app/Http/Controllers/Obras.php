@@ -92,9 +92,11 @@ class Obras extends Controller
             $totals = Cache::remember('total_actives', 86400, function(){
                 return DB::table('obras')->where('estado_inversion', '=', 'ACTIVO')->count();
             });
-            $results['totals'] = $totals;
-
-           return response()->json($results, 200);
+  
+           return response()->json([ 
+                'items' => $results,
+                'totals' => $totals    
+            ], 200);
         }catch(Exception $e){
             return response()->json([
                 'message' => 'Estamos experimentando problemas temporales.',
