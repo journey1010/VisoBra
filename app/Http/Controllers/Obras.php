@@ -73,12 +73,6 @@ class Obras extends Controller
                 $results  = ObrasModel::totalsDefaults($request->nivelGobierno, $request->estado);
                 return response()->json($results, 200);
             }
-
-            if((!$request->departamento && !$request->provincia && !$request->distrito) || $request->departamento){
-                $results  = ObrasModel::totalsDefaults($request->nivelGobierno, $request->estado);
-                return response()->json($results, 200);
-            }
-
             if($request->provincia){
                 $results = ObrasModel::totalsProvincia($request->nivelGobierno, $request->estado);
             }
@@ -86,17 +80,16 @@ class Obras extends Controller
                 $results = ObrasModel::totalDistrito($request->nivelGobierno, $request->estado);
             }
 
-            /**
-             * Retrive total of registers actives
-            */
-            $totals = Cache::remember('total_actives', 86400, function(){
-                return DB::table('obras')->where('estado_inversion', '=', 'ACTIVO')->count();
+            $totalSum = 0;
+            $results->each(function($item) use (&$totalSum) {
+                $totalSum += $item->total_items; 
             });
   
            return response()->json([ 
                 'items' => $results,
-                'totals' => $totals    
+                'totals' => $totalSum    
             ], 200);
+            
         }catch(Exception $e){
             return response()->json([
                 'message' => 'Estamos experimentando problemas temporales.',
