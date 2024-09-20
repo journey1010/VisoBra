@@ -110,7 +110,6 @@ class SpreedSheetHandler
             ->setFontBold()
             ->setFontSize(11)
             ->setFontColor(Color::BLACK)
-            ->setShouldWrapText(false)
             ->setCellAlignment(CellAlignment::CENTER)
             ->setBackgroundColor(Color::YELLOW)
             ->build();
