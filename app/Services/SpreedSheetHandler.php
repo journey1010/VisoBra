@@ -124,6 +124,8 @@ class SpreedSheetHandler
             'Subprograma',
             'Programa',
             'Sector',
+            'Provincia',
+            'Distrito'
         ], $style);
         
         $writer->addRow($headers);
@@ -138,7 +140,9 @@ class SpreedSheetHandler
                 $items->funcion, 
                 $items->subprograma,
                 $items->programa,
-                $items->sector
+                $items->sector,
+                $items->provincia,
+                $items->distrito
             ]);
             $writer->addRow($row);
         });
